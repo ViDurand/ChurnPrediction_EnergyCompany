@@ -1,0 +1,31 @@
+https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/#:~:text=Feature%20Selection%3A%20Select%20a%20subset,(e.g.%20remove%20redundant%20variables).&text=Supervised%3A%20Use%20the%20target%20variable,well%2Dperforming%20subsets%20of%20features.
+
+Unsupervised Feature selection
+	Manual analysis
+		-> Step 1: Manually analyzing columns. output: Keep, Remove, Maybe
+
+	Automatic analysis
+		-> Step 2: Data Cleaning -> replacing NAs
+		-> Step 3: Create new features (val_day_t0, val_month_t0, ...)
+		-> Step 4: Check the maybe cases. by computing correlations output: Keep or Remove
+		-> Step 5: Data Transformation -> Transforming categorical data to numerical
+		-> Step 6: Check for auto-corelation among the features
+	
+Supervised Feature selection
+	-> Step 4: Check if Data Set is Unbalanced
+	Filter
+		-> Statistical Methods to measure correlation with the target
+		-> Feature Importance Methods
+
+	-> Convert categorical to numerical
+	
+	Wrapper
+		-> RFE (https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html)
+	
+	Intrinsic
+	
+		-> Lasso
+		-> Decision trees
+		-> Random Forest
+		-> RFE (https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html)
+
