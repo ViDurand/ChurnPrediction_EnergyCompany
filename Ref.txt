@@ -1,0 +1,14 @@
+https://www.aclweb.org/anthology/I17-2006/
+file:///C:/Users/azimedemtsvd/Downloads/information-07-00006.pdf
+https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/#:~:text=Feature%20Selection%3A%20Select%20a%20subset,(e.g.%20remove%20redundant%20variables).&text=Supervised%3A%20Use%20the%20target%20variable,well%2Dperforming%20subsets%20of%20features.
+https://machinelearningmastery.com/how-to-prepare-categorical-data-for-deep-learning-in-python/
+https://engineering.taboola.com/using-word2vec-better-embeddings-categorical-features/
+https://heartbeat.fritz.ai/hands-on-with-feature-engineering-techniques-encoding-categorical-variables-be4bc0715394
+https://towardsdatascience.com/creating-word-embeddings-coding-the-word2vec-algorithm-in-python-using-deep-learning-b337d0ba17a8
+https://github.com/Eligijus112/word-embedding-creation/blob/master/master.py
+https://towardsdatascience.com/a-beginners-guide-to-word-embedding-with-gensim-word2vec-model-5970fa56cc92
+https://github.com/zhlli1/Genism-word2vec/blob/master/Genism%20Word2Vec%20Tutorial.ipynb
+https://www.mdpi.com/2078-2489/7/1/6/pdf
+https://databricks.com/session/building-custom-ml-pipelinestages-for-feature-selection
+http://people.stat.sc.edu/haigang/improvement.html
+https://github.com/runawayhorse001/AutoFeatures/blob/bd0e94b7ac193da672f758a7c8017fdb88a9d072/AutoFeatures/AutoFeatures.py
