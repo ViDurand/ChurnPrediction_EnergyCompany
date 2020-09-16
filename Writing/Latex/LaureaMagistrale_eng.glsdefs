@@ -1,0 +1,120 @@
+\ifglsentryexists{latex}{}%
+{%
+\gls@defglossaryentry{latex}%
+{%
+name={latex},%
+sort={latex},%
+type={main},%
+first={latex},%
+firstplural={latexs},%
+text={latex},%
+plural={latexs},%
+description={LaTeX (short for Lamport TeX) is a document preparation system. The user has to think about only the content to put in the document and the software will take care of the formatting.},%
+descriptionplural={LaTeX (short for Lamport TeX) is a document preparation system. The user has to think about only the content to put in the document and the software will take care of the formatting.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glsy}{}%
+{%
+\gls@defglossaryentry{glsy}%
+{%
+name={glossary},%
+sort={glossary},%
+type={main},%
+first={glossary},%
+firstplural={glossarys},%
+text={glossary},%
+plural={glossarys},%
+description={Acronyms and terms which are generally unknown or new to common readers.},%
+descriptionplural={Acronyms and terms which are generally unknown or new to common readers.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{s2e}{}%
+{%
+\gls@defglossaryentry{s2e}%
+{%
+name={S2E},%
+sort={S2E},%
+type={main},%
+first={Start to End\glsspace (S2E)},%
+firstplural={Start to Ends\glsspace (S2Es)},%
+text={S2E},%
+plural={S2Es},%
+description={Start to End},%
+descriptionplural={Start to End\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Start to End},%
+longplural={Start to Ends},%
+short={S2E},%
+shortplural={S2Es},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{b2e}{}%
+{%
+\gls@defglossaryentry{b2e}%
+{%
+name={B2E},%
+sort={B2E},%
+type={main},%
+first={Beginner to Expert\glsspace (B2E)},%
+firstplural={Beginner to Experts\glsspace (B2Es)},%
+text={B2E},%
+plural={B2Es},%
+description={Beginner to Expert},%
+descriptionplural={Beginner to Expert\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Beginner to Expert},%
+longplural={Beginner to Experts},%
+short={B2E},%
+shortplural={B2Es},%
+counter={page},%
+parent={},%
+%
+}%
+}%

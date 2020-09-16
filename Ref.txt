@@ -12,3 +12,5 @@ https://www.mdpi.com/2078-2489/7/1/6/pdf
 https://databricks.com/session/building-custom-ml-pipelinestages-for-feature-selection
 http://people.stat.sc.edu/haigang/improvement.html
 https://github.com/runawayhorse001/AutoFeatures/blob/bd0e94b7ac193da672f758a7c8017fdb88a9d072/AutoFeatures/AutoFeatures.py
+
+SpringerLink: churn AND prediction AND machine AND learning

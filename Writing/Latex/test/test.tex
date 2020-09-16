@@ -1,0 +1,21 @@
+% arara: xelatex
+% arara: makeglossaries
+% arara: xelatex
+\documentclass{scrbook}
+
+\usepackage{hyperref}
+\usepackage[entrycounter,numberedsection=autolabel]{glossaries}
+
+\makenoidxglossaries
+
+\newglossaryentry{test}{name=test,type=main,description={this is a
+test}}
+\newglossaryentry{entry}{name=other,type=main,description={another
+entry (have a link to the test \gls{test} on page~\pageref{glsentry-test})}}
+
+\begin{document}
+A \gls{test}. I want to refer to this glossary \gls{entry}, see the
+test definition on page~\pageref{glsentry-entry}, in \ref{main}.
+
+\printnoidxglossaries
+\end{document}
