@@ -1,4 +1,4 @@
-,column,Number_Of_NA_Values
+,column,na_values
 0,idn_servizio_sk,0
 1,idn_cliente_sk,0
 2,cdc_stato_servizio_calc,3974
