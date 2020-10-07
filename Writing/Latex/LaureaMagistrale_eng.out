@@ -10,22 +10,22 @@
 \BOOKMARK [2][-]{subsection.2.1.2}{Apache spark}{section.2.1}% 10
 \BOOKMARK [2][-]{subsection.2.1.3}{Dealing with missing data}{section.2.1}% 11
 \BOOKMARK [2][-]{subsection.2.1.4}{Dealing with imbalance data}{section.2.1}% 12
-\BOOKMARK [2][-]{subsection.2.1.5}{One hot encoding}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.5}{One-hot encoding}{section.2.1}% 13
 \BOOKMARK [2][-]{subsection.2.1.6}{Ordinal encoding}{section.2.1}% 14
-\BOOKMARK [2][-]{subsection.2.1.7}{Word embedding}{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.2.1.8}{Data Normalization}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.9}{Feature selection}{section.2.1}% 17
-\BOOKMARK [1][-]{section.2.2}{Machine learning models}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.1}{Logistic regression}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.2}{Random forest classifier}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.3}{Gradient-boosted tree classifier}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.4}{Decision tree classifier}{section.2.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.5}{Support vector machine}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.6}{Multilayer perceptron}{section.2.2}% 24
-\BOOKMARK [1][-]{section.2.3}{Evaluation metrics}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.3.1}{Confusion matrix}{section.2.3}% 26
-\BOOKMARK [2][-]{subsection.2.3.2}{Accuracy}{section.2.3}% 27
-\BOOKMARK [2][-]{subsection.2.3.3}{NDCG@K}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.1.7}{Categorical embeddings}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.8}{Feature selection}{section.2.1}% 16
+\BOOKMARK [1][-]{section.2.2}{Machine learning models}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.1}{Logistic regression}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.2}{Decision tree classifier}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.3}{Random forest classifier}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.4}{Boosting: Gradient-boosted tree, XGBoost}{section.2.2}% 21
+\BOOKMARK [1][-]{section.2.3}{Evaluation metrics}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.3.1}{Confusion matrix}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.2}{Precision}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.3}{Recall}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.4}{F-Score}{section.2.3}% 26
+\BOOKMARK [2][-]{subsection.2.3.5}{Area under the ROC curve \(ROC AUC\)}{section.2.3}% 27
+\BOOKMARK [2][-]{subsection.2.3.6}{Area under the PR curve \(PR AUC\)}{section.2.3}% 28
 \BOOKMARK [0][-]{chapter.3}{Related work}{}% 29
 \BOOKMARK [1][-]{section.3.1}{Customer churn prediction}{chapter.3}% 30
 \BOOKMARK [1][-]{section.3.2}{Customer churn prediction in energy}{chapter.3}% 31
@@ -52,4 +52,4 @@
 \BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 52
 \BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 53
 \BOOKMARK [1][-]{section.6.2}{Suggestions for future research}{chapter.6}% 54
-\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 55
+\BOOKMARK [0][-]{section*.10}{Bibliography}{}% 55

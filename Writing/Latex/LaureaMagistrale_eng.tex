@@ -55,6 +55,18 @@
 	type=main,
 	description={Machine Learning}
 	}
+	
+\newglossaryentry{ETL}{
+	name=ETL,
+	type=main,
+	description={Extraction-Transformation-Loading}
+	}
+
+\newglossaryentry{MapReduce}{
+	name=MapReduce,
+	type=main,
+	description={MapReduce is a programming model and an associated implementation for processing and generating big data sets with a parallel, distributed algorithm on a cluster. A MapReduce program is composed of a map procedure, which performs filtering and sorting (such as sorting students by first name into queues, one queue for each name), and a reduce method, which performs a summary operation (such as counting the number of students in each queue, yielding name frequencies).}
+	}
 
 \hypersetup{pdftitle={Customer Churn Prediction - Energy Provider Case Study},pdfauthor={Vigèr Durand Azimedem Tsafack}}
 
@@ -115,7 +127,7 @@ retention. This is a known fact across all the industry sectors, making retentio
 
 \par Communications technologies came with great advantages, making our every day live incredibly easy. however, they also represent a big disadvantage for companies since they have empowered the costumers who are no longer stuck with the decisions of a single company. Given that competitors are only one click away, companies must find interesting ways and techniques to examine their clients, understand their behavior and being able to predict if they are possibly going to leave in a close future. One of the tools that is commonly used in customer churn prediction is machine learning.
 
-\par The quantity of companies data is continuously increasing, making the usage of machine learning for customer churn prediction a more and more popular in almost every industry. Most machine learning applications work as follow: the dataset is split into a test and training data. The training data is then used to train a model that learns from the data. The model is afterwards used to predict the results on yet unseen test data which are then compared to real values. Last but not least, metrics are used to calculate how good the model is doing using real and predicted values.\cite{Geron2017}
+\par The quantity of companies data is continuously increasing, making the usage of machine learning for customer churn prediction more and more popular in almost every industry. Most machine learning applications work as follow: the dataset is split into a test and training data. The training data is then used to train a model that learns from the data. The model is afterwards used to predict the results on yet unseen test data which are then compared to real values. Last but not least, metrics are used to calculate how good the model is doing using real and predicted values.\cite{Geron2017}
 
 \par The aim of this study was to develop a machine learning application namely an efficient and accurate churn prediction model for an energy provider company. In order to settle the context and make you familiar with the research's realm, we start the report by explaining some machine learning theoretical concepts and afterwards we describe the steps that we took in the development process of our churn prediction machine learning model.
 
@@ -138,7 +150,7 @@ In this study, we mostly focus on exploiting the current state of the literature
 
 \section{Research questions and objectives}
 
-The primary goal of this thesis is to accurately predict the future churn or status of costumers (stays/churns) for an Italian energy supply company for the next 2 months. Machine learning is the tool that will be used to achieve our goal. Thereby, a theoretical overview of related machine learning concepts is needed in order to create a good model. The obtained models are compared using some metrics an the best performing one is selected to be used in production. Based on these objectives he following research questions are formulated:
+The primary goal of this thesis is to accurately predict the future churn or status of costumers (stays/churns) for an Italian energy supply company for the next 2 months. Machine learning is the tool that will be used to achieve our goal. Thereby, a theoretical overview of related machine learning concepts is needed in order to create a good model. The obtained models are compared using some metrics an the best performing one is selected to be used in production. Based on these objectives the following research questions are formulated:
 
 \begin{enumerate}
 	\item What is the current state of costumer churn prediction in the 			literature?
@@ -152,7 +164,7 @@ The primary goal of this thesis is to accurately predict the future churn or sta
 
 The study made in this thesis consisted in three steps. Foremost, some research are formulated based on the desired outcome and the literature. As a first part, we conducted general overview of the machine learning concepts that are necessary to fully understand this thesis. The second part consisted in searching the literature to find related work that were used as inspiration for the last part. Finally, starting from the literature review, we selected some \gls{ML} models and some evaluations metrics to build a churn predictive application.
 
-Data was provided by an Italian energy provider and consisted in real costumer data from May 2019 to June 2020. Unfortunately, for privacy reasons the data cannot be disclosed alongside this thesis.
+Data was provided by an Italian energy provider and consisted in real costumer data from January 2019 to March 2020. Unfortunately, for privacy reasons the data cannot be disclosed alongside this thesis.
 
 \section{Structure of the thesis}
 
@@ -160,91 +172,195 @@ The second chapter presents a high level overview of critical methodologies and 
 
 \chapter{Machine learning: Some theoretical concepts}
 
-
+\gls{ML} is a branch of artificial intelligence that systematically applies algorithms to synthesize the underlying relationships among data and information.\cite{Awad2015} Lately, it has become a common solution to several problems that companies face daily. This chapter presents a high level explanation of some machine learning concepts which the comprehension is necessary to fully understand the experiment performed within the framework of this thesis.
 
 \section{Data collection and preprocessing}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Without data, no machine learning project could be made possible. It is therefore crucial to find interesting ways to collect and process the data to make it ready for any machine learning algorithm. Several methods are often used for this purpose. The most relevant for the scope of this thesis will be presented in this section. 
 
 \subsection{ETL}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+The acronym \gls{ETL} stands for Extract, Transform, and Load. ETL tools are pieces of software responsible for the extraction of data from several sources, their cleansing, customization and insertion into a data warehouse.\cite{Vassiliadis2002} These tools are very often used as helper in the process of data collection and preparation for a machine learning application.
+
+\par More explicitly, an ETL tool is three database functions combined into one entity to pull data out of one or multiple database(s) and then place it into another database. The process can be summarized as follows: data is taken (extracted) from a source system, converted(transformed) into a desired format, and finally stored into a data warehouse or other systems.
 
 \subsection{Apache spark}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+The quantity of digital data generated in today's companies is continuously increasing thus making their analysis more difficult. To overcome this problem several solutions have been implemented through the years. Google’s MapReduce revolutionized large-scale analysis, enabling the processing of massive datasets on commodity hardware and cloud resources, providing transparent scalability and fault tolerance at the software level.\cite{Capuccini2017} Open source implementations of MapReduce include Apache Hadoop.
+
+\par Industries initially adopted Hadoop because it is a framework based on a simple programming model (\gls{MapReduce}), it provides a computing solution that is scalable, flexible, fault-tolerent and also cost effective. Apache spark comes into play when the concern is to maintain speed while processing large datasets. It was introduced by Apache Software Foundation aiming to speed up the Hadoop computational process.
+
+\par Apache Spark is designed to accelerate analytics on Hadoop while providing a complete suite of complementary tools that include a fully-featured machine learning library (MLlib), a graph processing engine (GraphX) and stream processing. Spark is natively designed to run in-memory, enabling it to support iterative analysis and more rapid, less expensive data crunching. Spark runs programs in memory up to 100 times faster than Hadoop MapReduce and up to 10 times faster on disk. Spark's speed and efficiency are some of the the key reasons behind it's popularity. 
 
 \subsection{Dealing with missing data}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Data is the hub of every machine learning project. As a matter of fact without a good and clean dataset, useful results cannot be obtained from the data science process. Missing data is a major problem that statisticians and data scientists face quite often.
+
+\par Dealing with missing data is absolutely necessary because most statistical models operate only on complete observations of predictor and target variables. Different methods can be adopted to deal with missing data. Incomplete observations can be deleted or missing values can be replaced by an estimated value based on other information available. This process is called missing data imputation.\cite{Salgado2016} To handle missing data, three main steps are generally followed: (i) finding the reasons for missing data; (ii) analyzing the proportions of missing data by feature and finally; (iii) choosing the best imputation method. Analyzing the cause of missing data is very important since it plays a major role in the choice of the imputation technique to be used.
+
+%\par In terms of source of "missingness", several cases are possible: (i) the value is missing because it was forgotten or lost (Missing Completely at Random); (ii) the value is missing because it was not applicable to the instance (Missing at Random); (iii) the value is missing because it is of no interest to the instance (Missing Not at Random).\cite{Salgado2016} Let's rewrite this adapting it to the energy supply context: (i) the variable is correctly calculated but for some reason that cannot be identified, the values are not written in the database, eg. failure of ETL process, communication errors while writing the values in the database, values accidentally deleted, and others; (ii) The variable is not calculated during a certain amount of time due to an identifiable reason, for example the system is down for maintenance reasons; (iii) the variable is not calculated because it not relevant for that particular type of client, for instance the number of family members is not relevant if the client is a company.
 
 \subsection{Dealing with imbalance data}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Imbalanced training dataset means that one class is represented by a large number of observations (majority class) while the other is underrepresented, namely represented by only a few number of observations (minority class). This is a typical issue that is observed with every churn prediction problem. It may produce an importance deterioration of the classification accuracy, leading for example to all the observations being predicted as part of the majority class. Several techniques are usually adopted to handle the imbalance situation. The two most common are the under sampling and over sampling approaches.\cite{Barandela2004}
 
-\subsection{One hot encoding}
+\subsection{One-hot encoding}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Most machine learning and deep learning models require all input and output variables to be numeric. This means that if the dataset contains categorical data, that data must be converted into numerical form before fitting it to a machine learning model. One-hot encoding method is one of the most commonly used strategies to convert data from categorical to numerical form. This technique requires very little work. With this method, categorical variables are converted into several binary columns.
+
+\begin{figure}[h!]
+    \includegraphics[width=0.5\textwidth]{One-hot_encoding.jpg}
+    \centering
+    \caption{One-hot encoding method}
+    \label{fig:one-hot-encoding}
+\end{figure}
+
+\par One clear disadvantage of this method is the fact that the distance between one-hot encoded vectors does not carry much information. Another major disadvantage is that it aggressively consumes storage resources.\cite{Hancock2020}
 
 \subsection{Ordinal encoding}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Another import and widely used method to convert features from categorical form to numerical is ordinal encoding. this method is generally used when the variable to be converted is ordinal, namely when the variable comprises a finite set of discrete values with a ranked ordering between values. For instance, if the possible values of the variable are \textit{first}, \textit{second} and \textit{third}, integers \textit{1}, \textit{2} and \textit{3} can be used to encode the variable. 
 
-\subsection{Word embedding}
+\par An advantage of this method is that since the integer values have a natural order relationship between each other, machine learning algorithms may be able to understand and use this relationship. A clear disadvantage is that it cannot be used to encode every type of categorical feature since it is adapted only for features presenting a natural ordinal relationship among the possible values.
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+\subsection{Categorical embeddings}
 
-\subsection{Data Normalization}
+The standard in natural language processing (NLP) is to encode the input such as words into continuous vector representation which are called embeddings.\cite{Almeida2019} Embeddings are a solution to dealing with categorical variables while avoiding a lot of the pitfalls of one-hot encoding. Recently, there has
+been some interest in learning embeddings \cite{Hannes}, \cite{Berkhahn2016}, \cite{Russac2018} for general
+categorical variables instead of using the standard encoding
+techniques. Formally speaking, an embedding is a mapping of a categorical variable into an n-dimensional vector.
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+This provides us with 2 advantages. First, we limit the number of columns we need per category. Second, embeddings by nature intrinsically group similar categories together.
 
 \subsection{Feature selection}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Feature selection is the process of manually or automatically selecting the features contributing the most to the prediction of the target variable. As the number of variables and data has increased due to more advanced data gathering, it is essential to include only the most critical and useful variables for the model one is building. Feature selection have three main objectives: (i) Allowing the model to achieve better predictive performance; (ii) getting faster and more efficient predictions; (iii) Allowing to get a more understandable and interpretable model. Adding unnecessary variables to the model also adds unnecessary complexity and can lead to overfitting, while missing essential variables lead to the reduction of the predictive performance. Feature selection methods can be divided into three main category: \textit{Filter} methods, \textit{Wrapper} methods and \textit{embedded} methods.\cite{duboue2020}
 
+\par In \textit{Filter} methods, a relevance criteria is initially decided. Subsequently, the features are ranked based on the previously decided criteria. A threshold is set to select the highest-ranking features. Some commonly used metrics are the following: (i) variance which is used to remove constant features; (ii) chi-square which is a statistical test that is used to verify the dependency of two variables; (iii) correlation coefficients that can be used to remove duplicated variables. 
+
+\par \textit{Wrapper} method feature selection process is based on a specific machine learning algorithm that we wish to fit on a given dataset. A greedy search approach is used by evaluating all the possible combinations of features against the evaluation criterion. even if this method is effective, it is also computationally expensive.
+
+\par In \textit{embedded} methods, the feature selection process is completed within the machine learning algorithm itself. In other words, the feature selection process is performed during the model training.
+
+\par Another method which is quite common is to use principal component analysis (PCA), which is a linear extraction method that transforms the data into a low-dimensional subspace. The idea is to retain most of the information but reduce the features into a smaller vector.\cite{Jolliffe2016}
 
 \section{Machine learning models}
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+Several machine learning algorithms have been used in this thesis. In this section we provide a theoretical explanation for all of them.
 
 \subsection{Logistic regression}
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+Logistic regression is one of the most common machine learning algorithms. It is generally used as a baseline model when the problem to be solved is a classification problem. This model is particularly appropriate when the dependent variable is dichotomous (binary).\cite{Sahar2018} The name logistic regression is derived from the function used at the core of the method to transform the linear predictions, the logistic function. The logistic function which is also known as sigmoid function is a very popular function that machine learning borrowed from the statistical field. It is an S-shaped curve that can take any real-valued number and map it into a value between 0 and 1, but never exactly at those limits. The logistic function can be mathematically expressed as shown in equation 2.1.
 
-\subsection{Random forest classifier}
+\begin{equation}
+logit(x) = \frac{1}{1 + e^{-x}} = \frac{e^x}{1 + e^x}
+\end{equation}
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+\par Every linear methods try to fit a curve between data points. While \textit{linear regression} uses the least-squares method to measure the error namely the distance between the data points and the line, logistic regression in contrast uses maximum likelihood in its fitting process. Maximum likelihood tries to maximize the probability of obtaining the observed dataset using the likelihood function. The chosen maximum likelihood estimators are those maximizing the likelihood function and agreeing the most with the data. Equation 2.2 shows a mathematical representation of logistic regression.
 
-\subsection{Gradient-boosted tree classifier}
+\begin{equation}
+logit(\pi(x)) = \beta_0 + \beta_1x_1 + ... + \beta_nx_n \Longleftrightarrow \pi(x) = \frac{e^{\beta_0 + \beta_1x_1 + ... + \beta_nx_n}}{1 + e^{\beta_0 + \beta_1x_1 + ... + \beta_nx_n}}
+\end{equation}
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+where \(\pi(x)\) is the probability of the predicted event, \(\beta_i\) is the regression coefficient for each explanatory variable \(x_i\). The probability of belonging to the predicted class is obtained by solving \(\pi(x)\) from the equation.\cite{Hosmer2000}
 
 \subsection{Decision tree classifier}
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+Another commonly used model for solving classification problems in machine learning is decision tree. A decision tree is simply a supervised machine learning algorithm where the data is continuously split according to a certain parameter. It is a very simple model. Given several features, the decision begins with one of these features; if that is not enough, we use another one, and so on. 
 
-\subsection{Support vector machine}
+\par It is widely known and used in many companies to aid the decision making process and risk analysis. It was widely used from the 1960s to the 1980s for building expert systems. The rules were entered manually, that is why this model lost its popularity after the 1980s. The advent of mathematical methods to build decision trees brought this model back to the battle of automatic matching algorithms. The following is the general algorithm for creating a decision tree:
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+\begin{enumerate}
+	\item Determine the best feature from the training data set.
+  	\item Divide the training data into subsets containing the possible values of the best feature.
+  	\item Recursively generate new decision trees using the created data subsets.
+  	\item We stop when we can no longer classify the data.
+\end{enumerate}
 
-\subsection{Multilayer perceptron}
+There are different types of decision trees, among which CART, C4.5, CHAID, QUEST, and more...\cite{Song2015} CART which stands for classification and regression trees is the most commonly used by the models that were considered in this study. Figure \ref{fig:decision-tree}, displays a simple binary decision tree.
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+\begin{figure}[h!]
+    \includegraphics[width=0.8\textwidth]{Simple_Decision_Tree.jpg}
+    \centering
+    \caption{A decision tree example based on binary feature Y \cite{Song2015}}
+    \label{fig:decision-tree}
+\end{figure}
+
+\par among the advantages of decision trees, we can enumerate the following: (i) they are easy to understand and interpret since the tree can be visualized and the obtained results explained easily; (ii) they can work on data with little preparation, for instance they don't need data standardization; (iii) they accept both numeric and nominal data while other learning algorithms specialize in a single type of data.
+
+\par On the other hand, decision trees present several downsides: (i) they can be complex, they don't generalize well (overfitting), This can be adjusted by tuning the maximum depth of the tree or the minimum number of samples in the leaves; (ii) they may be unstable due to variations in the data; (iii) some concepts can be difficult to learn using decision trees since they are not easy to express, \textit{XOR} is a good example; (iv) they can be biased towards the ruling class, thus the data has to be balanced before training the system. (v) hitting the optimal decision tree is not guaranteed.
+
+\subsection{Random forest classifier}
+
+This powerful machine learning algorithm makes it possible to make predictions based on the aggregation of several decision trees. The method uses binary decision trees, in particular CART trees proposed by Breiman et al. (1984). The general idea behind the method is the following: instead of trying to get an optimized method all at once, we generate several predictors before putting together their different predictions.
+
+\par Random forests are an improvement of bagging for CART decision trees with the aim of making the trees used more independent (less correlated). Some characteristics of this method are that (i) They give good results especially  with large data sets; (ii) They are very easy to implement; (iii) They have few parameters.\cite{Fang2016} The general steps for implementing this model are the following:
+
+\begin{enumerate}
+	\item We draw at random from the training set \(B\) samples with replacement \(z_i, i = 1, ..., B\) each sample having \(n\) data points.
+  	\item For each sample \(i\) we build a CART tree \(G_i(x)\) according to a slightly modified algorithm: each time a node has to be cut (“split” step) we randomly select a part of the attributes (\(q\) among the \(p\) attributes) and we choose the best division in this subset.
+  	\item For classification problems which are of interest in this study, aggregation by vote is used: \(G(x) = Majority vote(G_i(x), ..., G_B(x))\).
+\end{enumerate}
+
+\subsection{Boosting: Gradient-boosted tree, XGBoost}
+
+Boosting is another type of ensemble method just like random forests. The principle of boosting is to combine the outputs of several weak classifiers to obtain a stronger result (strong classifier). The weak classifier must have a basic behavior being a little better than the random one: error rate less than 0.5 for a binary classification. Each weak classifier is weighted by the quality of its classification: the better it classifies, the more important it will be. Misclassified examples will have greater weights (they are said to be boosted) towards the weak learner in the next round so that it addresses the gap.\cite{Freund}
+
+\par Gradient boosting is a particular boosting technique which is  mainly used with decision trees. The main idea here is again to aggregate several classifiers together but by creating them iteratively. These “mini-classifiers” are generally simple and parameterized functions, most often decision trees in which each parameter is the criterion for splitting the branches. The final super-classifier is a weighting of these mini-classifiers. One approach to build this super-classifier is to:
+
+\begin{enumerate}
+	\item Randomly set the weighting (weights \(w_i\) of the mini-classifiers to form the initial super-classifier.
+  	\item Calculate the error induced by this super-classifier, and find the mini-classifier that comes closest to this error.
+  	\item Subtract the mini-classifier from the super-classifier while optimizing its weight with respect to a loss function.
+  	\item Repeat the process iteratively.
+\end{enumerate}
+
+Some of the most common boosting ensemble model implementations are \textit{Gradient-boosted tree} and \textit{XGBoost}. These two algorithms are indeed going to be used in this study.
 
 
 \section{Evaluation metrics}
 
-As regards the image formats, please use vector images as much as possible! Use jpg images only for photographs! pdf\LaTeX\ supports the pdf, jpg and png formats.
+The choice of the best performing model is a critical task in machine learning since choosing the wrong model makes all the hard work performed useless. In this section, we give a theoretical explanation of the evaluation metrics used in this thesis.
 
 \subsection{Confusion matrix}
 
+A Confusion Matrix or contingency table is a tool for measuring the performance of a machine learning model by checking in particular how often its predictions are accurate compared to reality in classification problems. More specifically, it is a summary of the results of predictions about a classification problem. Correct and incorrect predictions are highlighted and broken down by class. The results are thus compared with the actual values.
+
+\par This matrix helps to understand how the classification model is confused when making predictions. This not only allows you to know what mistakes were made, but above all the type of mistakes made. Users can analyze them to determine which results indicate how errors are made. To illustrate the idea, we can think of the problem as a binary classification problem where the instance either is classified correctly or is not. In this case, there are four possibilities:
+
+\begin{itemize}
+	\item True Positives (TP): cases where the prediction is positive, and where the real value is indeed positive.
+  	\item True Negatives (TN): cases where the prediction is negative, and where the real value is indeed negative.
+  	\item False Positives (FP): cases where the prediction is positive, but the true value is negative.
+  	\item False Negatives (FN): cases where the prediction is negative, but the actual value is positive.
+\end{itemize}
+
+\par Several other metrics (\textit{accuracy}, \textit{precision}, \textit{recall}, \textit{f-Score}, ...) can be calculated directly from the confusion matrix. and some of them will be covered subsequently. Figure \ref{fig:confusion-matrix} shows a simple illustration of a confusion matrix configuration.
+
+\begin{figure}[h!]
+    \includegraphics[width=0.5\textwidth]{confusion-matrix-exemple.jpg}
+    \centering
+    \caption{A confusion matrix example}
+    \label{fig:confusion-matrix}
+\end{figure}
+
+\subsection{Precision}
+
+
+
+\subsection{Recall}
+
 The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
 
-\subsection{Accuracy}
+\subsection{F-Score}
 
 The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
 
-\subsection{NDCG@K}
+\subsection{Area under the ROC curve (ROC AUC)}
+
+The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+
+\subsection{Area under the PR curve (PR AUC)}
 
 The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
 
@@ -368,6 +484,63 @@ Eusébio E., de Sousa J., Ventim Neves M. (2015). \href{https://doi.org/10.1007/
 
 \bibitem{Garcia2016} 
 Martínez García I.E., Sánchez A.S., Barbati S. (2016). \href{https://doi.org/10.1007/978-3-319-39095-6_15}{Reliability and Preventive Maintenance}. In: Ostachowicz W., McGugan M., Schröder-Hinrichs JU., Luczak M. (eds) MARE-WINT. Springer, Cham.
+
+\bibitem{Awad2015} 
+Awad M., Khanna R. (2015). \href{https://doi.org/10.1007/978-1-4302-5990-9_1}{Machine Learning}. In: Efficient Learning Machines. Apress, Berkeley, CA.
+
+\bibitem{Vassiliadis2002}
+Vassiliadis P., Simitsis A., Skiadopoulos S. (2002). \href{https://doi.org/10.1007/3-540-47961-9_67}{On the Logical Modeling of ETL Processes}. In: Pidduck A.B., Ozsu M.T., Mylopoulos J., Woo C.C. (eds) Advanced Information Systems Engineering. CAiSE 2002. Lecture Notes in Computer Science, vol 2348. Springer, Berlin, Heidelberg.
+
+\bibitem{Capuccini2017}
+Capuccini, M., Ahmed, L., Schaal, W. et al. \href{https://doi.org/10.1007/3-540-47961-9_67}{Large-scale virtual screening on public cloud resources with Apache Spark}. J Cheminform 9, 15 (2017).
+
+\bibitem{Salgado2016}
+Salgado C.M., Azevedo C., Proença H., Vieira S.M. (2016). \href{https://doi.org/10.1007/978-3-319-43742-2_13}{Missing Data}. In: Secondary Analysis of Electronic Health Records. Springer, Cham.
+
+\bibitem{Barandela2004}
+Barandela R., Valdovinos R.M., Sánchez J.S., Ferri F.J. (2004). \href{https://doi.org/10.1007/978-3-540-27868-9_88}{The Imbalanced Training Sample Problem: Under or over Sampling?}. In: Fred A., Caelli T.M., Duin R.P.W., Campilho A.C., de Ridder D. (eds) Structural, Syntactic, and Statistical Pattern Recognition. SSPR /SPR 2004. Lecture Notes in Computer Science, vol 3138. Springer, Berlin, Heidelberg.
+
+\bibitem{Hancock2020}
+Hancock, J.T., Khoshgoftaar, T.M. \href{https://doi.org/10.1186/s40537-020-00305-w}{Survey on categorical data for neural networks}. J Big Data 7, 28 (2020).
+
+\bibitem{Almeida2019}
+F. Almeida and G. Xexeo \href{http://arxiv.org/abs/1901.09069}{Word embeddings: A survey}. CoRR, vol.abs/1901.09069, 2019. [Online].
+
+\bibitem{Hannes}
+Hannes De Meulemeester, Bart De Moor. \href{ftp://ftp.esat.kuleuven.be/pub/SISTA//hdemeule/20-34.pdf}{Unsupervised Embeddings for Categorical Variables}. Fellow, IEEE \& SIAM ESAT, STADIUS Center for Dynamical Systems, Signal Processing and Data Analytics, KU Leuven Kasteelpark Arenberg 10, B-3001 Leuven, Belgium
+
+\bibitem{Berkhahn2016}
+C. Guo and F. Berkhahn, \href{https://arxiv.org/abs/1604.06737}{Entity embeddings of categorical
+variables.} CoRR, vol. abs/1604.06737, 2016. [Online].
+
+\bibitem{Russac2018}
+Y. Russac, O. Caelen, and L. He-Guelton, “Embeddings of categorical
+variables for sequential data in fraud context,” in The International Conference on Advanced Machine Learning Technologies and Applications,
+AMLTA 2018, Cairo, Egypt, February 22-24, 2018, ser. Advances in
+Intelligent Systems and Computing, vol. 723. Springer, 2018, pp. 542–
+552.
+
+\bibitem{duboue2020} 
+Duboue, P. (2020). \href{https://books.google.it/books?id=lLbrDwAAQBAJ}{The Art of Feature Engineering: Essentials for Machine Learning}. Cambridge University Press, isbn 9781108571647
+
+\bibitem{Jolliffe2016} 
+Jolliffe Ian T. and Cadima Jorge (2016). \href{http://doi.org/10.1098/rsta.2015.0202}{Principal component analysis: a review and recent developments}. Phil. Trans. R. Soc. A.37420150202
+
+\bibitem{Sahar2018}
+F., Sahar. (2018). Machine-Learning Techniques for Customer Retention: A Comparative Study. International Journal of Advanced Computer Science and Applications. 9. 10.14569/IJACSA.2018.090238.
+
+\bibitem{Hosmer2000}
+Hosmer, W., D. and Lemeshow, S. (2000). \href{http://resource.heartonline.cn/20150528/1_3kOQSTg.pdf}{Applied Logistic Regression}. 2nd edn. John Wiley \& Sons, Inc.
+
+\bibitem{Song2015}
+Song, Y. Y. and Lu, Y. (2015). Decision tree methods: applications for classification and prediction, Shanghai Archives of Psychiatry. Editorial Department of the Shanghai Archives of Psychiatry, 27(2), pp. 130–135. doi: 10.11919/j.issn.1002-0829.215044
+
+\bibitem{Fang2016}
+Fang, K., Jiang, Y. and Song, M. (2016). Customer profitability forecasting using Big Data analytics: A case study of the insurance industry, Computers \& Industrial Engineering, 101, pp. 552–564. doi: 10.1016/j.cie.2016.09.011.
+
+\bibitem{Freund}
+Freund and Schapire, A decision-theoretic generalization of on-line learning and an application to boosting, Journal of Computer and System Sciences, vol. 55, no 1, 1997, p. 119-139.
+
 
 \end{thebibliography}
 
