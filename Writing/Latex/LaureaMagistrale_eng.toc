@@ -21,15 +21,11 @@
 \contentsline {subsection}{\numberline {2.2.4}Boosting: Gradient-boosted tree, XGBoost}{11}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}Evaluation metrics}{12}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Confusion matrix}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Precision}{12}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Recall}{12}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}F-Score}{12}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Area under the ROC curve (ROC AUC)}{13}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Area under the PR curve (PR AUC)}{13}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.2}Precision, Recall, F-Measure}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Area under the curve (ROC AUC, PR AUC)}{13}{subsection.2.3.3}%
 \contentsline {chapter}{\numberline {3}Related work}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Customer churn prediction}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Customer churn prediction in energy}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Summary}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.1}Review: Techniques and Data}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Summary}{16}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Energy provider case study: churn prediction machine learning model}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Tools and libraries}{17}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Python}{17}{subsection.4.1.1}%
@@ -52,4 +48,4 @@
 \contentsline {chapter}{\numberline {6}Conclusions}{21}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Conclusion}{21}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Suggestions for future research}{21}{section.6.2}%
-\contentsline {chapter}{Bibliography}{23}{section*.10}%
+\contentsline {chapter}{Bibliography}{23}{section*.12}%

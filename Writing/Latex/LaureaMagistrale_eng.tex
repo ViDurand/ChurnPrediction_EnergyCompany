@@ -5,18 +5,16 @@
 \documentclass[LaM,binding=0.6cm, english]{sapthesis}
 
 \usepackage{microtype}
-
 \usepackage{xcolor}% http://ctan.org/pkg/xcolor
-
 \usepackage{hyperref}
-
 \hypersetup{
   colorlinks=true,
   linkcolor=blue,
   urlcolor=blue
 }
-
 \usepackage{glossaries}
+\usepackage{graphicx}
+\usepackage{subfig}
 
 \makenoidxglossaries
 
@@ -142,7 +140,7 @@ retention. This is a known fact across all the industry sectors, making retentio
 In this study, we mostly focus on exploiting the current state of the literature to empirically build several models for customer churn prediction in energy industry exploiting the provided data. Then suitable metrics are used to evaluate the build models in order to select the best performing one to be used in an Italian energy provider context.
 
 \begin{figure}[h!]
-    \includegraphics[width=0.5\textwidth]{Thesis-Research-Area.png}
+    \includegraphics[width=0.5\textwidth]{images/Thesis-Research-Area.png}
     \centering
     \caption{Thesis research area}
     \label{fig:research-area}
@@ -209,7 +207,7 @@ Imbalanced training dataset means that one class is represented by a large numbe
 Most machine learning and deep learning models require all input and output variables to be numeric. This means that if the dataset contains categorical data, that data must be converted into numerical form before fitting it to a machine learning model. One-hot encoding method is one of the most commonly used strategies to convert data from categorical to numerical form. This technique requires very little work. With this method, categorical variables are converted into several binary columns.
 
 \begin{figure}[h!]
-    \includegraphics[width=0.5\textwidth]{One-hot_encoding.jpg}
+    \includegraphics[width=0.5\textwidth]{images/One-hot_encoding.jpg}
     \centering
     \caption{One-hot encoding method}
     \label{fig:one-hot-encoding}
@@ -250,15 +248,17 @@ Several machine learning algorithms have been used in this thesis. In this secti
 
 \subsection{Logistic regression}
 
-Logistic regression is one of the most common machine learning algorithms. It is generally used as a baseline model when the problem to be solved is a classification problem. This model is particularly appropriate when the dependent variable is dichotomous (binary).\cite{Sahar2018} The name logistic regression is derived from the function used at the core of the method to transform the linear predictions, the logistic function. The logistic function which is also known as sigmoid function is a very popular function that machine learning borrowed from the statistical field. It is an S-shaped curve that can take any real-valued number and map it into a value between 0 and 1, but never exactly at those limits. The logistic function can be mathematically expressed as shown in equation 2.1.
+Logistic regression is one of the most common machine learning algorithms. It is generally used as a baseline model when the problem to be solved is a classification problem. This model is particularly appropriate when the dependent variable is dichotomous (binary).\cite{Sahar2018} The name logistic regression is derived from the function used at the core of the method to transform the linear predictions, the logistic function. The logistic function which is also known as sigmoid function is a very popular function that machine learning borrowed from the statistical field. It is an S-shaped curve that can take any real-valued number and map it into a value between 0 and 1, but never exactly at those limits. The logistic function can be mathematically expressed as shown in equation \ref{eqn:logistic-function}.
 
 \begin{equation}
+\label{eqn:logistic-function}
 logit(x) = \frac{1}{1 + e^{-x}} = \frac{e^x}{1 + e^x}
 \end{equation}
 
-\par Every linear methods try to fit a curve between data points. While \textit{linear regression} uses the least-squares method to measure the error namely the distance between the data points and the line, logistic regression in contrast uses maximum likelihood in its fitting process. Maximum likelihood tries to maximize the probability of obtaining the observed dataset using the likelihood function. The chosen maximum likelihood estimators are those maximizing the likelihood function and agreeing the most with the data. Equation 2.2 shows a mathematical representation of logistic regression.
+\par Every linear methods try to fit a curve between data points. While \textit{linear regression} uses the least-squares method to measure the error namely the distance between the data points and the line, logistic regression in contrast uses maximum likelihood in its fitting process. Maximum likelihood tries to maximize the probability of obtaining the observed dataset using the likelihood function. The chosen maximum likelihood estimators are those maximizing the likelihood function and agreeing the most with the data. Equation \ref{eqn:logistic-regression} shows a mathematical representation of logistic regression.
 
 \begin{equation}
+\label{eqn:logistic-regression}
 logit(\pi(x)) = \beta_0 + \beta_1x_1 + ... + \beta_nx_n \Longleftrightarrow \pi(x) = \frac{e^{\beta_0 + \beta_1x_1 + ... + \beta_nx_n}}{1 + e^{\beta_0 + \beta_1x_1 + ... + \beta_nx_n}}
 \end{equation}
 
@@ -280,7 +280,7 @@ Another commonly used model for solving classification problems in machine learn
 There are different types of decision trees, among which CART, C4.5, CHAID, QUEST, and more...\cite{Song2015} CART which stands for classification and regression trees is the most commonly used by the models that were considered in this study. Figure \ref{fig:decision-tree}, displays a simple binary decision tree.
 
 \begin{figure}[h!]
-    \includegraphics[width=0.8\textwidth]{Simple_Decision_Tree.jpg}
+    \includegraphics[width=0.8\textwidth]{images/Simple_Decision_Tree.jpg}
     \centering
     \caption{A decision tree example based on binary feature Y \cite{Song2015}}
     \label{fig:decision-tree}
@@ -338,48 +338,81 @@ A Confusion Matrix or contingency table is a tool for measuring the performance 
 \par Several other metrics (\textit{accuracy}, \textit{precision}, \textit{recall}, \textit{f-Score}, ...) can be calculated directly from the confusion matrix. and some of them will be covered subsequently. Figure \ref{fig:confusion-matrix} shows a simple illustration of a confusion matrix configuration.
 
 \begin{figure}[h!]
-    \includegraphics[width=0.5\textwidth]{confusion-matrix-exemple.jpg}
+    \includegraphics[width=0.5\textwidth]{images/confusion-matrix-exemple.jpg}
     \centering
     \caption{A confusion matrix example}
     \label{fig:confusion-matrix}
 \end{figure}
 
-\subsection{Precision}
+\subsection{Precision, Recall, F-Measure}
 
+Precision, recall and F-Measure are by far the most commonly used evaluation metrics when we want to deal with classification problems. Indeed, in many machine learning problems the performance of algorithms is evaluated using precision and recall measurements.\cite{Sokolova2006} However, these two measures can have a very different importance depending on the
+context. That's why data scientist more often prefer an evaluation metric that will combine these two measures equally important one as the other. The most common among those combination metric is called F-Measure (a.k.a f1 score).\cite{Albatineh2011}
 
+\textbf{Precision} can be defined in machine learning as the conditional probability that a randomly chosen example is correctly classified by the system. This is the ratio between the number of true positive predictions (TP) and the number of positive predictions (TP + FP). In our context, it measures the quality of the predictions, that is, the degree to which customers marked as being churning really are. The \textbf{recall} measures the "width of learning" and represents the ratio of the number of true positive predictions to the total number of real positive examples. It measures the percentage of churning clients that was identified by the model, namely the model effectiveness. The break-even point is reached when precision and recall are equal.\cite{Namburu2005} The expression to calculate both precision an recall can be seen in Equation \ref{eqn:precision-recall}.
 
-\subsection{Recall}
+\begin{equation}
+\label{eqn:precision-recall}
+Recall = \frac{TP}{TP+FN} \qquad Precision = \frac{TP}{TP + FP}
+\end{equation}
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+\par The \textbf{F-measure}, also called Dice index, can be defined as the harmonic mean of precision and recall. This measurement can be seen as a trade off between precision and recall. Equation \ref{eqn:f-measure} shows the mathematical formula for this metric.
 
-\subsection{F-Score}
+\begin{equation}
+\label{eqn:f-measure}
+F-measure = \frac{2 * precision * recall}{precision + recall}
+\end{equation}
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+A value close to 1 indicates that the classification is of very good quality.
 
-\subsection{Area under the ROC curve (ROC AUC)}
+\subsection{Area under the curve (ROC AUC, PR AUC)}
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+Other two interesting evaluation metrics in machine learning are the areas under the ROC and PR curves.\cite{Fogarty2005} these two measurements are popular because they are suitable when the data set used to build the model is unbalanced. Indeed, they are going to be perfect for our case, especially area under the PR curve since we wish to have a good recall while keeping the precision reasonably high.
 
-\subsection{Area under the PR curve (PR AUC)}
+A receiver operating characteristic (ROC) curve is a graph representing the performance of a classification model for all classification thresholds. This curve plots the rate of true positives as a function of the rate of false positives. The true positive rate (TPR) is the equivalent of the recall. It is therefore defined as already shown in equation \ref{eqn:precision-recall}, whereas the false positive rate (FPR) can be expressed as shown in equation \ref{eqn:fpr}. Similarly, A Precision-Recall (PR) curve is another graph that can be used to evaluate a classification model over multiple classification thresholds. This other curve plots the precision as a function of the recall. In summary, These two curves are quite interesting because they can be used to identify the best threshold (namely the one yielding the best performance) for a particular classifier.
 
-The captions have a smaller font respect to the text and the label is in boldface. The appearance of the margin notes has been improved.
+The closer to 1 are the areas under the ROC and the PR curves, the better the classifier is likely to perform. Figures \ref{fig:roc_curve_interpretation} and \ref{fig:pr_curve_interpretation} help understanding how the areas under the curves should be interpreted.
+
+\begin{equation}
+\label{eqn:fpr}
+FPR = \frac{FP}{FP + TN}
+\end{equation}
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[ROC curve.]{\includegraphics[width=0.5\textwidth]{images/roc_curve_interpretation.jpg}\label{fig:roc_curve_interpretation}}
+  \hfill
+  \subfloat[PR curve.]{\includegraphics[width=0.5\textwidth]{images/pr_curve_interpretation.jpg}\label{fig:pr_curve_interpretation}}
+  \caption{ROC and PR curves interpretation}
+\end{figure}
 
 \chapter{Related work}
 
-In this chapter I will discuss my stylistic choices of \textsf{sapthesis}.
-I will show the page layout geometry and I will describe the page style.
+The word "churn" - which originated from the contraction between the words \textit{change} and \textit{turn} - describes the phenomenon of losing a customer. It is measured by the rate of churn which is an important indicator for organizations. This churn rate represents the percentage of lost customers over a given period compared to the
+total number of clients at the beginning of the same period. Reduce this rate is thus one of the most important concerns of every modern company. This study is clearly not the first of his kind. Multiple studies in the field of churn prediction/reduction have been performed, this chapter brings to light some of them reviewing both the techniques and the data sources used.
 
-\section{Customer churn prediction}
+\section{Review: Techniques and Data}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+The goal of the studies on the churn phenomenon is to detect individuals who intend to leave the organization in order to improve decision making and initiate retention actions. It is often analyzed using predictive techniques similar to datamining. Some methods are commonly used for churn prediction, such as logistic regression models (\cite{Nie2009}, \cite{Dahiya2015}, \cite{Yabas2013}, \cite{Rehman2013}), decision tree models (\cite{Dahiya2015}, \cite{Yabas2013}, \cite{Yabas2013}, \cite{Rehman2013}), support vector machines (\cite{Toderean2016}), random forests (\cite{Yabas2013}), neural networks (\cite{Rehman2013}).
 
-\section{Customer churn prediction in energy}
+\par in \cite{Toderean2016}, a data mining method is used to predict the customer churn in mobile telecommunication industry using call detail records dataset that consists of 3333 customers with 21 attributes each and a churn dependent variable with two classes Yes/No. Few attributes include the information about their corresponding inbound/outbound SMS count and voice mail. In this study, a principal component analysis was used in order to reduce the data dimensionality and deal with multicolinearity. the modeling phase was done using three machine learning model, namely support vector machines, neural networks and Baysian networks. In the evaluation phase of this study, confusion matrix and ROC curve were used as evaluation metrics.
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+\par Another interesting churn prediction study is the performed in \cite{Dahiya2015}. in this study, a software called \textit{WEKA} is used to develop a churn prediction model. Each customer was classified as a potential churner or non-churner. The framework discussed was based on Knowledge Discovery Data process. Three different datasets, small, medium and large with varying attributes were considered. The performance of decision trees and logistic regression models are compared by calculating the accuracy and error rate.
+
+\par Paper \cite{Yabas2013} presents a study on subscriber churn analysis and prediction for mobile and wireless service providers. A real and complied dataset by Orange Telecom, 2009 was used. Main emphasis was laid on ensemble methods that encompass single methods to improve the solution to churn prediction problem. These results were compared with that of classic methods, namely logistic regression, decision trees and random forests; the evaluation metric used was ROC score.
+
+\par Paper \cite{Nie2009} proposes a framework of the whole process of churn prediction of credit card holders. The machine learning model used in this study is logistic regression applied on the data of more than 5000 credit card holders provided by a major China commercial bank. Accuracy and ROC curve are used to evaluate the obtained model.
 
 \section{Summary}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Several studies on churn prediction attempt to find the most efficient data mining technique in terms of minimizing the error rate and prediction accuracy. From the researches that have been performed,it turns out that logistic regression random forest and decision trees are the most widely used techniques for churn prediction. In addition, the general remark resulting from this non-exhaustive summary is that there is no standard technique for solving the problem of churn prediction because the quality of the results obtained is closely related to the nature of the data used, their volume and quality, the number and relevance of indicators taken into consideration, the size of the learning sample, and finally the definition of the target variable. Without forgetting the confidential aspect of the data which does not allow the dissemination of the strategic results of the organization, especially in a competitive sector such as energy supply. Figure \ref{fig:studies-summary} synthesizes the articles that we presented in the previous section.
+
+\begin{figure}[h!]
+    \includegraphics[width=0.95\textwidth]{images/studies_summary.jpg}
+    \centering
+    \caption{Related works summary}
+    \label{fig:studies-summary}
+\end{figure}
 
 \chapter{Energy provider case study: churn prediction machine learning model}
 
@@ -541,6 +574,37 @@ Fang, K., Jiang, Y. and Song, M. (2016). Customer profitability forecasting usin
 \bibitem{Freund}
 Freund and Schapire, A decision-theoretic generalization of on-line learning and an application to boosting, Journal of Computer and System Sciences, vol. 55, no 1, 1997, p. 119-139.
 
+\bibitem{Sokolova2006}
+Sokolova, M., N. Japkowicz, et S. Szpakowicz (2006). Beyond accuracy, f-score and roc : A family of discriminant measures for performance evaluation. In Proceedings of the 19th Australian Joint Conference on Artificial Intelligence : Advances in Artificial Intelligence,
+AI’06, pp. 1015–1021.
+
+\bibitem{Sokolova2006}
+Sokolova, M., N. Japkowicz, and S. Szpakowicz (2006). Beyond accuracy, f-score and roc : A family of discriminant measures for performance evaluation. In Proceedings of the 19th Australian Joint Conference on Artificial Intelligence : Advances in Artificial Intelligence,
+AI’06, pp. 1015–1021.
+
+\bibitem{Albatineh2011}
+Albatineh, A. N. and M. Niewiadomska-Bugaj (2011). Correcting jaccard and other similarity indices for chance agreement in cluster analysis. Adv. Data Anal. Classif. 5(3), 179–200.
+
+\bibitem{Namburu2005}
+Namburu, S., Tu, H., Luo, J., and Pattipati, K. (2005). Experiments on Supervised Learning Algorithms for Text Categorization. Aerospace Conference, IEEE, pp. 1-8.
+
+\bibitem{Fogarty2005}
+Fogarty, J., Baker, R. S., et Hudson, S.E. (2005). Case studies in the use of roc curve analysis for sensor-based estimates in human computer interaction. In Proceedings of Graphics Interface 2005, GI '05, Canada, pp. 129-136.
+
+\bibitem{Nie2009}
+Nie G., Wang G., Zhang P., Tian Y., Shi Y. (2009) \href{https://doi.org/10.1007/978-3-642-01973-9_63}{Finding the Hidden Pattern of Credit Card Holder’s Churn: A Case of China}. In: Allen G., Nabrzyski J., Seidel E., van Albada G.D., Dongarra J., Sloot P.M.A. (eds) Computational Science – ICCS 2009. ICCS 2009. Lecture Notes in Computer Science, vol 5545. Springer, Berlin, Heidelberg.
+
+\bibitem{Dahiya2015}
+K. Dahiya and S. Bhatia, Customer churn analysis in telecom industry, in 2015 4th International Conference on Reliability, Infocom Technologies and Optimization (ICRITO) (Trends and Future Directions), 2015, pp. 1–6.
+
+\bibitem{Toderean2016}
+I. Brânduşoiu, G. Toderean, and H. Beleiu, Methods for churn prediction in the prepaid mobile telecommunications industry, in 2016 International Conference on Communications (COMM), 2016, pp. 97–100.
+
+\bibitem{Yabas2013}
+U. Yabas and H. C. Cankaya, Churn prediction in subscriber management for mobile and wireless communications services, in 2013 IEEE Globecom Workshops (GC Wkshps), 2013, pp. 991–995.
+
+\bibitem{Rehman2013}
+S. A. Qureshi, A. S. Rehman, A. M. Qamar, A. Kamal, and A. Rehman, Telecommunication subscribers’ churn prediction model using machine learning, in 2013 Eighth International Conference on Digital Information Management (ICDIM), 2013, pp. 131–136
 
 \end{thebibliography}
 

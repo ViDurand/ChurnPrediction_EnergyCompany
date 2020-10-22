@@ -21,35 +21,31 @@
 \BOOKMARK [2][-]{subsection.2.2.4}{Boosting: Gradient-boosted tree, XGBoost}{section.2.2}% 21
 \BOOKMARK [1][-]{section.2.3}{Evaluation metrics}{chapter.2}% 22
 \BOOKMARK [2][-]{subsection.2.3.1}{Confusion matrix}{section.2.3}% 23
-\BOOKMARK [2][-]{subsection.2.3.2}{Precision}{section.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.3.3}{Recall}{section.2.3}% 25
-\BOOKMARK [2][-]{subsection.2.3.4}{F-Score}{section.2.3}% 26
-\BOOKMARK [2][-]{subsection.2.3.5}{Area under the ROC curve \(ROC AUC\)}{section.2.3}% 27
-\BOOKMARK [2][-]{subsection.2.3.6}{Area under the PR curve \(PR AUC\)}{section.2.3}% 28
-\BOOKMARK [0][-]{chapter.3}{Related work}{}% 29
-\BOOKMARK [1][-]{section.3.1}{Customer churn prediction}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.2}{Customer churn prediction in energy}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.3}{Summary}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{Energy provider case study: churn prediction machine learning model}{}% 33
-\BOOKMARK [1][-]{section.4.1}{Tools and libraries}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.1.1}{Python}{section.4.1}% 35
-\BOOKMARK [2][-]{subsection.4.1.2}{Apache Spark}{section.4.1}% 36
-\BOOKMARK [1][-]{section.4.2}{Data description and understanding}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.3}{Data preprocessing and feature selection}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.3.1}{Handling missing data}{section.4.3}% 39
-\BOOKMARK [2][-]{subsection.4.3.2}{Dealing with categorical features}{section.4.3}% 40
-\BOOKMARK [2][-]{subsection.4.3.3}{Imbalanced data}{section.4.3}% 41
-\BOOKMARK [2][-]{subsection.4.3.4}{Data Normalization}{section.4.3}% 42
-\BOOKMARK [2][-]{subsection.4.3.5}{Feature selection}{section.4.3}% 43
-\BOOKMARK [0][-]{chapter.5}{Models and results}{}% 44
-\BOOKMARK [1][-]{section.5.1}{Logistic regression}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.2}{Random forest classifier}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.3}{Gradient-boosted tree classifier}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.4}{Decision tree classifier}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.5}{Support vector machine}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.6}{Multilayer perceptron}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.7}{Summary and analysis of the results}{chapter.5}% 51
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 52
-\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 53
-\BOOKMARK [1][-]{section.6.2}{Suggestions for future research}{chapter.6}% 54
-\BOOKMARK [0][-]{section*.10}{Bibliography}{}% 55
+\BOOKMARK [2][-]{subsection.2.3.2}{Precision, Recall, F-Measure}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.3}{Area under the curve \(ROC AUC, PR AUC\)}{section.2.3}% 25
+\BOOKMARK [0][-]{chapter.3}{Related work}{}% 26
+\BOOKMARK [1][-]{section.3.1}{Review: Techniques and Data}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{Summary}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Energy provider case study: churn prediction machine learning model}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Tools and libraries}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.1.1}{Python}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.2}{Apache Spark}{section.4.1}% 32
+\BOOKMARK [1][-]{section.4.2}{Data description and understanding}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.3}{Data preprocessing and feature selection}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.3.1}{Handling missing data}{section.4.3}% 35
+\BOOKMARK [2][-]{subsection.4.3.2}{Dealing with categorical features}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.3}{Imbalanced data}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.3.4}{Data Normalization}{section.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.3.5}{Feature selection}{section.4.3}% 39
+\BOOKMARK [0][-]{chapter.5}{Models and results}{}% 40
+\BOOKMARK [1][-]{section.5.1}{Logistic regression}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{Random forest classifier}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.3}{Gradient-boosted tree classifier}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.4}{Decision tree classifier}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.5}{Support vector machine}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.6}{Multilayer perceptron}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.7}{Summary and analysis of the results}{chapter.5}% 47
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 48
+\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.2}{Suggestions for future research}{chapter.6}% 50
+\BOOKMARK [0][-]{section*.12}{Bibliography}{}% 51
