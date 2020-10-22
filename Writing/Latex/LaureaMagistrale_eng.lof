@@ -4,7 +4,11 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces One-hot encoding method\relax }}{7}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces A decision tree example based on binary feature Y \cite {Song2015}\relax }}{10}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces A confusion matrix example\relax }}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces ROC and PR curves interpretation\relax }}{14}{figure.caption.10}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ROC curve.}}}{14}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PR curve.}}}{14}{subfigure.4.2}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Related works summary\relax }}{16}{figure.caption.11}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
