@@ -172,7 +172,7 @@ The second chapter presents a high level overview of critical methodologies and 
 
 \gls{ML} is a branch of artificial intelligence that systematically applies algorithms to synthesize the underlying relationships among data and information.\cite{Awad2015} Lately, it has become a common solution to several problems that companies face daily. This chapter presents a high level explanation of some machine learning concepts which the comprehension is necessary to fully understand the experiment performed within the framework of this thesis.
 
-\section{Data collection and preprocessing}
+\section{Data collection and preprocessing} \label{data-collection}
 
 Without data, no machine learning project could be made possible. It is therefore crucial to find interesting ways to collect and process the data to make it ready for any machine learning algorithm. Several methods are often used for this purpose. The most relevant for the scope of this thesis will be presented in this section. 
 
@@ -182,7 +182,7 @@ The acronym \gls{ETL} stands for Extract, Transform, and Load. ETL tools are pie
 
 \par More explicitly, an ETL tool is three database functions combined into one entity to pull data out of one or multiple database(s) and then place it into another database. The process can be summarized as follows: data is taken (extracted) from a source system, converted(transformed) into a desired format, and finally stored into a data warehouse or other systems.
 
-\subsection{Apache spark}
+\subsection{Apache spark} \label{spark}
 
 The quantity of digital data generated in today's companies is continuously increasing thus making their analysis more difficult. To overcome this problem several solutions have been implemented through the years. Google’s MapReduce revolutionized large-scale analysis, enabling the processing of massive datasets on commodity hardware and cloud resources, providing transparent scalability and fault tolerance at the software level.\cite{Capuccini2017} Open source implementations of MapReduce include Apache Hadoop.
 
@@ -190,7 +190,7 @@ The quantity of digital data generated in today's companies is continuously incr
 
 \par Apache Spark is designed to accelerate analytics on Hadoop while providing a complete suite of complementary tools that include a fully-featured machine learning library (MLlib), a graph processing engine (GraphX) and stream processing. Spark is natively designed to run in-memory, enabling it to support iterative analysis and more rapid, less expensive data crunching. Spark runs programs in memory up to 100 times faster than Hadoop MapReduce and up to 10 times faster on disk. Spark's speed and efficiency are some of the the key reasons behind it's popularity. 
 
-\subsection{Dealing with missing data}
+\subsection{Dealing with missing data} \label{missing-data}
 
 Data is the hub of every machine learning project. As a matter of fact without a good and clean dataset, useful results cannot be obtained from the data science process. Missing data is a major problem that statisticians and data scientists face quite often.
 
@@ -198,11 +198,11 @@ Data is the hub of every machine learning project. As a matter of fact without a
 
 %\par In terms of source of "missingness", several cases are possible: (i) the value is missing because it was forgotten or lost (Missing Completely at Random); (ii) the value is missing because it was not applicable to the instance (Missing at Random); (iii) the value is missing because it is of no interest to the instance (Missing Not at Random).\cite{Salgado2016} Let's rewrite this adapting it to the energy supply context: (i) the variable is correctly calculated but for some reason that cannot be identified, the values are not written in the database, eg. failure of ETL process, communication errors while writing the values in the database, values accidentally deleted, and others; (ii) The variable is not calculated during a certain amount of time due to an identifiable reason, for example the system is down for maintenance reasons; (iii) the variable is not calculated because it not relevant for that particular type of client, for instance the number of family members is not relevant if the client is a company.
 
-\subsection{Dealing with imbalance data}
+\subsection{Dealing with imbalance data} \label{imbalance_data}
 
 Imbalanced training dataset means that one class is represented by a large number of observations (majority class) while the other is underrepresented, namely represented by only a few number of observations (minority class). This is a typical issue that is observed with every churn prediction problem. It may produce an importance deterioration of the classification accuracy, leading for example to all the observations being predicted as part of the majority class. Several techniques are usually adopted to handle the imbalance situation. The two most common are the under sampling and over sampling approaches.\cite{Barandela2004}
 
-\subsection{One-hot encoding}
+\subsection{One-hot encoding} \label{one-hot_encoding}
 
 Most machine learning and deep learning models require all input and output variables to be numeric. This means that if the dataset contains categorical data, that data must be converted into numerical form before fitting it to a machine learning model. One-hot encoding method is one of the most commonly used strategies to convert data from categorical to numerical form. This technique requires very little work. With this method, categorical variables are converted into several binary columns.
 
@@ -215,13 +215,13 @@ Most machine learning and deep learning models require all input and output vari
 
 \par One clear disadvantage of this method is the fact that the distance between one-hot encoded vectors does not carry much information. Another major disadvantage is that it aggressively consumes storage resources.\cite{Hancock2020}
 
-\subsection{Ordinal encoding}
+\subsection{Ordinal encoding} \label{ordinal_encoding}
 
-Another import and widely used method to convert features from categorical form to numerical is ordinal encoding. this method is generally used when the variable to be converted is ordinal, namely when the variable comprises a finite set of discrete values with a ranked ordering between values. For instance, if the possible values of the variable are \textit{first}, \textit{second} and \textit{third}, integers \textit{1}, \textit{2} and \textit{3} can be used to encode the variable. 
+Another important and widely used method to convert features from categorical form to numerical is ordinal encoding. this method is generally used when the variable to be converted is ordinal, namely when the variable comprises a finite set of discrete values with a ranked ordering between values. For instance, if the possible values of the variable are \textit{first}, \textit{second} and \textit{third}, integers \textit{1}, \textit{2} and \textit{3} can be used to encode the variable. 
 
 \par An advantage of this method is that since the integer values have a natural order relationship between each other, machine learning algorithms may be able to understand and use this relationship. A clear disadvantage is that it cannot be used to encode every type of categorical feature since it is adapted only for features presenting a natural ordinal relationship among the possible values.
 
-\subsection{Categorical embeddings}
+\subsection{Categorical embeddings} \label{categorical_embeddings}
 
 The standard in natural language processing (NLP) is to encode the input such as words into continuous vector representation which are called embeddings.\cite{Almeida2019} Embeddings are a solution to dealing with categorical variables while avoiding a lot of the pitfalls of one-hot encoding. Recently, there has
 been some interest in learning embeddings \cite{Hannes}, \cite{Berkhahn2016}, \cite{Russac2018} for general
@@ -230,7 +230,7 @@ techniques. Formally speaking, an embedding is a mapping of a categorical variab
 
 This provides us with 2 advantages. First, we limit the number of columns we need per category. Second, embeddings by nature intrinsically group similar categories together.
 
-\subsection{Feature selection}
+\subsection{Feature selection} \label{feature_selection}
 
 Feature selection is the process of manually or automatically selecting the features contributing the most to the prediction of the target variable. As the number of variables and data has increased due to more advanced data gathering, it is essential to include only the most critical and useful variables for the model one is building. Feature selection have three main objectives: (i) Allowing the model to achieve better predictive performance; (ii) getting faster and more efficient predictions; (iii) Allowing to get a more understandable and interpretable model. Adding unnecessary variables to the model also adds unnecessary complexity and can lead to overfitting, while missing essential variables lead to the reduction of the predictive performance. Feature selection methods can be divided into three main category: \textit{Filter} methods, \textit{Wrapper} methods and \textit{embedded} methods.\cite{duboue2020}
 
@@ -416,49 +416,151 @@ Several studies on churn prediction attempt to find the most efficient data mini
 
 \chapter{Energy provider case study: churn prediction machine learning model}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
-
+According to the US Energy Information Administration (\href{https://www.eia.gov/}{EIA}), Italy is the fourth-largest energy consumer in Europe; the energy market is thereby highly competitive. At this point, the only way for companies of this sector to secure a good market share is to develop various strategies in order not to lose their clients. One of those ways is churn prediction which is the main goal of this work consisting of an experiment that has been performed to meet the needs of one of the largest energy distribution companies in Italy. Machine learning was chosen as the main tool among others to be used in this work. The current chapter describes the development process of our solution.
+ 
 \section{Tools and libraries}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
-
+This section presents two important tools that played an essential role in the realization of this work.
 
 \subsection{Python}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
-
+Python was chosen as the programming language to be used in this work. It is the most widely used open source programming language. it is also the best language for performing data analysis tasks because it allows developers to focus on what they do rather than how they do it. It freed developers from the form constraints that occupied their time with older languages. Thus, developing code with Python is faster than with other languages. Furthermore, python includes a very large number of libraries that make the data scientist's job easier. \textit{Pyspark} is one of those.
 
 \subsection{Apache Spark}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Apache Spark is a fast data processing engine dedicated to big data. It allows processing of large volumes of data in a distributed manner (cluster computing). It is very popular for a few years now, this Framework is on the way to replace \textit{Hadoop}. Its main advantages are its speed, ease of use, and versatility. Section \ref{spark} presents more details about spark. The native language of apache spark is \textit{scala}; however, in this work we used a version of spark especially designed for python which is called \textit{pyspark}. This version helps to take advantage of the velocity of spark while keeping the simplicity provided by python.
+
+\section{Data collection}
+
+Without Data, no data science study can be performed. This is the reason why we had to implement various logics to gather customer data all over the company.
+
+\subsection{Data collection: ETL}
+
+Apache spark engine works with full potential within a cluster; That is why is was necessary to transfer the data from all over the company to a \textit{cloudera} cluster. Another important goal of this step was to gather all the needed customer data at one place in order to process it more efficiently taking advantage of the processing speed of spark. Multiple ETL processes have been developed to transfer clients data from multiple scopes to the cloudera cluster. Some of the scopes from which data was pulled are billing, marketing, customer relationship management (CRM), contacts, pricing, complaints management, etc. Figure \ref{fig:data-collection} schematically shows the implemented workflow. 
+
+\begin{figure}[h!]
+    \includegraphics[width=0.95\textwidth]{images/data_collection.jpg}
+    \centering
+    \caption{Data collection}
+    \label{fig:data-collection}
+\end{figure}
+
+\subsection{Feature creation} \label{feature-creation}
+
+After collecting the customer data and loading it into the cloudera cluster, we started working effectively on the churn prediction model which is the scope of this thesis. The first step in this process was feature creation which is essential for every data science project. In this step, we merged the gathered data to obtain the dataset to be used in the modeling phase. This phase was performed writing a python code that implemented the following steps: (i) Initial time-stamps \textit{t0's} was chosen (15 time-stamps, from 01 January 2019 up to 01 March 2020). (ii) At each instant \textit{t0}, a picture of the data was taken by computing some customer related metrics that were thought to be related to the churn phenomenon (Number of inbound calls during the last month, If the client payed late in the last month, etc.); 767 features have been generated. See figure \ref{fig:feature-creation} for a schematical representation of this phase.
+
+\begin{figure}[h!]
+    \includegraphics[width=0.95\textwidth]{images/feature_creation.jpg}
+    \centering
+    \caption{Feature creation}
+    \label{fig:feature-creation}
+\end{figure}
 
 \section{Data description and understanding}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+The task we performed in the current study was that of predicting the churn probability of the business clients of an Italian big energy provider company. As required by the company, the dataset has been divided in two distinct groups based on their sizes. The first group consisted in all the clients holding businesses of limited size (\textit{micro}); While the second group consisted in all the clients holding small and medium businesses (\textit{small} and \textit{medium}).
+
+The dataset of micro clients consisted of 20.223.914,0 records while the dataset of small and medium clients had 5.264.625,0 records. both datasets were made up of 767 columns with 1 boolean target variable indicating weather the client churned two months after \textit{t0} or not. \textit{t0} being the feature creation data already discussed in section \ref{feature-creation}. As shown in figures \ref{fig:target-variable-distribution-micro} and \ref{fig:target-variable-distribution-small-medium}, both datasets were highly unbalanced with the \textit{staying} class highly over represented.
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.45\textwidth]{images/target-variable-distribution-micro.jpg}\label{fig:target-variable-distribution-micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.45\textwidth]{images/target-variable-distribution-small-medium.jpg}\label{fig:target-variable-distribution-small-medium}}
+  \caption{Target variable distribution}
+\end{figure}
 
 \section{Data preprocessing and feature selection}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Before applying any machine learning algorithm, some preprocessing steps are usually performed on data in order to clean it and put it in the appropriate form to be best exploited by the algorithm. This section presents the description of the preprocessing/cleaning operations that we performed in this study.
 
 \subsection{Handling missing data}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+As previously discussed in section \ref{missing-data}, the first thing to do while handling missing data is to discover the reason why data is missing. This is exactly what we did while dealing with 111 over 767 features that contained missing values for both \textit{micro} and \textit{small-medium} datasets. Some features were removed because they had a high proportion of missing data.
+
+The two principal reasons of data missingness in this study were the following: (i) Missing data caused by software bugs. Indeed, some bugs were present in the ETL processes of the various areas and were propagated into our datasets. In this case, the missing values were imputed by the neural value already part of the values list. \textbf{e.g.} For the feature \textit{"last bill cluster"} missing values were imputed by \textit{"other"}. (ii) Missing data caused by the fact that the feature were not applicable to the corresponding observation. In this case the missing values were imputed using a new value not yet part of the values list. \textbf{e.g.} For the feature \textit{"number of days since last inbound contact"} missing values were imputed by \textit{-1} which was not yet part of the values list.
 
 \subsection{Dealing with categorical features}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Generally speaking, a dataset (textual data and images are excluded) has two types of features: quantitative and qualitative features. A quantitative feature admits numerical, continuous or discrete values. Since these variables are numeric, their processing by machine learning algorithms is simpler, that is, they can be used directly without requiring a prior transformation. A qualitative variable on the other hand takes values called categories, modalities or levels which do not have a quantitative meaning. The presence of these variables in the data generally complicates learning. This is because most machine learning algorithms take numeric values as input.
+
+To deal with this issue, multiple methods already discussed in section \ref{data-collection} have been applied.
+
+\subsubsection{One-hot encoding}
+
+As explained in section \ref{one-hot_encoding}, this method is one of the most commonly used. 12 features have been converted using this method. we chose this method because of the small amount of distinct values in these 12 features, limiting the number of new generated features. This method was applied when the feature was thought not to be further exploitable. The following are some of the 12 features transformed using one-hot encoding: \textit{usage type}, \textit{payment type}, \textit{selling company}, \textit{land type}, etc. 
+
+\subsubsection{Boolean encoding}
+
+As suggested by the name, the features on which this method has been applied were those presenting boolean properties. Namely, having two possible values - one representing \textit{false} and the other \textit{true} - that can respectively be replaced by \textit{0} or \textit{1}. 3 features were affected by this method: (i) \textit{resident}, indicating whether or not the client is resident in his billing municipality; (ii) \textit{win back}, indicating whether or not a win back action has been initiated on the client; (iii) \textit{web bill}, indicating whether or not the client activated the web bill.
+
+\subsubsection{Ordinal encoding}
+
+This is another major encoding method as discussed in \ref{ordinal_encoding}. 9 features have been converted using this method (eg. \textit{consumption quantity cluster}, \textit{customer seniority cluster}, \textit{client size}, etc.). This approach was adopted in order to deal with features presenting a possibility to naturally order their different values.
+
+\subsubsection{Categorical embeddings}
+
+This method was borrowed from the NLP world because of its capability to embed in a M dimensional vector information about the lexical meaning of words learned from various contexts. The context in this case was built selecting several features to form \textit{sentences}. The \textbf{Word2Vec} algorithm was then used to learn 8 dimensional embeddings of each word from the created corpus. Figure \ref{fig:categorical-embeddings} illustrates the process by showing the plot of the embedings of the feature \textit{acquisition channel}.
+
+\begin{figure}[h!]
+    \includegraphics[width=0.95\textwidth]{images/categorical_embeddings.jpg}
+    \centering
+    \caption{Categorical embeddings: \textit{acquisition channel}}
+    \label{fig:categorical-embeddings}
+\end{figure}
+
+\subsection{Train-Test split}
+
+This is a traditional step of most machine learning problems. In this step the dataset has been divided in two blocs, the training set and the test set. We applied this to both \textit{micro} and \textit{small-medium} datasets. 80\% of the data was used as training data while 20 \% as testing data.
+
+The split operation was performed implementing a stratified random sampling operation with the help of the \textit{pyspark} library in order to maintain the natural distribution of the data. The sampling operation was performed grouping the data by \textit{year}, \textit{month} and \textit{churn}. 80\% of data was selected from each sub group as training data while 20\% as test data. This technique was also used in this study to perform undersampling to deal with the imbalance situation.
 
 \subsection{Imbalanced data}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+As already mentioned in \ref{imbalance_data}, having an imbalance dataset is a major issue in several machine learning problems. Churn prediction is certainly not an exception. As shown in figures \ref{fig:target-variable-distribution-micro} and \ref{fig:target-variable-distribution-small-medium}, the datasets we worked with were highly unbalanced as we could expect since in a normal situation, the number of churning clients should be typically low. Figures \ref{fig:distribution-over-months-micro} and \ref{fig:distribution-over-months-small-medium} display the quantity distribution of our two training sets over the months for both churning and staying clients. We can clearly see on this figure the big difference in quantity between the two distributions.
 
-\subsection{Data Normalization}
+\begin{figure}[h!]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/distribution-over-months-micro.jpg}\label{fig:distribution-over-months-micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/distribution-over-months-small-medium.jpg}\label{fig:distribution-over-months-small-medium}}
+  \caption{Data quantity distribution over the months}
+\end{figure}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Imbalanced data can negatively affect the model performance. That is why we implemented the following two strategies in order to provide a solution to this problem:
+
+\subsubsection{Undersampling}
+
+This method was used on the \textit{micro} training set which had around 16 000 000 observations for the over-represented class (the \textit{staying} class). The idea was to randomly sample approximately 5 000 000 observations from this class maintaining the original data distribution. To do so, a stratified sampling was implemented, grouping the data by \textit{year}, \textit{month} and \textit{churn}. An illustration of this process can be found in figure \ref{fig:undersampling-staying-class-micro}.
+
+\begin{figure}[h!]
+    \includegraphics[width=0.95\textwidth]{images/undersampling-staying-class-micro.jpg}
+    \centering
+    \caption{Undersampling process of the \textit{staying} class: \textit{micro} dataset}
+    \label{fig:undersampling-staying-class-micro}
+\end{figure}
+
+\subsubsection{Oversampling}
+
+This method instead was used in both \textit{micro} and \textit{small-medium} datasets. The goal was to increase the under-represented class (the \textit{churning} class) number of records up to approximately 5 000 000. This was achieved through the help of the \textit{pyspark} library. The idea of oversampling, is to duplicate the samples from the under-represented (1 in this case) class, to inflate the numbers till it reaches the same level as the dominant class (0 in this case).
+
+Figures \ref{fig:balanced-distribution-over-months-micro} and \ref{fig:balanced-distribution-over-months-small-medium} show the new quantity distribution and we can clearly see the effects of undersampling and oversampling.
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/balanced-distribution-over-months-micro.jpg}\label{fig:balanced-distribution-over-months-micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/balanced-distribution-over-months-small-medium.jpg}\label{fig:balanced-distribution-over-months-small-medium}}
+  \caption{Balanced data: quantity distribution over the months}
+\end{figure}
 
 \subsection{Feature selection}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Feature selection is a crucial step of every machine learning project. Indeed, the training data set usually contains a lot of useless and noisy features that must be removed to allow the model to gain simplicity. As discussed in \ref{feature_selection}, multiple methods can used to achieve this goal. In the current section, we will discuss all the feature selection methods used in this study.
+
+\subsubsection{Unique selector}
+
+With this method, all the columns having only one unique value have been removed. Indeed, that kind of column contains no information that could be useful in predicting the target variable. 65 features have been removed from the \textit{micro} dataset, while 68 have been removed from the \textit{small and medium} dataset for this reason.
 
 \chapter{Models and results}
 

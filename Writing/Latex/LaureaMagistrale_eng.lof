@@ -10,5 +10,18 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Related works summary\relax }}{16}{figure.caption.11}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Data collection\relax }}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Feature creation\relax }}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Target variable distribution\relax }}{20}{figure.caption.14}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{20}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{20}{subfigure.3.2}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Categorical embeddings: \textit {acquisition channel}\relax }}{22}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Data quantity distribution over the months\relax }}{22}{figure.caption.20}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{22}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{22}{subfigure.5.2}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Undersampling process of the \textit {staying} class: \textit {micro} dataset\relax }}{23}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Balanced data: quantity distribution over the months\relax }}{24}{figure.caption.24}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{24}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{24}{subfigure.7.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

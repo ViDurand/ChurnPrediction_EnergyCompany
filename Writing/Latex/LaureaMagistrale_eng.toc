@@ -30,22 +30,32 @@
 \contentsline {section}{\numberline {4.1}Tools and libraries}{17}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Python}{17}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Apache Spark}{17}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Data description and understanding}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Data preprocessing and feature selection}{17}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Handling missing data}{18}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Dealing with categorical features}{18}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Imbalanced data}{18}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Data Normalization}{18}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Feature selection}{18}{subsection.4.3.5}%
-\contentsline {chapter}{\numberline {5}Models and results}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Logistic regression}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Random forest classifier}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Gradient-boosted tree classifier}{19}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Decision tree classifier}{19}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Support vector machine}{19}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Multilayer perceptron}{19}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Summary and analysis of the results}{20}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Conclusions}{21}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Conclusion}{21}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Suggestions for future research}{21}{section.6.2}%
-\contentsline {chapter}{Bibliography}{23}{section*.12}%
+\contentsline {section}{\numberline {4.2}Data collection}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Data collection: ETL}{18}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Feature creation}{18}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Data description and understanding}{19}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Data preprocessing and feature selection}{19}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Handling missing data}{20}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Dealing with categorical features}{20}{subsection.4.4.2}%
+\contentsline {subsubsection}{One-hot encoding}{21}{section*.15}%
+\contentsline {subsubsection}{Boolean encoding}{21}{section*.16}%
+\contentsline {subsubsection}{Ordinal encoding}{21}{section*.17}%
+\contentsline {subsubsection}{Categorical embeddings}{21}{section*.18}%
+\contentsline {subsection}{\numberline {4.4.3}Train-Test split}{21}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Imbalanced data}{22}{subsection.4.4.4}%
+\contentsline {subsubsection}{Undersampling}{23}{section*.21}%
+\contentsline {subsubsection}{Oversampling}{23}{section*.23}%
+\contentsline {subsection}{\numberline {4.4.5}Feature selection}{23}{subsection.4.4.5}%
+\contentsline {subsubsection}{Unique selector}{23}{section*.25}%
+\contentsline {chapter}{\numberline {5}Models and results}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Logistic regression}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Random forest classifier}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Gradient-boosted tree classifier}{25}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Decision tree classifier}{25}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Support vector machine}{25}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Multilayer perceptron}{25}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Summary and analysis of the results}{26}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Conclusions}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Conclusion}{27}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Suggestions for future research}{27}{section.6.2}%
+\contentsline {chapter}{Bibliography}{29}{section*.26}%

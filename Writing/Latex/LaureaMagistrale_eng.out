@@ -30,22 +30,25 @@
 \BOOKMARK [1][-]{section.4.1}{Tools and libraries}{chapter.4}% 30
 \BOOKMARK [2][-]{subsection.4.1.1}{Python}{section.4.1}% 31
 \BOOKMARK [2][-]{subsection.4.1.2}{Apache Spark}{section.4.1}% 32
-\BOOKMARK [1][-]{section.4.2}{Data description and understanding}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.3}{Data preprocessing and feature selection}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.3.1}{Handling missing data}{section.4.3}% 35
-\BOOKMARK [2][-]{subsection.4.3.2}{Dealing with categorical features}{section.4.3}% 36
-\BOOKMARK [2][-]{subsection.4.3.3}{Imbalanced data}{section.4.3}% 37
-\BOOKMARK [2][-]{subsection.4.3.4}{Data Normalization}{section.4.3}% 38
-\BOOKMARK [2][-]{subsection.4.3.5}{Feature selection}{section.4.3}% 39
-\BOOKMARK [0][-]{chapter.5}{Models and results}{}% 40
-\BOOKMARK [1][-]{section.5.1}{Logistic regression}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.2}{Random forest classifier}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.3}{Gradient-boosted tree classifier}{chapter.5}% 43
-\BOOKMARK [1][-]{section.5.4}{Decision tree classifier}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.5}{Support vector machine}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.6}{Multilayer perceptron}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.7}{Summary and analysis of the results}{chapter.5}% 47
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 48
-\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 49
-\BOOKMARK [1][-]{section.6.2}{Suggestions for future research}{chapter.6}% 50
-\BOOKMARK [0][-]{section*.12}{Bibliography}{}% 51
+\BOOKMARK [1][-]{section.4.2}{Data collection}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.2.1}{Data collection: ETL}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.2}{Feature creation}{section.4.2}% 35
+\BOOKMARK [1][-]{section.4.3}{Data description and understanding}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.4}{Data preprocessing and feature selection}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.1}{Handling missing data}{section.4.4}% 38
+\BOOKMARK [2][-]{subsection.4.4.2}{Dealing with categorical features}{section.4.4}% 39
+\BOOKMARK [2][-]{subsection.4.4.3}{Train-Test split}{section.4.4}% 40
+\BOOKMARK [2][-]{subsection.4.4.4}{Imbalanced data}{section.4.4}% 41
+\BOOKMARK [2][-]{subsection.4.4.5}{Feature selection}{section.4.4}% 42
+\BOOKMARK [0][-]{chapter.5}{Models and results}{}% 43
+\BOOKMARK [1][-]{section.5.1}{Logistic regression}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.2}{Random forest classifier}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.3}{Gradient-boosted tree classifier}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.4}{Decision tree classifier}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.5}{Support vector machine}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.6}{Multilayer perceptron}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.7}{Summary and analysis of the results}{chapter.5}% 50
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 51
+\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 52
+\BOOKMARK [1][-]{section.6.2}{Suggestions for future research}{chapter.6}% 53
+\BOOKMARK [0][-]{section*.26}{Bibliography}{}% 54
