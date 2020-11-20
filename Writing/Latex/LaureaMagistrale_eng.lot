@@ -3,4 +3,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Logistic regression metrics\relax }}{30}{table.caption.33}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Decision tree classifier metrics\relax }}{31}{table.caption.37}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Random forest classifier metrics\relax }}{33}{table.caption.41}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Gradient-boosted tree classifier metrics\relax }}{34}{table.caption.45}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces XGBoost metrics\relax }}{36}{table.caption.49}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Results summary (Micro)\relax }}{37}{table.caption.53}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Results summary (Small-medium)\relax }}{37}{table.caption.54}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Random search results (Micro)\relax }}{38}{table.caption.55}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Random search results (Small-Medium)\relax }}{38}{table.caption.55}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces Final model results for different thresholds\relax }}{40}{table.caption.62}%
 \addvspace {10\p@ }

@@ -40,15 +40,17 @@
 \BOOKMARK [2][-]{subsection.4.4.3}{Train-Test split}{section.4.4}% 40
 \BOOKMARK [2][-]{subsection.4.4.4}{Imbalanced data}{section.4.4}% 41
 \BOOKMARK [2][-]{subsection.4.4.5}{Feature selection}{section.4.4}% 42
-\BOOKMARK [0][-]{chapter.5}{Models and results}{}% 43
-\BOOKMARK [1][-]{section.5.1}{Logistic regression}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.2}{Random forest classifier}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.3}{Gradient-boosted tree classifier}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.4}{Decision tree classifier}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.5}{Support vector machine}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.6}{Multilayer perceptron}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.7}{Summary and analysis of the results}{chapter.5}% 50
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 51
-\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 52
-\BOOKMARK [1][-]{section.6.2}{Suggestions for future research}{chapter.6}% 53
-\BOOKMARK [0][-]{section*.26}{Bibliography}{}% 54
+\BOOKMARK [2][-]{subsection.4.4.6}{The complete workflow}{section.4.4}% 43
+\BOOKMARK [0][-]{chapter.5}{Models and results}{}% 44
+\BOOKMARK [1][-]{section.5.1}{Logistic regression}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.2}{Decision tree classifier}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.3}{Random forest classifier}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.4}{Gradient-boosted tree classifier}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.5}{XGBoost}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.6}{Summary and analysis of the results}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.6.1}{Random search}{section.5.6}% 51
+\BOOKMARK [2][-]{subsection.5.6.2}{Threshold optimization and final results}{section.5.6}% 52
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 53
+\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.2}{Suggestion for future research}{chapter.6}% 55
+\BOOKMARK [0][-]{section*.63}{Bibliography}{}% 56

@@ -16,56 +16,6 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 
-\makenoidxglossaries
-
-\newglossaryentry{SVM}{
-	name=SVM,
-	type=main,
-	description={Support Vector Machine}
-}
-
-\newglossaryentry{GBT}{
-	name=GBT,
-	type=main,
-	description={Gradient Boosted Tree}
-	}
-	
-\newglossaryentry{MLP}{
-	name=MLP,
-	type=main,
-	description={Multilayer Perceptron}
-	}
-
-\newglossaryentry{NDCG}{
-	name=NDCG@k,
-	type=main,
-	description={Normalized Discounted Cumulative Gain at k}
-	}
-
-\newglossaryentry{CCP}{
-	name=CCP,
-	type=main,
-	description={Costumer Churn Prediction}
-	}
-
-\newglossaryentry{ML}{
-	name=ML,
-	type=main,
-	description={Machine Learning}
-	}
-	
-\newglossaryentry{ETL}{
-	name=ETL,
-	type=main,
-	description={Extraction-Transformation-Loading}
-	}
-
-\newglossaryentry{MapReduce}{
-	name=MapReduce,
-	type=main,
-	description={MapReduce is a programming model and an associated implementation for processing and generating big data sets with a parallel, distributed algorithm on a cluster. A MapReduce program is composed of a map procedure, which performs filtering and sorting (such as sorting students by first name into queues, one queue for each name), and a reduce method, which performs a summary operation (such as counting the number of students in each queue, yielding name frequencies).}
-	}
-
 \hypersetup{pdftitle={Customer Churn Prediction - Energy Provider Case Study},pdfauthor={Vigèr Durand Azimedem Tsafack}}
 
 % Remove in a normal thesis
@@ -103,9 +53,9 @@
 \par The cost of customer acquisition is far greater than cost of customer
 retention. This is a known fact across all the industry sectors, making retention a crucial business prototype. Customer churn analysis is one of the most important and common drivers laying behind customer retention. In fact, knowing in advance if a client is about to churn can be a quite valuable information; Particularly in the energy field which is going to be the focus of this work.
 
-\par Energy supply is one of the most competitive industries where large amount of data is usually produced. Therefore, churn prediction in this type of industries is a key tool for customer retention. The present work aims to predict customer churn in energy industry through several data science techniques and methods. The experiment has been held in an Italian energy provider company which provided us with a huge amount of data. we start by explaining some relevant concepts from machine learning and continues to a literature review on the field of customer churn prediction. Then, an empirical study is performed by applying findings from the literature to the data provided by the aforementioned energy provider company. This study can be summarized in two main phases: Data and Modeling. The Data step includes collection, exploration and transformation of data.The Modeling phase refers to the creation and selection of the best machine learning model.
+\par Energy supply is one of the most competitive industries where large amount of data is usually produced. Therefore, churn prediction in this type of industries is a key tool for customer retention. The present work aims to predict customer churn in energy industry through several data science techniques and methods. The experiment has been held in an Italian energy provider company which provided us with a huge amount of data. we start by explaining some relevant concepts from machine learning and continues to a presentation of related works on the field of customer churn prediction. Then, an empirical study is performed by applying findings from the literature to the data provided by the aforementioned energy provider company. This study can be summarized in two main phases: Data and Modeling. The Data step includes collection, exploration and transformation of data.The Modeling phase refers to the creation and selection of the best machine learning model.
 
-\par Regarding the results, \gls{GBT} Classifier outperformed all the other five models that we tried (Logistic Regression, Random Forest, Decision Tree, \gls{SVM} and \gls{MLP}) with 73\% of accuracy. The model evaluation was done by using the three following metrics: confusion matrix, accuracy and \gls{NDCG}. The study also confirmed that machine learning is a viable tool for predicting customer churn in energy provider companies.
+\par Regarding the results, Gradient Boosted Tree Classifier outperformed all the other four models that we tried (Logistic Regression, Decision Tree, Random Forest and XGBoost) with a 27\% and a 54\% of F1 Score on micro and small-medium data clusters respectively. The model evaluation was done by using the following metrics: confusion matrix, Precision, Recall, F1 Score ROC AUC and PR AUC. The study also confirmed that machine learning is a viable tool for predicting customer churn in energy provider companies.
 
 \end{abstract}
 
@@ -139,7 +89,7 @@ retention. This is a known fact across all the industry sectors, making retentio
 
 In this study, we mostly focus on exploiting the current state of the literature to empirically build several models for customer churn prediction in energy industry exploiting the provided data. Then suitable metrics are used to evaluate the build models in order to select the best performing one to be used in an Italian energy provider context.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[width=0.5\textwidth]{images/Thesis-Research-Area.png}
     \centering
     \caption{Thesis research area}
@@ -160,7 +110,7 @@ The primary goal of this thesis is to accurately predict the future churn or sta
 
 \section{Methodology}
 
-The study made in this thesis consisted in three steps. Foremost, some research are formulated based on the desired outcome and the literature. As a first part, we conducted general overview of the machine learning concepts that are necessary to fully understand this thesis. The second part consisted in searching the literature to find related work that were used as inspiration for the last part. Finally, starting from the literature review, we selected some \gls{ML} models and some evaluations metrics to build a churn predictive application.
+The study made in this thesis consisted in three steps. Foremost, some research are formulated based on the desired outcome and the literature. As a first part, we conducted general overview of the machine learning concepts that are necessary to fully understand this thesis. The second part consisted in searching the literature to find related work that were used as inspiration for the last part. Finally, starting from the literature review, we selected some machine learning models and some evaluations metrics to build a churn predictive application.
 
 Data was provided by an Italian energy provider and consisted in real costumer data from January 2019 to March 2020. Unfortunately, for privacy reasons the data cannot be disclosed alongside this thesis.
 
@@ -170,7 +120,7 @@ The second chapter presents a high level overview of critical methodologies and 
 
 \chapter{Machine learning: Some theoretical concepts}
 
-\gls{ML} is a branch of artificial intelligence that systematically applies algorithms to synthesize the underlying relationships among data and information.\cite{Awad2015} Lately, it has become a common solution to several problems that companies face daily. This chapter presents a high level explanation of some machine learning concepts which the comprehension is necessary to fully understand the experiment performed within the framework of this thesis.
+Machine learning is a branch of artificial intelligence that systematically applies algorithms to synthesize the underlying relationships among data and information.\cite{Awad2015} Lately, it has become a common solution to several problems that companies face daily. This chapter presents a high level explanation of some machine learning concepts which the comprehension is necessary to fully understand the experiment performed within the framework of this thesis.
 
 \section{Data collection and preprocessing} \label{data-collection}
 
@@ -178,7 +128,7 @@ Without data, no machine learning project could be made possible. It is therefor
 
 \subsection{ETL}
 
-The acronym \gls{ETL} stands for Extract, Transform, and Load. ETL tools are pieces of software responsible for the extraction of data from several sources, their cleansing, customization and insertion into a data warehouse.\cite{Vassiliadis2002} These tools are very often used as helper in the process of data collection and preparation for a machine learning application.
+The acronym ETL stands for Extract, Transform, and Load. ETL tools are pieces of software responsible for the extraction of data from several sources, their cleansing, customization and insertion into a data warehouse.\cite{Vassiliadis2002} These tools are very often used as helper in the process of data collection and preparation for a machine learning application.
 
 \par More explicitly, an ETL tool is three database functions combined into one entity to pull data out of one or multiple database(s) and then place it into another database. The process can be summarized as follows: data is taken (extracted) from a source system, converted(transformed) into a desired format, and finally stored into a data warehouse or other systems.
 
@@ -186,7 +136,7 @@ The acronym \gls{ETL} stands for Extract, Transform, and Load. ETL tools are pie
 
 The quantity of digital data generated in today's companies is continuously increasing thus making their analysis more difficult. To overcome this problem several solutions have been implemented through the years. Google’s MapReduce revolutionized large-scale analysis, enabling the processing of massive datasets on commodity hardware and cloud resources, providing transparent scalability and fault tolerance at the software level.\cite{Capuccini2017} Open source implementations of MapReduce include Apache Hadoop.
 
-\par Industries initially adopted Hadoop because it is a framework based on a simple programming model (\gls{MapReduce}), it provides a computing solution that is scalable, flexible, fault-tolerent and also cost effective. Apache spark comes into play when the concern is to maintain speed while processing large datasets. It was introduced by Apache Software Foundation aiming to speed up the Hadoop computational process.
+\par Industries initially adopted Hadoop because it is a framework based on a simple programming model (MapReduce), it provides a computing solution that is scalable, flexible, fault-tolerent and also cost effective. Apache spark comes into play when the concern is to maintain speed while processing large datasets. It was introduced by Apache Software Foundation aiming to speed up the Hadoop computational process.
 
 \par Apache Spark is designed to accelerate analytics on Hadoop while providing a complete suite of complementary tools that include a fully-featured machine learning library (MLlib), a graph processing engine (GraphX) and stream processing. Spark is natively designed to run in-memory, enabling it to support iterative analysis and more rapid, less expensive data crunching. Spark runs programs in memory up to 100 times faster than Hadoop MapReduce and up to 10 times faster on disk. Spark's speed and efficiency are some of the the key reasons behind it's popularity. 
 
@@ -206,7 +156,7 @@ Imbalanced training dataset means that one class is represented by a large numbe
 
 Most machine learning and deep learning models require all input and output variables to be numeric. This means that if the dataset contains categorical data, that data must be converted into numerical form before fitting it to a machine learning model. One-hot encoding method is one of the most commonly used strategies to convert data from categorical to numerical form. This technique requires very little work. With this method, categorical variables are converted into several binary columns.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[width=0.5\textwidth]{images/One-hot_encoding.jpg}
     \centering
     \caption{One-hot encoding method}
@@ -246,7 +196,7 @@ Feature selection is the process of manually or automatically selecting the feat
 
 Several machine learning algorithms have been used in this thesis. In this section we provide a theoretical explanation for all of them.
 
-\subsection{Logistic regression}
+\subsection{Logistic regression} \label{lr_model}
 
 Logistic regression is one of the most common machine learning algorithms. It is generally used as a baseline model when the problem to be solved is a classification problem. This model is particularly appropriate when the dependent variable is dichotomous (binary).\cite{Sahar2018} The name logistic regression is derived from the function used at the core of the method to transform the linear predictions, the logistic function. The logistic function which is also known as sigmoid function is a very popular function that machine learning borrowed from the statistical field. It is an S-shaped curve that can take any real-valued number and map it into a value between 0 and 1, but never exactly at those limits. The logistic function can be mathematically expressed as shown in equation \ref{eqn:logistic-function}.
 
@@ -264,7 +214,7 @@ logit(\pi(x)) = \beta_0 + \beta_1x_1 + ... + \beta_nx_n \Longleftrightarrow \pi(
 
 where \(\pi(x)\) is the probability of the predicted event, \(\beta_i\) is the regression coefficient for each explanatory variable \(x_i\). The probability of belonging to the predicted class is obtained by solving \(\pi(x)\) from the equation.\cite{Hosmer2000}
 
-\subsection{Decision tree classifier}
+\subsection{Decision tree classifier} \label{dt_model}
 
 Another commonly used model for solving classification problems in machine learning is decision tree. A decision tree is simply a supervised machine learning algorithm where the data is continuously split according to a certain parameter. It is a very simple model. Given several features, the decision begins with one of these features; if that is not enough, we use another one, and so on. 
 
@@ -279,7 +229,7 @@ Another commonly used model for solving classification problems in machine learn
 
 There are different types of decision trees, among which CART, C4.5, CHAID, QUEST, and more...\cite{Song2015} CART which stands for classification and regression trees is the most commonly used by the models that were considered in this study. Figure \ref{fig:decision-tree}, displays a simple binary decision tree.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[width=0.8\textwidth]{images/Simple_Decision_Tree.jpg}
     \centering
     \caption{A decision tree example based on binary feature Y \cite{Song2015}}
@@ -290,7 +240,7 @@ There are different types of decision trees, among which CART, C4.5, CHAID, QUES
 
 \par On the other hand, decision trees present several downsides: (i) they can be complex, they don't generalize well (overfitting), This can be adjusted by tuning the maximum depth of the tree or the minimum number of samples in the leaves; (ii) they may be unstable due to variations in the data; (iii) some concepts can be difficult to learn using decision trees since they are not easy to express, \textit{XOR} is a good example; (iv) they can be biased towards the ruling class, thus the data has to be balanced before training the system. (v) hitting the optimal decision tree is not guaranteed.
 
-\subsection{Random forest classifier}
+\subsection{Random forest classifier} \label{rf_model}
 
 This powerful machine learning algorithm makes it possible to make predictions based on the aggregation of several decision trees. The method uses binary decision trees, in particular CART trees proposed by Breiman et al. (1984). The general idea behind the method is the following: instead of trying to get an optimized method all at once, we generate several predictors before putting together their different predictions.
 
@@ -302,7 +252,7 @@ This powerful machine learning algorithm makes it possible to make predictions b
   	\item For classification problems which are of interest in this study, aggregation by vote is used: \(G(x) = Majority vote(G_i(x), ..., G_B(x))\).
 \end{enumerate}
 
-\subsection{Boosting: Gradient-boosted tree, XGBoost}
+\subsection{Boosting: Gradient-boosted tree, XGBoost} \label{boosting_model}
 
 Boosting is another type of ensemble method just like random forests. The principle of boosting is to combine the outputs of several weak classifiers to obtain a stronger result (strong classifier). The weak classifier must have a basic behavior being a little better than the random one: error rate less than 0.5 for a binary classification. Each weak classifier is weighted by the quality of its classification: the better it classifies, the more important it will be. Misclassified examples will have greater weights (they are said to be boosted) towards the weak learner in the next round so that it addresses the gap.\cite{Freund}
 
@@ -337,7 +287,7 @@ A Confusion Matrix or contingency table is a tool for measuring the performance 
 
 \par Several other metrics (\textit{accuracy}, \textit{precision}, \textit{recall}, \textit{f-Score}, ...) can be calculated directly from the confusion matrix. and some of them will be covered subsequently. Figure \ref{fig:confusion-matrix} shows a simple illustration of a confusion matrix configuration.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[width=0.5\textwidth]{images/confusion-matrix-exemple.jpg}
     \centering
     \caption{A confusion matrix example}
@@ -378,7 +328,7 @@ The closer to 1 are the areas under the ROC and the PR curves, the better the cl
 FPR = \frac{FP}{FP + TN}
 \end{equation}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
   \subfloat[ROC curve.]{\includegraphics[width=0.5\textwidth]{images/roc_curve_interpretation.jpg}\label{fig:roc_curve_interpretation}}
   \hfill
@@ -407,7 +357,7 @@ The goal of the studies on the churn phenomenon is to detect individuals who int
 
 Several studies on churn prediction attempt to find the most efficient data mining technique in terms of minimizing the error rate and prediction accuracy. From the researches that have been performed,it turns out that logistic regression random forest and decision trees are the most widely used techniques for churn prediction. In addition, the general remark resulting from this non-exhaustive summary is that there is no standard technique for solving the problem of churn prediction because the quality of the results obtained is closely related to the nature of the data used, their volume and quality, the number and relevance of indicators taken into consideration, the size of the learning sample, and finally the definition of the target variable. Without forgetting the confidential aspect of the data which does not allow the dissemination of the strategic results of the organization, especially in a competitive sector such as energy supply. Figure \ref{fig:studies-summary} synthesizes the articles that we presented in the previous section.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[width=0.95\textwidth]{images/studies_summary.jpg}
     \centering
     \caption{Related works summary}
@@ -438,7 +388,7 @@ Without Data, no data science study can be performed. This is the reason why we 
 
 Apache spark engine works with full potential within a cluster; That is why is was necessary to transfer the data from all over the company to a \textit{cloudera} cluster. Another important goal of this step was to gather all the needed customer data at one place in order to process it more efficiently taking advantage of the processing speed of spark. Multiple ETL processes have been developed to transfer clients data from multiple scopes to the cloudera cluster. Some of the scopes from which data was pulled are billing, marketing, customer relationship management (CRM), contacts, pricing, complaints management, etc. Figure \ref{fig:data-collection} schematically shows the implemented workflow. 
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[width=0.95\textwidth]{images/data_collection.jpg}
     \centering
     \caption{Data collection}
@@ -449,7 +399,7 @@ Apache spark engine works with full potential within a cluster; That is why is w
 
 After collecting the customer data and loading it into the cloudera cluster, we started working effectively on the churn prediction model which is the scope of this thesis. The first step in this process was feature creation which is essential for every data science project. In this step, we merged the gathered data to obtain the dataset to be used in the modeling phase. This phase was performed writing a python code that implemented the following steps: (i) Initial time-stamps \textit{t0's} was chosen (15 time-stamps, from 01 January 2019 up to 01 March 2020). (ii) At each instant \textit{t0}, a picture of the data was taken by computing some customer related metrics that were thought to be related to the churn phenomenon (Number of inbound calls during the last month, If the client payed late in the last month, etc.); 767 features have been generated. See figure \ref{fig:feature-creation} for a schematical representation of this phase.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[width=0.95\textwidth]{images/feature_creation.jpg}
     \centering
     \caption{Feature creation}
@@ -462,7 +412,7 @@ The task we performed in the current study was that of predicting the churn prob
 
 The dataset of micro clients consisted of 20.223.914,0 records while the dataset of small and medium clients had 5.264.625,0 records. both datasets were made up of 767 columns with 1 boolean target variable indicating weather the client churned two months after \textit{t0} or not. \textit{t0} being the feature creation data already discussed in section \ref{feature-creation}. As shown in figures \ref{fig:target-variable-distribution-micro} and \ref{fig:target-variable-distribution-small-medium}, both datasets were highly unbalanced with the \textit{staying} class highly over represented.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
   \subfloat[Micro.]{\includegraphics[width=0.45\textwidth]{images/target-variable-distribution-micro.jpg}\label{fig:target-variable-distribution-micro}}
   \hfill
@@ -502,7 +452,7 @@ This is another major encoding method as discussed in \ref{ordinal_encoding}. 9 
 
 This method was borrowed from the NLP world because of its capability to embed in a M dimensional vector information about the lexical meaning of words learned from various contexts. The context in this case was built selecting several features to form \textit{sentences}. The \textbf{Word2Vec} algorithm was then used to learn 8 dimensional embeddings of each word from the created corpus. Figure \ref{fig:categorical-embeddings} illustrates the process by showing the plot of the embedings of the feature \textit{acquisition channel}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[width=0.95\textwidth]{images/categorical_embeddings.jpg}
     \centering
     \caption{Categorical embeddings: \textit{acquisition channel}}
@@ -517,9 +467,9 @@ The split operation was performed implementing a stratified random sampling oper
 
 \subsection{Imbalanced data}
 
-As already mentioned in \ref{imbalance_data}, having an imbalance dataset is a major issue in several machine learning problems. Churn prediction is certainly not an exception. As shown in figures \ref{fig:target-variable-distribution-micro} and \ref{fig:target-variable-distribution-small-medium}, the datasets we worked with were highly unbalanced as we could expect since in a normal situation, the number of churning clients should be typically low. Figures \ref{fig:distribution-over-months-micro} and \ref{fig:distribution-over-months-small-medium} display the quantity distribution of our two training sets over the months for both churning and staying clients. We can clearly see on this figure the big difference in quantity between the two distributions.
+As already mentioned in \ref{imbalance_data}, having an imbalance dataset is a major issue in several machine learning problems. Churn prediction is certainly not an exception. As shown in figures \ref{fig:target-variable-distribution-micro} and \ref{fig:target-variable-distribution-small-medium}, the datasets we worked with were highly unbalanced as we could expect since in a normal situation, the number of churning clients should be typically low. Figures \ref{fig:distribution-over-months-micro} and \ref{fig:distribution-over-months-small-medium} display the quantity distribution of our two training sets over the months for both churning and staying clients. We can clearly see on this figures, the big difference in quantity between the two distributions.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
   \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/distribution-over-months-micro.jpg}\label{fig:distribution-over-months-micro}}
   \hfill
@@ -527,13 +477,13 @@ As already mentioned in \ref{imbalance_data}, having an imbalance dataset is a m
   \caption{Data quantity distribution over the months}
 \end{figure}
 
-Imbalanced data can negatively affect the model performance. That is why we implemented the following two strategies in order to provide a solution to this problem:
+Imbalanced data can have a negative impact on the model performance. That is why the following two strategies have been implemented in order to provide a solution to this problem:
 
 \subsubsection{Undersampling}
 
 This method was used on the \textit{micro} training set which had around 16 000 000 observations for the over-represented class (the \textit{staying} class). The idea was to randomly sample approximately 5 000 000 observations from this class maintaining the original data distribution. To do so, a stratified sampling was implemented, grouping the data by \textit{year}, \textit{month} and \textit{churn}. An illustration of this process can be found in figure \ref{fig:undersampling-staying-class-micro}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[width=0.95\textwidth]{images/undersampling-staying-class-micro.jpg}
     \centering
     \caption{Undersampling process of the \textit{staying} class: \textit{micro} dataset}
@@ -546,7 +496,7 @@ This method instead was used in both \textit{micro} and \textit{small-medium} da
 
 Figures \ref{fig:balanced-distribution-over-months-micro} and \ref{fig:balanced-distribution-over-months-small-medium} show the new quantity distribution and we can clearly see the effects of undersampling and oversampling.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
   \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/balanced-distribution-over-months-micro.jpg}\label{fig:balanced-distribution-over-months-micro}}
   \hfill
@@ -560,49 +510,512 @@ Feature selection is a crucial step of every machine learning project. Indeed, t
 
 \subsubsection{Unique selector}
 
-With this method, all the columns having only one unique value have been removed. Indeed, that kind of column contains no information that could be useful in predicting the target variable. 65 features have been removed from the \textit{micro} dataset, while 68 have been removed from the \textit{small and medium} dataset for this reason.
+With this method, all the columns having only one unique value have been removed. Indeed, that kind of column contains no information that could be useful in predicting the target variable. 65 features have been removed from the \textit{micro} dataset, while 68 have been removed from the \textit{small-medium} dataset for this reason.
+
+\subsubsection{Missing selector}
+
+In this case, all the features having a missing value percentage higher than a given threshold have been removed. This kind of features can potentially add noise to the model predictions since most of the values are missing. Thus it is best to remove them. The threshold has been set to 60\% and 14 features have been removed from the \textit{micro} dataset, while 12 have been removed from the \textit{small-medium} dataset for this reason.
+
+\subsubsection{Importance selector}
+
+This method was used to drop features based on the feature importance of a gradient boosted tree model. Features were selected by their importance in such a way that the overall cumulative importance was equal to 0.99. With this method, 491 features were removed from the \textit{micro} dataset and 459 from the \textit{small-medium} dataset. Figures \ref{fig:cumulative-importance_vs_number-of-features_micro} and \ref{fig:cumulative-importance_vs_number-of-features_small-medium} show plots of the cumulative importance as a function of the number of features for both datasets in order to illustrate the importance selection process.
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/cumulative-importance_vs_number-of-features_micro.jpg}\label{fig:cumulative-importance_vs_number-of-features_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/cumulative-importance_vs_number-of-features_small-medium.jpg}\label{fig:cumulative-importance_vs_number-of-features_small-medium}}
+  \caption{Cumulative importance vs number of features}
+\end{figure}
+
+\subsubsection{Correlation selector}
+
+This is a very common feature selection method. We used it to identify and remove highly correlated features. A threshold was selected (0.9) and the pearson correlation metric was calculated among all the features. For all the couples of features having a pearson greater than 0.9, one of the features were removed. 63 features were removed for \textit{micro} and 81 features for \textit{small-medium}. Figures \ref{fig:correlation-matrix_micro} and \ref{fig:correlation-matrix_small-medium} show the plots of the correlation matrices built for the occasion.
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/correlation-matrix_micro.jpg}\label{fig:correlation-matrix_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/correlation-matrix_small-medium.jpg}\label{fig:correlation-matrix_small-medium}}
+  \caption{Correlation matrices}
+\end{figure}
+
+\subsubsection{Recursive feature elimination}
+
+Recursive feature elimination (RFE) is a feature selection method that fits a model and removes the weakest feature (or features) until the specified number of features is reached. To find the optimal number of features, cross-validation is used with RFE to score different feature subsets and select the best scoring collection of features.\cite{scikitRFE}
+
+In this study, we combined this method with a random forest classifier to identify the best collection of features to be used. The optimal and final number of features to be used was 49 for \textit{micro} and 55 for \textit{small-medium} as shown on figures \ref{fig:rfecv_micro} and \ref{fig:rfecv_small-medium} that plot f-score as a function of the number of selected features.
+
+\begin{figure}[!ht]
+  \includegraphics[width=0.95\textwidth]{images/rfecv_micro.jpg}
+  \centering
+  \caption{Recursive feature elimination with cross-validation: micro}	
+  \label{fig:rfecv_micro}
+\end{figure}
+
+\begin{figure}[!ht]
+  \includegraphics[width=0.95\textwidth]{images/rfecv_small-medium.jpg}
+  \centering
+  \caption{Recursive feature elimination with cross-validation: small-medium}
+  \label{fig:rfecv_small-medium}
+\end{figure}
+
+\subsection{The complete workflow}
+
+Figure \ref{fig:complete_wf} displays the complete workflow impleted in the this study starting from the data collection and ending with the transmission of the prediction to the marketing area for campaign.
+
+\begin{figure}[!ht]
+  \includegraphics[width=0.95\textwidth]{images/complete_wf.jpg}
+  \centering
+  \caption{Complete workflow}
+  \label{fig:complete_wf}
+\end{figure}
 
 \chapter{Models and results}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+When speaking about machine learning and data science, people directly thing about modeling, which surprisingly is not the most tedious step of a data science project. However this phase is crucial and extremely important since it is where we use all the results obtained in the previous steps. It therefore clearly appears that this is a key phase, because if poorly implemented, it would make all the previous work useless.
 
+In this chapter, we present all the machine learning models that we implemented during our experiment with the corresponding results. For each model, the following results are presented: (i) Precision, Recall, F-Measure, ROC AUC and PR AUC; (ii) The ROC curve and the PR curve; (iii) And finally the confusion matrices.
+
+In the last part of this chapter, we compare all the models and present an optimized (through random search) version of the best performing one along with the final results.
+  
 \section{Logistic regression}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+This model is often used as a baseline for binary classification problems. See section \ref{lr_model} for details. Some significant parameters for logistic regression are \textit{maxIter}, \textit{regParam}, \textit{elasticNetParam}, \textit{tol} and \textit{aggregationDepth}. (i) maxIter ($\ge 0$) represents the maximum number of iterations necessary for the solver to converge; (ii) regParam ($\ge 0$) is the regularization parameter; (iii) elasticNetParam is the \textit{ElasticNet} mixing parameter, in range $[0, 1]$. The used penalty changes based on the value of this parameter. An $L2$ penalty is used for for a value of $0$ while an $L1$ penalty is used for a value of $1$; (iv) tol ($\ge 0$) is the convergence tolerance for iterative algorithms; (v) aggregationDepth ($\ge 2$) represents the suggested depth for tree aggregate.\cite{pysparkLR}
 
-\section{Random forest classifier}
+The settings that we used with this model in \textit{pyspark}  for both datasets are the following: $maxIter = 50$, $regParam = 0.0$, $elasticNetParam = 0.0$, $tol = 1\mathrm{e}{-6}$ and $aggregationDepth = 2$. The obtained results are shown on table \ref{lr_metrics}. Figures \ref{fig:lr_roc_curve_micro} and \ref{fig:lr_roc_curve_small-medium} display the resulting ROC curves. Figures \ref{fig:lr_pr_curve_micro} and \ref{fig:lr_pr_curve_small-medium} show the PR curves. And finally, the resulting confusion matrices can be found on figures \ref{fig:lr_cm_micro} and \ref{fig:lr_cm_small-medium}.
+ 
+\begin{table}[!ht]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+LR Micro&0.5&4.75846&59.0225&8.8069&0.704211&0.0756913\\
+LR Small-Medium&0.5&5.61412&61.3749&10.2872&0.705553&0.0881378\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Logistic regression metrics}
+\label{lr_metrics}
+\end{table}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/lr_roc_curve_micro.png}\label{fig:lr_roc_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/lr_roc_curve_small-medium.png}\label{fig:lr_roc_curve_small-medium}}
+  \caption{Logistic regression: ROC curves}
+\end{figure}
 
-\section{Gradient-boosted tree classifier}
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/lr_pr_curve_micro.png}\label{fig:lr_pr_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/lr_pr_curve_small-medium.png}\label{fig:lr_pr_curve_small-medium}}
+  \caption{Logistic regression: PR curves}
+\end{figure}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/lr_cm_micro.png}\label{fig:lr_cm_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/lr_cm_small-medium.png}\label{fig:lr_cm_small-medium}}
+  \caption{Logistic regression: Confusion matrices}
+\end{figure}
 
 \section{Decision tree classifier}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+After logistic regression, we used decision tree classifier which is another simple model that, sometimes is also used as baseline in machine learning classification problems. Section \ref{dt_model} describes the logic behind this model. Let's take a look at the main parameters of this model: (i) \textit{maxDepth} ($\ge 0$) representing the maximum depth of the tree; (ii) \textit{maxBins} ($\ge 2$) is the maximum number of bins for discretizing continuous features; (iii) \textit{minInfoGain} which is the minimum information gain for a split to be considered at a tree node; (iv) \textit{impurity} which represents the criterion used for information gain calculation; The supported options are \textit{entropy} and  \textit{gini}; (v) \textit{minWeightFractionPerNode} ($[0.0, 0.5)$) which is the minimum fraction of the weighted sample count that each child must have after split.\cite{pysparkDT}
 
-\section{Support vector machine}
+In \textit{pyspark}, the configuration that we used with this model both for small-medium and micro datasets is: $maxDepth = 5$, $maxBins = 32$, $minInfoGain = 0.0$, $impurity = gini$ and $minWeightFractionPerNode = 0.0$. Table \ref{dt_metrics} shows the obtained results on our datasets. Figures \ref{fig:dt_roc_curve_micro} and \ref{fig:dt_roc_curve_small-medium} display ROC curves while figures \ref{fig:dt_pr_curve_micro} and \ref{fig:dt_pr_curve_small-medium} show the PR curves. Finally, the confusion matrices are shown on figures \ref{fig:dt_cm_micro} and \ref{fig:dt_cm_small-medium} for both datasets.
+ 
+\begin{table}[!ht]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+DT Micro&0.5&7.65107&44.4062&13.0531&0.689376&0.0916564\\
+DT Small-Medium&0.5&7.76758&51.9121&13.5132&0.7147&0.0914786\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Decision tree classifier metrics}
+\label{dt_metrics}
+\end{table}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/dt_roc_curve_micro.png}\label{fig:dt_roc_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/dt_roc_curve_small-medium.png}\label{fig:dt_roc_curve_small-medium}}
+  \caption{Decision tree classifier: ROC curves}
+\end{figure}
 
-\section{Multilayer perceptron}
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/dt_pr_curve_micro.png}\label{fig:dt_pr_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/dt_pr_curve_small-medium.png}\label{fig:dt_pr_curve_small-medium}}
+  \caption{Decision tree classifier: PR curves}
+\end{figure}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/dt_cm_micro.png}\label{fig:dt_cm_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/dt_cm_small-medium.png}\label{fig:dt_cm_small-medium}}
+  \caption{Decision tree classifier: Confusion matrices}
+\end{figure}
+
+
+\section{Random forest classifier}
+
+Random forest classifier is another commonly used classifier that we adopted in our study. Section \ref{rf_model} gives more theoretical details about this model. Some of it's important parameters are: (i) \textit{maxDepth} and \textit{maxBins} are same as in decision tree; (ii) \textit{numTrees} ($\ge 1$) is the number of trees to train; (iv) \textit{subsamplingRate} ($(0, 1]$) represents the fraction of training data used for learning each decision tree.\cite{pysparkRF}
+
+In \textit{pyspark}, the settings that we used with this model for our two datasets are: $maxDepth = 5$, $maxBins = 32$, $numTrees = 50$ and $subsamplingRate = 1.0$. The obtained results are shown on table \ref{rf_metrics}. Figures \ref{fig:rf_roc_curve_micro} and \ref{fig:rf_roc_curve_small-medium} display the ROC curves, figures \ref{fig:rf_pr_curve_micro} and \ref{fig:rf_pr_curve_small-medium} show the PR curves. And finally, figures \ref{fig:rf_cm_micro} and \ref{fig:rf_cm_small-medium} show the resulting confusion matrices.
+ 
+\begin{table}[!ht]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+RF Micro&0.5&5.2842&56.1575&9.65948&0.716906&0.0798355\\
+RF Small-Medium&0.5&5.53378&64.5486&10.1937&0.727238&0.0975543\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Random forest classifier metrics}
+\label{rf_metrics}
+\end{table}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/rf_roc_curve_micro.png}\label{fig:rf_roc_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/rf_roc_curve_small-medium.png}\label{fig:rf_roc_curve_small-medium}}
+  \caption{Random forest classifier: ROC curves}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/rf_pr_curve_micro.png}\label{fig:rf_pr_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/rf_pr_curve_small-medium.png}\label{fig:rf_pr_curve_small-medium}}
+  \caption{Random forest classifier: PR curves}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/rf_cm_micro.png}\label{fig:rf_cm_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/rf_cm_small-medium.png}\label{fig:rf_cm_small-medium}}
+  \caption{Random forest classifier: Confusion matrices}
+\end{figure}
+
+
+\section{Gradient-boosted tree classifier}
+
+As already introduced in section \ref{boosting_model}, this model is one of the most commonly used boosting techniques. It used gradient descent to minimize the loss function. This model has been adopted in this study, in order to improve the results of simpler models like logistic regression and decision tree classifier. Indeed we obtained quite better results. Some important parameters of this model are the following: (i) \textit{maxDepth}, \textit{maxBins}, \textit{minInfoGain}, \textit{maxIter} and \textit{subsamplingRate} with the same meaning as for the previous models (Decision tree and Random forest); (ii) \textit{lossType} is the loss function that the GBT model tries to minimize; (iii) \textit{stepSize} ($(0, 1]$) represents the step size also known as learning rate for shrinking the contribution of each estimator; (iv) \textit{impurity} is the criterion used for information gain calculation.\cite{pysparkGBT}
+
+We used \textit{pyspark} with the following settings to implement this model: $maxDepth = 5$, $maxBins = 32$, $minInfoGain = 0.0$, $lossType = logistic$, $maxIter = 50$, $stepSize = 0.1$, $subsamplingRate = 1.0$ and $impurity = variance$. The obtained results can be found on table \ref{gbt_metrics}. Figures \ref{fig:gbt_roc_curve_micro} and \ref{fig:gbt_roc_curve_small-medium} display the ROC curves, figures \ref{fig:gbt_pr_curve_micro} and \ref{fig:gbt_pr_curve_small-medium} show the PR curves. And finally, figures \ref{fig:gbt_cm_micro} and \ref{fig:gbt_cm_small-medium} show the resulting confusion matrices of the implemented model.
+ 
+\begin{table}[!ht]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+GBT Micro&0.5&6.21126&62.904&11.3061&0.772177&0.104269\\
+GBT Small-Medium&0.5&7.32602&69.5662&13.256&0.794414&0.138775\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Gradient-boosted tree classifier metrics}
+\label{gbt_metrics}
+\end{table}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/gbt_roc_curve_micro.png}\label{fig:gbt_roc_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/gbt_roc_curve_small-medium.png}\label{fig:gbt_roc_curve_small-medium}}
+  \caption{Gradient-boosted tree classifier: ROC curves}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/gbt_pr_curve_micro.png}\label{fig:gbt_pr_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/gbt_pr_curve_small-medium.png}\label{fig:gbt_pr_curve_small-medium}}
+  \caption{Gradient-boosted tree classifier: PR curves}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/gbt_cm_micro.png}\label{fig:gbt_cm_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/gbt_cm_small-medium.png}\label{fig:gbt_cm_small-medium}}
+  \caption{Gradient-boosted tree classifier: Confusion matrices}
+\end{figure}
+
+\section{XGBoost}
+
+One of the major inefficiencies in gradient boosting is that the process of creating the trees is sequential (namely it creates one decision tree at a time). XGBoost (Extreme Gradient Boosting) is a model that was introduced by Tianqi Chen and Carlos Guestrin to overcome this inefficiency.\cite{Tianqi2016}
+
+The results that we obtained with this model are shown on table \ref{xgb_metrics}. Figures \ref{fig:xgb_roc_curve_micro} and \ref{fig:xgb_roc_curve_small-medium} display the ROC curves, figures \ref{fig:xgb_pr_curve_micro} and \ref{fig:xgb_pr_curve_small-medium} show the PR curves. And finally, figures \ref{fig:xgb_cm_micro} and \ref{fig:xgb_cm_small-medium} show the resulting confusion matrices.
+ 
+\begin{table}[!ht]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+XGB Micro&0.5&7.15468&57.0475&12.7147&0.769127&0.103214\\
+XGB Small-Medium&0.5&7.85845&62.2334&13.9548&0.778677&0.124997\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{XGBoost metrics}
+\label{xgb_metrics}
+\end{table}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/xgb_roc_curve_micro.png}\label{fig:xgb_roc_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/xgb_roc_curve_small-medium.png}\label{fig:xgb_roc_curve_small-medium}}
+  \caption{XGBoost: ROC curves}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/xgb_pr_curve_micro.png}\label{fig:xgb_pr_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/xgb_pr_curve_small-medium.png}\label{fig:xgb_pr_curve_small-medium}}
+  \caption{XGBoost: PR curves}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/xgb_cm_micro.png}\label{fig:xgb_cm_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/xgb_cm_small-medium.png}\label{fig:xgb_cm_small-medium}}
+  \caption{XGBoost: Confusion matrices}
+\end{figure}
+
 
 \section{Summary and analysis of the results}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+In summary, 5 different machine learning models were used in this study (Logistic regression, Random forest, Decision tree, Gradient-boosted tree and XGBoost) to predict customer churn. These 5 models have been evaluated using 6 different evaluation metrics (Confusion matrix, Precision, Recall, F1 Score, ROC AUC and PR AUC). To choose the best performing model, we focused our attention on precision and recall since we were interested by both the quality and the quantity of the positive predictions. F1 Score is as combination of this two metrics. 
+
+However the initial predictions were made using the default threshold (0.5); Thus, it was then necessary to find a metric able to summarize the model performance over all the possible thresholds so that the best threshold could then be identified. Precision and Recall area under the curve (PR AUC) was thought to be the right metric to do so.
+
+As shown on tables \ref{results_summary_micro} and \ref{results_summary_small-medium}, the best model appears to be \textit{Gradient Boosted Tree Classifier} with a PR AUC of approximately $0.10$ for \textit{micro} and $0.13$ for textit{small-medium} datasets. 
+
+
+\begin{table}[!ht]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+LR Micro&0.5&4.75846&59.0225&8.8069&0.704211&0.0756913\\
+DT Micro&0.5&7.65107&44.4062&13.0531&0.689376&0.0916564\\
+RF Micro&0.5&5.2842&56.1575&9.65948&0.716906&0.0798355\\
+GBT Micro&0.5&6.21126&62.904&11.3061&0.772177&0.104269\\
+XGB Micro&0.5&7.15468&57.0475&12.7147&0.769127&0.103214\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Results summary (Micro)}
+\label{results_summary_micro}
+\end{table}
+
+\begin{table}[!ht]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+LR Small-Medium&0.5&5.61412&61.3749&10.2872&0.705553&0.0881378\\
+DT Small-Medium&0.5&7.76758&51.9121&13.5132&0.7147&0.0914786\\
+RF Small-Medium&0.5&5.53378&64.5486&10.1937&0.727238&0.0975543\\
+GBT Small-Medium&0.5&7.32602&69.5662&13.256&0.794414&0.138775\\
+XFB Small-Medium&0.5&7.85845&62.2334&13.9548&0.778677&0.124997\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Results summary (Small-medium)}
+\label{results_summary_small-medium}
+\end{table}
+
+Some more work has been conducted in order to further optimize the best performing model including, parameter tuning through random search and threshold optimization. 
+
+\subsection{Random search}
+
+Parameter tuning is a very important step in machine learning, since it helps in improving the model performances. In this experiment, we ran a random search on a set of 7 parameters in order to identify the set of parameters yielding the best model. Tables \ref{results_random_search_micro} and \ref{results_random_search_small-medium} display the best obtained parameters for our two datasets. The best performances were obtained at iteration 11 for micro and 15 for small-medium as shown on figures \ref{fig:rendom_search_micro} and \ref{fig:rendom_search_small-medium}. These 2 figures show plots of the PR AUC as a function of the iterations.
+
+\begin{table}[!ht]
+\resizebox{\textwidth}{!}{
+\begin{minipage}{.6\textwidth}
+\centering
+\begin{tabular}[t]{lc}
+\toprule
+Parameter&Value\\
+\midrule
+maxDepth&18\\
+maxBins&10\\
+minInstancesPerNode&9\\
+checkpointInterval&4\\
+maxIter&29\\
+stepSize&0.4656094697539778\\
+subsamplingRate&0.9676665353677678\\
+\bottomrule
+\end{tabular}
+\vspace{2mm}
+\caption{Random search results (Micro)}
+\label{results_random_search_micro}
+\end{minipage}
+\hfill
+\begin{minipage}{.6\textwidth}
+\centering
+\begin{tabular}[t]{lc}
+\toprule
+Parameter&Value\\
+\midrule
+maxDepth&19\\
+maxBins&3\\
+minInstancesPerNode&4\\
+checkpointInterval&6\\
+maxIter&18\\
+stepSize&0.12112833339583066\\
+subsamplingRate&0.6956739102219601\\
+\bottomrule
+\end{tabular}
+\vspace{2mm}
+\caption{Random search results (Small-Medium)}
+\label{results_random_search_small-medium}
+\end{minipage}
+}
+\end{table}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/random_search_micro.jpg}\label{fig:rendom_search_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/random_search_small-medium.jpg}\label{fig:rendom_search_small-medium}}
+  \caption{Random search - PR AUC by iteration}
+\end{figure}
+
+
+\subsection{Threshold optimization and final results}
+
+Running the gradient boosted tree model with the best parameters identified in the previous step through random search, we obtained the final results with the default threshold ($0.5$). Moreover threshold optimization process has been made to identify the threshold yielding the best performances. Threshold optimization was performed using both ROC and PR curves. The final ROC curves can be found on figures \ref{fig:gbt_final_roc_curve_micro} and \ref{fig:gbt_final_roc_curve_small-medium}. The final PR curves are displayed on figures \ref{fig:gbt_final_pr_curve_micro} and \ref{fig:gbt_final_roc_curve_small-medium}. Figures \ref{fig:gbt_final_cm_micro} and \ref{fig:gbt_final_cm_small-medium} show the confusion matrices for different thresholds and for our two datasets. Figures \ref{fig:gbt_final_feature_importance_micro} and \ref{fig:gbt_final_feature_importance_small-medium} display the first 10 most important features of the final model. And lastly, the final results are summarized in table \ref{final_results_summary}.
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/gbt_final_roc_curve_micro.png}\label{fig:gbt_final_roc_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/gbt_final_roc_curve_small-medium.png}\label{fig:gbt_final_roc_curve_small-medium}}
+  \caption{GBT - Final ROC curves}
+\end{figure}
+
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/gbt_final_pr_curve_micro.png}\label{fig:gbt_final_pr_curve_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/gbt_final_pr_curve_small-medium.png}\label{fig:gbt_final_pr_curve_small-medium}}
+  \caption{GBT - Final PR curves}
+\end{figure}
+
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Default threshold.]{\includegraphics[width=0.33\textwidth]{images/gbt_final_cm_default_th_micro.png}\label{fig:gbt_final_cm_default_th_micro}}
+  \hfill
+  \subfloat[ROC curve: Best th.]{\includegraphics[width=0.33\textwidth]{images/gbt_final_cm_best_roc_th_micro.png}\label{fig:gbt_final_cm_best_roc_th_micro}}
+  \hfill
+  \subfloat[PR curve : Best th.]{\includegraphics[width=0.33\textwidth]{images/gbt_final_cm_best_pr_th_micro.png}\label{fig:gbt_final_cm_best_pr_th_micro}}
+  \caption{Micro: Confusion matrices for three different thresholds}
+  \label{fig:gbt_final_cm_micro}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Default threshold.]{\includegraphics[width=0.33\textwidth]{images/gbt_final_cm_default_th_small-medium.png}\label{fig:gbt_final_cm_default_th_small-medium}}
+  \hfill
+  \subfloat[ROC curve: Best th.]{\includegraphics[width=0.33\textwidth]{images/gbt_final_cm_best_roc_th_small-medium.png}\label{fig:gbt_final_cm_best_roc_th_small-medium}}
+  \hfill
+  \subfloat[PR curve : Best th.]{\includegraphics[width=0.33\textwidth]{images/gbt_final_cm_best_pr_th_small-medium.png}\label{fig:gbt_final_cm_best_pr_th_small-medium}}
+  \caption{Small-Medium: Confusion matrices for three different thresholds}
+  \label{fig:gbt_final_cm_small-medium}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/gbt_final_feature_importance_micro.jpg}\label{fig:gbt_final_feature_importance_micro}}
+  \hfill
+  \subfloat[Small and Medium.]{\includegraphics[width=0.50\textwidth]{images/gbt_final_feature_importance_small-medium.jpg}\label{fig:gbt_final_feature_importance_small-medium}}
+  \caption{GBT - Feature importance}
+\end{figure}
+
+\begin{table}[!htb]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+GBT Micro (Default th.)&0.5&20.0593&36.4681	&25.8821&0.809498&0.192311\\
+GBT Micro (ROC best th.)&0.0928788&7.55362&69.5023&13.6263&0.809498&0.192311\\
+GBT Micro (PR best th.)&0.617549&24.5504&29.819&26.9294&0.809498&0.192311\\
+GBT Small-Medium (Default th.)&0.5&35.2695&63.0268&45.229&0.886273&0.532811\\
+GBT Small-Medium (ROC best th.)&0.302107&18.0879&72.8668&28.9816&0.886273&0.532811\\
+GBT Small-Medium (PR best th.)&0.697076&63.9946&48.0522&54.8892&0.886273&0.532811\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Final model results for different thresholds}
+\label{final_results_summary}
+\end{table}
+
 
 \chapter{Conclusions}
 
 \section{Conclusion}
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+The goal of this experiment was to build a model able to accurately predict the churn probability of a given client. Such a model brings a sure competitive advantage for an energy provider since this makes it possible to take necessary actions in order to retain critical clients. There is no standard model to accurately address this issue, that is why we tried different techniques in this study.
 
-\section{Suggestions for future research}
+The first step of the study consisted in collecting from various company areas the data necessary to the modeling phase. To do so, some ETL processes were implemented to move the data from several company areas into a dedicated cluster (Data Lake). In this cluster the data was aggregated in a feature creation phase where we generated 767 features and a dataset containing 15 months (from January 2019 to March 2020). As required by the company, the data was divided in two groups based on the size of the corresponding client (micro and small-medium). The generated datasets were made up of more than 20 millions observations for the micro clients against 5 millions for the small and medium clients.
 
-The page is fixed at the dimensions of an A4 paper, therefore you have to print your thesis on A4 paper to obtain the best results. The font dimension
+Subsequently, some preprocessing tasks were realized in order to appropriately prepare the data to the modeling phase. Among those tasks we have missing data handling (Imputation by a neutral value, Imputation by a new value), categorical features encoding (one-hot, boolean, ordinal, embeddings), imbalanced data handling (under and over sampling) and feature selection (unique selector, missing selector,importance selector, correlation selector and recursive feature elimination). After the preprocessing phase, we obtained two clean datasets with 48 features for micro and 54 features for small-medium. These datasets were then split into two sets for each cluster: Train (80\%) and Test (20\%).
+
+Lastly, several models were implemented. the two best performing models appeared to be Gradient Boosted Tree (PR AUC = 0.1042 before optimization) and XGBoost (PR AUC = 0.1032 before optimization) with GBT performing slightly better than XGBoost. The fact that these two models turned out to be the best performing ones was not a big surprise for us because our data sets were bid and complex. Indeed, tree based models are known to be good at handling complex and non-linear relationships among features.
+
+After optimizing the best model (Gradient Boosted Tree), we obtained a precision of 25\%, and a recall of 30\% on the cluster of micro clients and a precision of 64\% and a recall of 48\% on the cluster of small-medium clients. Given the huge amount of training and testing data used, we can say that these results are quite good and this model could be considered as a good starting point for further research on churn prediction in energy field.
+
+\section{Suggestion for future research}
+
+Knowing in advance when a client is about to churn is certainly very important since it could help in taking effective actions to reverse the process and retain that client. However to identify the right action to be taken, the reason why the client is churning could be very helpful. Analyzing these reasons could be an excellent subject for a future research.
 
 \backmatter
 
@@ -707,6 +1120,24 @@ U. Yabas and H. C. Cankaya, Churn prediction in subscriber management for mobile
 
 \bibitem{Rehman2013}
 S. A. Qureshi, A. S. Rehman, A. M. Qamar, A. Kamal, and A. Rehman, Telecommunication subscribers’ churn prediction model using machine learning, in 2013 Eighth International Conference on Digital Information Management (ICDIM), 2013, pp. 131–136
+
+\bibitem{scikitRFE}
+\href{https://www.scikit-yb.org/en/latest/api/model_selection/rfecv.html}{Recursive Feature Elimination}, sklearn
+
+\bibitem{pysparkLR}
+\href{https://spark.apache.org/docs/latest/api/python/pyspark.ml.html#pyspark.ml.classification.LogisticRegression}{Logistic Regression}, pyspark
+
+\bibitem{pysparkDT}
+\href{https://spark.apache.org/docs/latest/api/python/pyspark.ml.html#pyspark.ml.classification.DecisionTreeClassifier}{Decision Tree Classifier}, pyspark
+
+\bibitem{pysparkRF}
+\href{https://spark.apache.org/docs/latest/api/python/pyspark.ml.html#pyspark.ml.classification.RandomForestClassifier}{Random Forest Classifier}, pyspark
+
+\bibitem{pysparkGBT}
+\href{https://spark.apache.org/docs/latest/api/python/pyspark.ml.html#pyspark.ml.classification.GBTClassifier}{Gradient-boosted tree Classifier}, pyspark
+
+\bibitem{Tianqi2016}
+Chen, Tianqi \& Guestrin, Carlos. (2016). \href{https://www.researchgate.net/publication/310824798_XGBoost_A_Scalable_Tree_Boosting_System}{XGBoost: A Scalable Tree Boosting System}. 785-794. 10.1145/2939672.2939785.
 
 \end{thebibliography}
 
