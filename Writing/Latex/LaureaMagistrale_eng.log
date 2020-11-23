@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.27)  17 NOV 2020 10:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.27)  21 NOV 2020 16:57
 entering extended mode
 **./LaureaMagistrale_eng.tex
 (LaureaMagistrale_eng.tex
@@ -1407,13 +1407,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16619 strings out of 480790
- 270083 string characters out of 2913590
+ 16623 strings out of 480790
+ 270129 string characters out of 2913590
  791565 words of memory out of 3000000
  31759 multiletter control sequences out of 15000+200000
- 620042 words of font info for 148 fonts, out of 3000000 for 9000
+ 620302 words of font info for 150 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,12n,100p,1111b,543s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,12n,100p,1112b,543s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/MiKTeX/fonts/enc/dvips/lm/lm-
 rm.enc}{C:/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/MiKTeX/fonts/enc/dvips/l
 m/lm-ec.enc}{C:/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/MiKTeX/fonts/type1/pub
@@ -1425,7 +1425,7 @@ fb><C:/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/MiKTeX/fonts/type1/public/lm/l
 mri10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/MiKTeX/fonts/type1/pu
 blic/lm/lmss17.pfb><C:/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/MiKTeX/fonts
 /type1/public/lm/lmsy8.pfb>
-Output written on LaureaMagistrale_eng.pdf (55 pages, 2535596 bytes).
+Output written on LaureaMagistrale_eng.pdf (55 pages, 2535664 bytes).
 PDF statistics:
  1158 PDF objects out of 1200 (max. 8388607)
  287 named destinations out of 1000 (max. 500000)
