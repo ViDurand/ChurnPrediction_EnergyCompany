@@ -144,7 +144,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Feature creation\relax }}{19}{figure.caption.11}\protected@file@percent }
 \newlabel{fig:feature-creation}{{4.2}{19}{Feature creation\relax }{figure.caption.11}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Data description and understanding}{19}{section.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Data preprocessing and feature selection}{19}{section.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}The churner profile}{19}{subsection.4.3.1}\protected@file@percent }
 \newlabel{fig:target-variable-distribution-micro}{{4.3a}{20}{Subfigure 4 4.3a}{subfigure.4.3.1}{}}
 \newlabel{sub@fig:target-variable-distribution-micro}{{(a)}{a}{Subfigure 4 4.3a\relax }{subfigure.4.3.1}{}}
 \newlabel{fig:target-variable-distribution-small-medium}{{4.3b}{20}{Subfigure 4 4.3b}{subfigure.4.3.2}{}}
@@ -152,258 +152,274 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Target variable distribution\relax }}{20}{figure.caption.12}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{20}{subfigure.3.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{20}{subfigure.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Data preprocessing and feature selection}{20}{section.4.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Handling missing data}{20}{subsection.4.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Dealing with categorical features}{20}{subsection.4.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{One-hot encoding}{21}{section*.13}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Boolean encoding}{21}{section*.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Ordinal encoding}{21}{section*.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Categorical embeddings}{21}{section*.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Train-Test split}{21}{subsection.4.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Categorical embeddings: \textit  {acquisition channel}\relax }}{22}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:categorical-embeddings}{{4.4}{22}{Categorical embeddings: \textit {acquisition channel}\relax }{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Imbalanced data}{22}{subsection.4.4.4}\protected@file@percent }
-\newlabel{fig:distribution-over-months-micro}{{4.5a}{22}{Subfigure 4 4.5a}{subfigure.4.5.1}{}}
-\newlabel{sub@fig:distribution-over-months-micro}{{(a)}{a}{Subfigure 4 4.5a\relax }{subfigure.4.5.1}{}}
-\newlabel{fig:distribution-over-months-small-medium}{{4.5b}{22}{Subfigure 4 4.5b}{subfigure.4.5.2}{}}
-\newlabel{sub@fig:distribution-over-months-small-medium}{{(b)}{b}{Subfigure 4 4.5b\relax }{subfigure.4.5.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Data quantity distribution over the months\relax }}{22}{figure.caption.18}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{22}{subfigure.5.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{22}{subfigure.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Undersampling}{23}{section*.19}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Undersampling process of the \textit  {staying} class: \textit  {micro} data set\relax }}{23}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:undersampling-staying-class-micro}{{4.6}{23}{Undersampling process of the \textit {staying} class: \textit {micro} data set\relax }{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Oversampling}{23}{section*.21}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.5}Feature selection}{23}{subsection.4.4.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Unique selector}{23}{section*.23}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Churner profile: identity\relax }}{21}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:identity}{{4.4}{21}{Churner profile: identity\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Churner profile: location\relax }}{21}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:location}{{4.5}{21}{Churner profile: location\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Churner profile: products\relax }}{22}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:products}{{4.6}{22}{Churner profile: products\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Churner profile: acquisition channels and activation reasons\relax }}{22}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:acquisition}{{4.7}{22}{Churner profile: acquisition channels and activation reasons\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Dealing with categorical features}{22}{subsection.4.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{One-hot encoding}{23}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Boolean encoding}{23}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Ordinal encoding}{23}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Categorical embeddings}{23}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Train-Test split}{23}{subsection.4.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Categorical embeddings: \textit  {acquisition channel}\relax }}{24}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:categorical-embeddings}{{4.8}{24}{Categorical embeddings: \textit {acquisition channel}\relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Imbalanced data}{24}{subsection.4.4.4}\protected@file@percent }
+\newlabel{fig:distribution-over-months-micro}{{4.9a}{24}{Subfigure 4 4.9a}{subfigure.4.9.1}{}}
+\newlabel{sub@fig:distribution-over-months-micro}{{(a)}{a}{Subfigure 4 4.9a\relax }{subfigure.4.9.1}{}}
+\newlabel{fig:distribution-over-months-small-medium}{{4.9b}{24}{Subfigure 4 4.9b}{subfigure.4.9.2}{}}
+\newlabel{sub@fig:distribution-over-months-small-medium}{{(b)}{b}{Subfigure 4 4.9b\relax }{subfigure.4.9.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Data quantity distribution over the months\relax }}{24}{figure.caption.22}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{24}{subfigure.9.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{24}{subfigure.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Undersampling}{24}{section*.23}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Undersampling process of the \textit  {staying} class: \textit  {micro} data set\relax }}{25}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:undersampling-staying-class-micro}{{4.10}{25}{Undersampling process of the \textit {staying} class: \textit {micro} data set\relax }{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Oversampling}{25}{section*.25}\protected@file@percent }
+\newlabel{fig:balanced-distribution-over-months-micro}{{4.11a}{25}{Subfigure 4 4.11a}{subfigure.4.11.1}{}}
+\newlabel{sub@fig:balanced-distribution-over-months-micro}{{(a)}{a}{Subfigure 4 4.11a\relax }{subfigure.4.11.1}{}}
+\newlabel{fig:balanced-distribution-over-months-small-medium}{{4.11b}{25}{Subfigure 4 4.11b}{subfigure.4.11.2}{}}
+\newlabel{sub@fig:balanced-distribution-over-months-small-medium}{{(b)}{b}{Subfigure 4 4.11b\relax }{subfigure.4.11.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Balanced data: quantity distribution over the months\relax }}{25}{figure.caption.26}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{25}{subfigure.11.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{25}{subfigure.11.2}\protected@file@percent }
 \citation{scikitRFE}
-\newlabel{fig:balanced-distribution-over-months-micro}{{4.7a}{24}{Subfigure 4 4.7a}{subfigure.4.7.1}{}}
-\newlabel{sub@fig:balanced-distribution-over-months-micro}{{(a)}{a}{Subfigure 4 4.7a\relax }{subfigure.4.7.1}{}}
-\newlabel{fig:balanced-distribution-over-months-small-medium}{{4.7b}{24}{Subfigure 4 4.7b}{subfigure.4.7.2}{}}
-\newlabel{sub@fig:balanced-distribution-over-months-small-medium}{{(b)}{b}{Subfigure 4 4.7b\relax }{subfigure.4.7.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Balanced data: quantity distribution over the months\relax }}{24}{figure.caption.22}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{24}{subfigure.7.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{24}{subfigure.7.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Missing selector}{24}{section*.24}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Importance selector}{24}{section*.25}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Correlation selector}{24}{section*.27}\protected@file@percent }
-\newlabel{fig:cumulative-importance_vs_number-of-features_micro}{{4.8a}{25}{Subfigure 4 4.8a}{subfigure.4.8.1}{}}
-\newlabel{sub@fig:cumulative-importance_vs_number-of-features_micro}{{(a)}{a}{Subfigure 4 4.8a\relax }{subfigure.4.8.1}{}}
-\newlabel{fig:cumulative-importance_vs_number-of-features_small-medium}{{4.8b}{25}{Subfigure 4 4.8b}{subfigure.4.8.2}{}}
-\newlabel{sub@fig:cumulative-importance_vs_number-of-features_small-medium}{{(b)}{b}{Subfigure 4 4.8b\relax }{subfigure.4.8.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Cumulative importance vs number of features\relax }}{25}{figure.caption.26}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{25}{subfigure.8.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{25}{subfigure.8.2}\protected@file@percent }
-\newlabel{fig:correlation-matrix_micro}{{4.9a}{25}{Subfigure 4 4.9a}{subfigure.4.9.1}{}}
-\newlabel{sub@fig:correlation-matrix_micro}{{(a)}{a}{Subfigure 4 4.9a\relax }{subfigure.4.9.1}{}}
-\newlabel{fig:correlation-matrix_small-medium}{{4.9b}{25}{Subfigure 4 4.9b}{subfigure.4.9.2}{}}
-\newlabel{sub@fig:correlation-matrix_small-medium}{{(b)}{b}{Subfigure 4 4.9b\relax }{subfigure.4.9.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Correlation matrices\relax }}{25}{figure.caption.28}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{25}{subfigure.9.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{25}{subfigure.9.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Recursive feature elimination}{25}{section*.29}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Recursive feature elimination with cross-validation: micro\relax }}{26}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:rfecv_micro}{{4.10}{26}{Recursive feature elimination with cross-validation: micro\relax }{figure.caption.30}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Recursive feature elimination with cross-validation: small-medium\relax }}{26}{figure.caption.31}\protected@file@percent }
-\newlabel{fig:rfecv_small-medium}{{4.11}{26}{Recursive feature elimination with cross-validation: small-medium\relax }{figure.caption.31}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.6}The complete workflow}{26}{subsection.4.4.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Complete workflow\relax }}{27}{figure.caption.32}\protected@file@percent }
-\newlabel{fig:complete_wf}{{4.12}{27}{Complete workflow\relax }{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.5}Feature selection}{26}{subsection.4.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Unique selector}{26}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Missing selector}{26}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Importance selector}{26}{section*.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Correlation selector}{26}{section*.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Recursive feature elimination}{26}{section*.33}\protected@file@percent }
+\newlabel{fig:cumulative-importance_vs_number-of-features_micro}{{4.12a}{27}{Subfigure 4 4.12a}{subfigure.4.12.1}{}}
+\newlabel{sub@fig:cumulative-importance_vs_number-of-features_micro}{{(a)}{a}{Subfigure 4 4.12a\relax }{subfigure.4.12.1}{}}
+\newlabel{fig:cumulative-importance_vs_number-of-features_small-medium}{{4.12b}{27}{Subfigure 4 4.12b}{subfigure.4.12.2}{}}
+\newlabel{sub@fig:cumulative-importance_vs_number-of-features_small-medium}{{(b)}{b}{Subfigure 4 4.12b\relax }{subfigure.4.12.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Cumulative importance vs number of features\relax }}{27}{figure.caption.30}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{27}{subfigure.12.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{27}{subfigure.12.2}\protected@file@percent }
+\newlabel{fig:correlation-matrix_micro}{{4.13a}{27}{Subfigure 4 4.13a}{subfigure.4.13.1}{}}
+\newlabel{sub@fig:correlation-matrix_micro}{{(a)}{a}{Subfigure 4 4.13a\relax }{subfigure.4.13.1}{}}
+\newlabel{fig:correlation-matrix_small-medium}{{4.13b}{27}{Subfigure 4 4.13b}{subfigure.4.13.2}{}}
+\newlabel{sub@fig:correlation-matrix_small-medium}{{(b)}{b}{Subfigure 4 4.13b\relax }{subfigure.4.13.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Correlation matrices\relax }}{27}{figure.caption.32}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{27}{subfigure.13.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{27}{subfigure.13.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.6}The complete workflow}{27}{subsection.4.4.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Recursive feature elimination with cross-validation: micro\relax }}{28}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:rfecv_micro}{{4.14}{28}{Recursive feature elimination with cross-validation: micro\relax }{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Recursive feature elimination with cross-validation: small-medium\relax }}{28}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:rfecv_small-medium}{{4.15}{28}{Recursive feature elimination with cross-validation: small-medium\relax }{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Complete workflow\relax }}{29}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:complete_wf}{{4.16}{29}{Complete workflow\relax }{figure.caption.36}{}}
 \citation{pysparkLR}
 \citation{pysparkDT}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Models and results}{29}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Models and results}{31}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Logistic regression}{29}{section.5.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Logistic regression metrics\relax }}{30}{table.caption.33}\protected@file@percent }
-\newlabel{lr_metrics}{{5.1}{30}{Logistic regression metrics\relax }{table.caption.33}{}}
-\newlabel{fig:lr_roc_curve_micro}{{5.1a}{30}{Subfigure 5 5.1a}{subfigure.5.1.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Logistic regression}{31}{section.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Logistic regression metrics\relax }}{32}{table.caption.37}\protected@file@percent }
+\newlabel{lr_metrics}{{5.1}{32}{Logistic regression metrics\relax }{table.caption.37}{}}
+\newlabel{fig:lr_roc_curve_micro}{{5.1a}{32}{Subfigure 5 5.1a}{subfigure.5.1.1}{}}
 \newlabel{sub@fig:lr_roc_curve_micro}{{(a)}{a}{Subfigure 5 5.1a\relax }{subfigure.5.1.1}{}}
-\newlabel{fig:lr_roc_curve_small-medium}{{5.1b}{30}{Subfigure 5 5.1b}{subfigure.5.1.2}{}}
+\newlabel{fig:lr_roc_curve_small-medium}{{5.1b}{32}{Subfigure 5 5.1b}{subfigure.5.1.2}{}}
 \newlabel{sub@fig:lr_roc_curve_small-medium}{{(b)}{b}{Subfigure 5 5.1b\relax }{subfigure.5.1.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Logistic regression: ROC curves\relax }}{30}{figure.caption.34}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{30}{subfigure.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{30}{subfigure.1.2}\protected@file@percent }
-\newlabel{fig:lr_pr_curve_micro}{{5.2a}{30}{Subfigure 5 5.2a}{subfigure.5.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Logistic regression: ROC curves\relax }}{32}{figure.caption.38}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{32}{subfigure.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.1.2}\protected@file@percent }
+\newlabel{fig:lr_pr_curve_micro}{{5.2a}{32}{Subfigure 5 5.2a}{subfigure.5.2.1}{}}
 \newlabel{sub@fig:lr_pr_curve_micro}{{(a)}{a}{Subfigure 5 5.2a\relax }{subfigure.5.2.1}{}}
-\newlabel{fig:lr_pr_curve_small-medium}{{5.2b}{30}{Subfigure 5 5.2b}{subfigure.5.2.2}{}}
+\newlabel{fig:lr_pr_curve_small-medium}{{5.2b}{32}{Subfigure 5 5.2b}{subfigure.5.2.2}{}}
 \newlabel{sub@fig:lr_pr_curve_small-medium}{{(b)}{b}{Subfigure 5 5.2b\relax }{subfigure.5.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Logistic regression: PR curves\relax }}{30}{figure.caption.35}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{30}{subfigure.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{30}{subfigure.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Decision tree classifier}{30}{section.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Logistic regression: PR curves\relax }}{32}{figure.caption.39}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{32}{subfigure.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Decision tree classifier}{32}{section.5.2}\protected@file@percent }
 \citation{pysparkRF}
 \citation{pysparkGBT}
-\newlabel{fig:lr_cm_micro}{{5.3a}{31}{Subfigure 5 5.3a}{subfigure.5.3.1}{}}
+\newlabel{fig:lr_cm_micro}{{5.3a}{33}{Subfigure 5 5.3a}{subfigure.5.3.1}{}}
 \newlabel{sub@fig:lr_cm_micro}{{(a)}{a}{Subfigure 5 5.3a\relax }{subfigure.5.3.1}{}}
-\newlabel{fig:lr_cm_small-medium}{{5.3b}{31}{Subfigure 5 5.3b}{subfigure.5.3.2}{}}
+\newlabel{fig:lr_cm_small-medium}{{5.3b}{33}{Subfigure 5 5.3b}{subfigure.5.3.2}{}}
 \newlabel{sub@fig:lr_cm_small-medium}{{(b)}{b}{Subfigure 5 5.3b\relax }{subfigure.5.3.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Logistic regression: Confusion matrices\relax }}{31}{figure.caption.36}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{31}{subfigure.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{31}{subfigure.3.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Decision tree classifier metrics\relax }}{31}{table.caption.37}\protected@file@percent }
-\newlabel{dt_metrics}{{5.2}{31}{Decision tree classifier metrics\relax }{table.caption.37}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Random forest classifier}{31}{section.5.3}\protected@file@percent }
-\newlabel{fig:dt_roc_curve_micro}{{5.4a}{32}{Subfigure 5 5.4a}{subfigure.5.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Logistic regression: Confusion matrices\relax }}{33}{figure.caption.40}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{33}{subfigure.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{33}{subfigure.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Decision tree classifier metrics\relax }}{33}{table.caption.41}\protected@file@percent }
+\newlabel{dt_metrics}{{5.2}{33}{Decision tree classifier metrics\relax }{table.caption.41}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Random forest classifier}{33}{section.5.3}\protected@file@percent }
+\newlabel{fig:dt_roc_curve_micro}{{5.4a}{34}{Subfigure 5 5.4a}{subfigure.5.4.1}{}}
 \newlabel{sub@fig:dt_roc_curve_micro}{{(a)}{a}{Subfigure 5 5.4a\relax }{subfigure.5.4.1}{}}
-\newlabel{fig:dt_roc_curve_small-medium}{{5.4b}{32}{Subfigure 5 5.4b}{subfigure.5.4.2}{}}
+\newlabel{fig:dt_roc_curve_small-medium}{{5.4b}{34}{Subfigure 5 5.4b}{subfigure.5.4.2}{}}
 \newlabel{sub@fig:dt_roc_curve_small-medium}{{(b)}{b}{Subfigure 5 5.4b\relax }{subfigure.5.4.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Decision tree classifier: ROC curves\relax }}{32}{figure.caption.38}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{32}{subfigure.4.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.4.2}\protected@file@percent }
-\newlabel{fig:dt_pr_curve_micro}{{5.5a}{32}{Subfigure 5 5.5a}{subfigure.5.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Decision tree classifier: ROC curves\relax }}{34}{figure.caption.42}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{34}{subfigure.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{34}{subfigure.4.2}\protected@file@percent }
+\newlabel{fig:dt_pr_curve_micro}{{5.5a}{34}{Subfigure 5 5.5a}{subfigure.5.5.1}{}}
 \newlabel{sub@fig:dt_pr_curve_micro}{{(a)}{a}{Subfigure 5 5.5a\relax }{subfigure.5.5.1}{}}
-\newlabel{fig:dt_pr_curve_small-medium}{{5.5b}{32}{Subfigure 5 5.5b}{subfigure.5.5.2}{}}
+\newlabel{fig:dt_pr_curve_small-medium}{{5.5b}{34}{Subfigure 5 5.5b}{subfigure.5.5.2}{}}
 \newlabel{sub@fig:dt_pr_curve_small-medium}{{(b)}{b}{Subfigure 5 5.5b\relax }{subfigure.5.5.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Decision tree classifier: PR curves\relax }}{32}{figure.caption.39}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{32}{subfigure.5.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.5.2}\protected@file@percent }
-\newlabel{fig:dt_cm_micro}{{5.6a}{32}{Subfigure 5 5.6a}{subfigure.5.6.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Decision tree classifier: PR curves\relax }}{34}{figure.caption.43}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{34}{subfigure.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{34}{subfigure.5.2}\protected@file@percent }
+\newlabel{fig:dt_cm_micro}{{5.6a}{34}{Subfigure 5 5.6a}{subfigure.5.6.1}{}}
 \newlabel{sub@fig:dt_cm_micro}{{(a)}{a}{Subfigure 5 5.6a\relax }{subfigure.5.6.1}{}}
-\newlabel{fig:dt_cm_small-medium}{{5.6b}{32}{Subfigure 5 5.6b}{subfigure.5.6.2}{}}
+\newlabel{fig:dt_cm_small-medium}{{5.6b}{34}{Subfigure 5 5.6b}{subfigure.5.6.2}{}}
 \newlabel{sub@fig:dt_cm_small-medium}{{(b)}{b}{Subfigure 5 5.6b\relax }{subfigure.5.6.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Decision tree classifier: Confusion matrices\relax }}{32}{figure.caption.40}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{32}{subfigure.6.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.6.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Random forest classifier metrics\relax }}{33}{table.caption.41}\protected@file@percent }
-\newlabel{rf_metrics}{{5.3}{33}{Random forest classifier metrics\relax }{table.caption.41}{}}
-\newlabel{fig:rf_roc_curve_micro}{{5.7a}{33}{Subfigure 5 5.7a}{subfigure.5.7.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Decision tree classifier: Confusion matrices\relax }}{34}{figure.caption.44}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{34}{subfigure.6.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{34}{subfigure.6.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Random forest classifier metrics\relax }}{35}{table.caption.45}\protected@file@percent }
+\newlabel{rf_metrics}{{5.3}{35}{Random forest classifier metrics\relax }{table.caption.45}{}}
+\newlabel{fig:rf_roc_curve_micro}{{5.7a}{35}{Subfigure 5 5.7a}{subfigure.5.7.1}{}}
 \newlabel{sub@fig:rf_roc_curve_micro}{{(a)}{a}{Subfigure 5 5.7a\relax }{subfigure.5.7.1}{}}
-\newlabel{fig:rf_roc_curve_small-medium}{{5.7b}{33}{Subfigure 5 5.7b}{subfigure.5.7.2}{}}
+\newlabel{fig:rf_roc_curve_small-medium}{{5.7b}{35}{Subfigure 5 5.7b}{subfigure.5.7.2}{}}
 \newlabel{sub@fig:rf_roc_curve_small-medium}{{(b)}{b}{Subfigure 5 5.7b\relax }{subfigure.5.7.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Random forest classifier: ROC curves\relax }}{33}{figure.caption.42}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{33}{subfigure.7.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{33}{subfigure.7.2}\protected@file@percent }
-\newlabel{fig:rf_pr_curve_micro}{{5.8a}{33}{Subfigure 5 5.8a}{subfigure.5.8.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Random forest classifier: ROC curves\relax }}{35}{figure.caption.46}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{35}{subfigure.7.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.7.2}\protected@file@percent }
+\newlabel{fig:rf_pr_curve_micro}{{5.8a}{35}{Subfigure 5 5.8a}{subfigure.5.8.1}{}}
 \newlabel{sub@fig:rf_pr_curve_micro}{{(a)}{a}{Subfigure 5 5.8a\relax }{subfigure.5.8.1}{}}
-\newlabel{fig:rf_pr_curve_small-medium}{{5.8b}{33}{Subfigure 5 5.8b}{subfigure.5.8.2}{}}
+\newlabel{fig:rf_pr_curve_small-medium}{{5.8b}{35}{Subfigure 5 5.8b}{subfigure.5.8.2}{}}
 \newlabel{sub@fig:rf_pr_curve_small-medium}{{(b)}{b}{Subfigure 5 5.8b\relax }{subfigure.5.8.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Random forest classifier: PR curves\relax }}{33}{figure.caption.43}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{33}{subfigure.8.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{33}{subfigure.8.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Gradient-boosted tree classifier}{33}{section.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Random forest classifier: PR curves\relax }}{35}{figure.caption.47}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{35}{subfigure.8.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Gradient-boosted tree classifier}{35}{section.5.4}\protected@file@percent }
 \citation{Tianqi2016}
-\newlabel{fig:rf_cm_micro}{{5.9a}{34}{Subfigure 5 5.9a}{subfigure.5.9.1}{}}
+\newlabel{fig:rf_cm_micro}{{5.9a}{36}{Subfigure 5 5.9a}{subfigure.5.9.1}{}}
 \newlabel{sub@fig:rf_cm_micro}{{(a)}{a}{Subfigure 5 5.9a\relax }{subfigure.5.9.1}{}}
-\newlabel{fig:rf_cm_small-medium}{{5.9b}{34}{Subfigure 5 5.9b}{subfigure.5.9.2}{}}
+\newlabel{fig:rf_cm_small-medium}{{5.9b}{36}{Subfigure 5 5.9b}{subfigure.5.9.2}{}}
 \newlabel{sub@fig:rf_cm_small-medium}{{(b)}{b}{Subfigure 5 5.9b\relax }{subfigure.5.9.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Random forest classifier: Confusion matrices\relax }}{34}{figure.caption.44}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{34}{subfigure.9.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{34}{subfigure.9.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Gradient-boosted tree classifier metrics\relax }}{34}{table.caption.45}\protected@file@percent }
-\newlabel{gbt_metrics}{{5.4}{34}{Gradient-boosted tree classifier metrics\relax }{table.caption.45}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}XGBoost}{34}{section.5.5}\protected@file@percent }
-\newlabel{fig:gbt_roc_curve_micro}{{5.10a}{35}{Subfigure 5 5.10a}{subfigure.5.10.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Random forest classifier: Confusion matrices\relax }}{36}{figure.caption.48}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{36}{subfigure.9.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{36}{subfigure.9.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Gradient-boosted tree classifier metrics\relax }}{36}{table.caption.49}\protected@file@percent }
+\newlabel{gbt_metrics}{{5.4}{36}{Gradient-boosted tree classifier metrics\relax }{table.caption.49}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}XGBoost}{36}{section.5.5}\protected@file@percent }
+\newlabel{fig:gbt_roc_curve_micro}{{5.10a}{37}{Subfigure 5 5.10a}{subfigure.5.10.1}{}}
 \newlabel{sub@fig:gbt_roc_curve_micro}{{(a)}{a}{Subfigure 5 5.10a\relax }{subfigure.5.10.1}{}}
-\newlabel{fig:gbt_roc_curve_small-medium}{{5.10b}{35}{Subfigure 5 5.10b}{subfigure.5.10.2}{}}
+\newlabel{fig:gbt_roc_curve_small-medium}{{5.10b}{37}{Subfigure 5 5.10b}{subfigure.5.10.2}{}}
 \newlabel{sub@fig:gbt_roc_curve_small-medium}{{(b)}{b}{Subfigure 5 5.10b\relax }{subfigure.5.10.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Gradient-boosted tree classifier: ROC curves\relax }}{35}{figure.caption.46}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{35}{subfigure.10.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.10.2}\protected@file@percent }
-\newlabel{fig:gbt_pr_curve_micro}{{5.11a}{35}{Subfigure 5 5.11a}{subfigure.5.11.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Gradient-boosted tree classifier: ROC curves\relax }}{37}{figure.caption.50}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{37}{subfigure.10.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{37}{subfigure.10.2}\protected@file@percent }
+\newlabel{fig:gbt_pr_curve_micro}{{5.11a}{37}{Subfigure 5 5.11a}{subfigure.5.11.1}{}}
 \newlabel{sub@fig:gbt_pr_curve_micro}{{(a)}{a}{Subfigure 5 5.11a\relax }{subfigure.5.11.1}{}}
-\newlabel{fig:gbt_pr_curve_small-medium}{{5.11b}{35}{Subfigure 5 5.11b}{subfigure.5.11.2}{}}
+\newlabel{fig:gbt_pr_curve_small-medium}{{5.11b}{37}{Subfigure 5 5.11b}{subfigure.5.11.2}{}}
 \newlabel{sub@fig:gbt_pr_curve_small-medium}{{(b)}{b}{Subfigure 5 5.11b\relax }{subfigure.5.11.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Gradient-boosted tree classifier: PR curves\relax }}{35}{figure.caption.47}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{35}{subfigure.11.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.11.2}\protected@file@percent }
-\newlabel{fig:gbt_cm_micro}{{5.12a}{35}{Subfigure 5 5.12a}{subfigure.5.12.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Gradient-boosted tree classifier: PR curves\relax }}{37}{figure.caption.51}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{37}{subfigure.11.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{37}{subfigure.11.2}\protected@file@percent }
+\newlabel{fig:gbt_cm_micro}{{5.12a}{37}{Subfigure 5 5.12a}{subfigure.5.12.1}{}}
 \newlabel{sub@fig:gbt_cm_micro}{{(a)}{a}{Subfigure 5 5.12a\relax }{subfigure.5.12.1}{}}
-\newlabel{fig:gbt_cm_small-medium}{{5.12b}{35}{Subfigure 5 5.12b}{subfigure.5.12.2}{}}
+\newlabel{fig:gbt_cm_small-medium}{{5.12b}{37}{Subfigure 5 5.12b}{subfigure.5.12.2}{}}
 \newlabel{sub@fig:gbt_cm_small-medium}{{(b)}{b}{Subfigure 5 5.12b\relax }{subfigure.5.12.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Gradient-boosted tree classifier: Confusion matrices\relax }}{35}{figure.caption.48}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{35}{subfigure.12.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.12.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces XGBoost metrics\relax }}{36}{table.caption.49}\protected@file@percent }
-\newlabel{xgb_metrics}{{5.5}{36}{XGBoost metrics\relax }{table.caption.49}{}}
-\newlabel{fig:xgb_roc_curve_micro}{{5.13a}{36}{Subfigure 5 5.13a}{subfigure.5.13.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Gradient-boosted tree classifier: Confusion matrices\relax }}{37}{figure.caption.52}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{37}{subfigure.12.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{37}{subfigure.12.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces XGBoost metrics\relax }}{38}{table.caption.53}\protected@file@percent }
+\newlabel{xgb_metrics}{{5.5}{38}{XGBoost metrics\relax }{table.caption.53}{}}
+\newlabel{fig:xgb_roc_curve_micro}{{5.13a}{38}{Subfigure 5 5.13a}{subfigure.5.13.1}{}}
 \newlabel{sub@fig:xgb_roc_curve_micro}{{(a)}{a}{Subfigure 5 5.13a\relax }{subfigure.5.13.1}{}}
-\newlabel{fig:xgb_roc_curve_small-medium}{{5.13b}{36}{Subfigure 5 5.13b}{subfigure.5.13.2}{}}
+\newlabel{fig:xgb_roc_curve_small-medium}{{5.13b}{38}{Subfigure 5 5.13b}{subfigure.5.13.2}{}}
 \newlabel{sub@fig:xgb_roc_curve_small-medium}{{(b)}{b}{Subfigure 5 5.13b\relax }{subfigure.5.13.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces XGBoost: ROC curves\relax }}{36}{figure.caption.50}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{36}{subfigure.13.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{36}{subfigure.13.2}\protected@file@percent }
-\newlabel{fig:xgb_pr_curve_micro}{{5.14a}{36}{Subfigure 5 5.14a}{subfigure.5.14.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces XGBoost: ROC curves\relax }}{38}{figure.caption.54}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{38}{subfigure.13.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{38}{subfigure.13.2}\protected@file@percent }
+\newlabel{fig:xgb_pr_curve_micro}{{5.14a}{38}{Subfigure 5 5.14a}{subfigure.5.14.1}{}}
 \newlabel{sub@fig:xgb_pr_curve_micro}{{(a)}{a}{Subfigure 5 5.14a\relax }{subfigure.5.14.1}{}}
-\newlabel{fig:xgb_pr_curve_small-medium}{{5.14b}{36}{Subfigure 5 5.14b}{subfigure.5.14.2}{}}
+\newlabel{fig:xgb_pr_curve_small-medium}{{5.14b}{38}{Subfigure 5 5.14b}{subfigure.5.14.2}{}}
 \newlabel{sub@fig:xgb_pr_curve_small-medium}{{(b)}{b}{Subfigure 5 5.14b\relax }{subfigure.5.14.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces XGBoost: PR curves\relax }}{36}{figure.caption.51}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{36}{subfigure.14.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{36}{subfigure.14.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Summary and analysis of the results}{36}{section.5.6}\protected@file@percent }
-\newlabel{fig:xgb_cm_micro}{{5.15a}{37}{Subfigure 5 5.15a}{subfigure.5.15.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces XGBoost: PR curves\relax }}{38}{figure.caption.55}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{38}{subfigure.14.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{38}{subfigure.14.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Summary and analysis of the results}{38}{section.5.6}\protected@file@percent }
+\newlabel{fig:xgb_cm_micro}{{5.15a}{39}{Subfigure 5 5.15a}{subfigure.5.15.1}{}}
 \newlabel{sub@fig:xgb_cm_micro}{{(a)}{a}{Subfigure 5 5.15a\relax }{subfigure.5.15.1}{}}
-\newlabel{fig:xgb_cm_small-medium}{{5.15b}{37}{Subfigure 5 5.15b}{subfigure.5.15.2}{}}
+\newlabel{fig:xgb_cm_small-medium}{{5.15b}{39}{Subfigure 5 5.15b}{subfigure.5.15.2}{}}
 \newlabel{sub@fig:xgb_cm_small-medium}{{(b)}{b}{Subfigure 5 5.15b\relax }{subfigure.5.15.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces XGBoost: Confusion matrices\relax }}{37}{figure.caption.52}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{37}{subfigure.15.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{37}{subfigure.15.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces Results summary (Micro)\relax }}{37}{table.caption.53}\protected@file@percent }
-\newlabel{results_summary_micro}{{5.6}{37}{Results summary (Micro)\relax }{table.caption.53}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces Results summary (Small-medium)\relax }}{37}{table.caption.54}\protected@file@percent }
-\newlabel{results_summary_small-medium}{{5.7}{37}{Results summary (Small-medium)\relax }{table.caption.54}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Random search}{38}{subsection.5.6.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.8}{\ignorespaces Random search results (Micro)\relax }}{38}{table.caption.55}\protected@file@percent }
-\newlabel{results_random_search_micro}{{5.8}{38}{Random search results (Micro)\relax }{table.caption.55}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.9}{\ignorespaces Random search results (Small-Medium)\relax }}{38}{table.caption.55}\protected@file@percent }
-\newlabel{results_random_search_small-medium}{{5.9}{38}{Random search results (Small-Medium)\relax }{table.caption.55}{}}
-\newlabel{fig:rendom_search_micro}{{5.16a}{38}{Subfigure 5 5.16a}{subfigure.5.16.1}{}}
-\newlabel{sub@fig:rendom_search_micro}{{(a)}{a}{Subfigure 5 5.16a\relax }{subfigure.5.16.1}{}}
-\newlabel{fig:rendom_search_small-medium}{{5.16b}{38}{Subfigure 5 5.16b}{subfigure.5.16.2}{}}
-\newlabel{sub@fig:rendom_search_small-medium}{{(b)}{b}{Subfigure 5 5.16b\relax }{subfigure.5.16.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces Random search - PR AUC by iteration\relax }}{38}{figure.caption.56}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{38}{subfigure.16.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{38}{subfigure.16.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}Threshold optimization and final results}{38}{subsection.5.6.2}\protected@file@percent }
-\newlabel{fig:gbt_final_roc_curve_micro}{{5.17a}{39}{Subfigure 5 5.17a}{subfigure.5.17.1}{}}
-\newlabel{sub@fig:gbt_final_roc_curve_micro}{{(a)}{a}{Subfigure 5 5.17a\relax }{subfigure.5.17.1}{}}
-\newlabel{fig:gbt_final_roc_curve_small-medium}{{5.17b}{39}{Subfigure 5 5.17b}{subfigure.5.17.2}{}}
-\newlabel{sub@fig:gbt_final_roc_curve_small-medium}{{(b)}{b}{Subfigure 5 5.17b\relax }{subfigure.5.17.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces GBT - Final ROC curves\relax }}{39}{figure.caption.57}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{39}{subfigure.17.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{39}{subfigure.17.2}\protected@file@percent }
-\newlabel{fig:gbt_final_pr_curve_micro}{{5.18a}{39}{Subfigure 5 5.18a}{subfigure.5.18.1}{}}
-\newlabel{sub@fig:gbt_final_pr_curve_micro}{{(a)}{a}{Subfigure 5 5.18a\relax }{subfigure.5.18.1}{}}
-\newlabel{fig:gbt_final_pr_curve_small-medium}{{5.18b}{39}{Subfigure 5 5.18b}{subfigure.5.18.2}{}}
-\newlabel{sub@fig:gbt_final_pr_curve_small-medium}{{(b)}{b}{Subfigure 5 5.18b\relax }{subfigure.5.18.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces GBT - Final PR curves\relax }}{39}{figure.caption.58}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{39}{subfigure.18.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{39}{subfigure.18.2}\protected@file@percent }
-\newlabel{fig:gbt_final_cm_default_th_micro}{{5.19a}{39}{Subfigure 5 5.19a}{subfigure.5.19.1}{}}
-\newlabel{sub@fig:gbt_final_cm_default_th_micro}{{(a)}{a}{Subfigure 5 5.19a\relax }{subfigure.5.19.1}{}}
-\newlabel{fig:gbt_final_cm_best_roc_th_micro}{{5.19b}{39}{Subfigure 5 5.19b}{subfigure.5.19.2}{}}
-\newlabel{sub@fig:gbt_final_cm_best_roc_th_micro}{{(b)}{b}{Subfigure 5 5.19b\relax }{subfigure.5.19.2}{}}
-\newlabel{fig:gbt_final_cm_best_pr_th_micro}{{5.19c}{39}{Subfigure 5 5.19c}{subfigure.5.19.3}{}}
-\newlabel{sub@fig:gbt_final_cm_best_pr_th_micro}{{(c)}{c}{Subfigure 5 5.19c\relax }{subfigure.5.19.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Micro: Confusion matrices for three different thresholds\relax }}{39}{figure.caption.59}\protected@file@percent }
-\newlabel{fig:gbt_final_cm_micro}{{5.19}{39}{Micro: Confusion matrices for three different thresholds\relax }{figure.caption.59}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Default threshold.}}}{39}{subfigure.19.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {ROC curve: Best th.}}}{39}{subfigure.19.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {PR curve : Best th.}}}{39}{subfigure.19.3}\protected@file@percent }
-\newlabel{fig:gbt_final_cm_default_th_small-medium}{{5.20a}{40}{Subfigure 5 5.20a}{subfigure.5.20.1}{}}
-\newlabel{sub@fig:gbt_final_cm_default_th_small-medium}{{(a)}{a}{Subfigure 5 5.20a\relax }{subfigure.5.20.1}{}}
-\newlabel{fig:gbt_final_cm_best_roc_th_small-medium}{{5.20b}{40}{Subfigure 5 5.20b}{subfigure.5.20.2}{}}
-\newlabel{sub@fig:gbt_final_cm_best_roc_th_small-medium}{{(b)}{b}{Subfigure 5 5.20b\relax }{subfigure.5.20.2}{}}
-\newlabel{fig:gbt_final_cm_best_pr_th_small-medium}{{5.20c}{40}{Subfigure 5 5.20c}{subfigure.5.20.3}{}}
-\newlabel{sub@fig:gbt_final_cm_best_pr_th_small-medium}{{(c)}{c}{Subfigure 5 5.20c\relax }{subfigure.5.20.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces Small-Medium: Confusion matrices for three different thresholds\relax }}{40}{figure.caption.60}\protected@file@percent }
-\newlabel{fig:gbt_final_cm_small-medium}{{5.20}{40}{Small-Medium: Confusion matrices for three different thresholds\relax }{figure.caption.60}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Default threshold.}}}{40}{subfigure.20.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {ROC curve: Best th.}}}{40}{subfigure.20.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {PR curve : Best th.}}}{40}{subfigure.20.3}\protected@file@percent }
-\newlabel{fig:gbt_final_feature_importance_micro}{{5.21a}{40}{Subfigure 5 5.21a}{subfigure.5.21.1}{}}
-\newlabel{sub@fig:gbt_final_feature_importance_micro}{{(a)}{a}{Subfigure 5 5.21a\relax }{subfigure.5.21.1}{}}
-\newlabel{fig:gbt_final_feature_importance_small-medium}{{5.21b}{40}{Subfigure 5 5.21b}{subfigure.5.21.2}{}}
-\newlabel{sub@fig:gbt_final_feature_importance_small-medium}{{(b)}{b}{Subfigure 5 5.21b\relax }{subfigure.5.21.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.21}{\ignorespaces GBT - Feature importance\relax }}{40}{figure.caption.61}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{40}{subfigure.21.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{40}{subfigure.21.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.10}{\ignorespaces Final model results for different thresholds\relax }}{40}{table.caption.62}\protected@file@percent }
-\newlabel{final_results_summary}{{5.10}{40}{Final model results for different thresholds\relax }{table.caption.62}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions}{41}{chapter.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces XGBoost: Confusion matrices\relax }}{39}{figure.caption.56}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{39}{subfigure.15.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{39}{subfigure.15.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces Results summary (Micro)\relax }}{39}{table.caption.57}\protected@file@percent }
+\newlabel{results_summary_micro}{{5.6}{39}{Results summary (Micro)\relax }{table.caption.57}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces Results summary (Small-medium)\relax }}{39}{table.caption.58}\protected@file@percent }
+\newlabel{results_summary_small-medium}{{5.7}{39}{Results summary (Small-medium)\relax }{table.caption.58}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces PR Curves: summary (micro)\relax }}{40}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:PR_curves_micro}{{5.16}{40}{PR Curves: summary (micro)\relax }{figure.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces PR Curves: summary (small-medium)\relax }}{40}{figure.caption.60}\protected@file@percent }
+\newlabel{fig:PR_curves_small-medium}{{5.17}{40}{PR Curves: summary (small-medium)\relax }{figure.caption.60}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Random search}{40}{subsection.5.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.8}{\ignorespaces Random search results (Micro)\relax }}{41}{table.caption.61}\protected@file@percent }
+\newlabel{results_random_search_micro}{{5.8}{41}{Random search results (Micro)\relax }{table.caption.61}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.9}{\ignorespaces Random search results (Small-Medium)\relax }}{41}{table.caption.61}\protected@file@percent }
+\newlabel{results_random_search_small-medium}{{5.9}{41}{Random search results (Small-Medium)\relax }{table.caption.61}{}}
+\newlabel{fig:rendom_search_micro}{{5.18a}{41}{Subfigure 5 5.18a}{subfigure.5.18.1}{}}
+\newlabel{sub@fig:rendom_search_micro}{{(a)}{a}{Subfigure 5 5.18a\relax }{subfigure.5.18.1}{}}
+\newlabel{fig:rendom_search_small-medium}{{5.18b}{41}{Subfigure 5 5.18b}{subfigure.5.18.2}{}}
+\newlabel{sub@fig:rendom_search_small-medium}{{(b)}{b}{Subfigure 5 5.18b\relax }{subfigure.5.18.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces Random search - PR AUC by iteration\relax }}{41}{figure.caption.62}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{41}{subfigure.18.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{41}{subfigure.18.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}Threshold optimization and final results}{41}{subsection.5.6.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.10}{\ignorespaces Final model results for different thresholds\relax }}{41}{table.caption.68}\protected@file@percent }
+\newlabel{final_results_summary}{{5.10}{41}{Final model results for different thresholds\relax }{table.caption.68}{}}
+\newlabel{fig:gbt_final_roc_curve_micro}{{5.19a}{42}{Subfigure 5 5.19a}{subfigure.5.19.1}{}}
+\newlabel{sub@fig:gbt_final_roc_curve_micro}{{(a)}{a}{Subfigure 5 5.19a\relax }{subfigure.5.19.1}{}}
+\newlabel{fig:gbt_final_roc_curve_small-medium}{{5.19b}{42}{Subfigure 5 5.19b}{subfigure.5.19.2}{}}
+\newlabel{sub@fig:gbt_final_roc_curve_small-medium}{{(b)}{b}{Subfigure 5 5.19b\relax }{subfigure.5.19.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces GBT - Final ROC curves\relax }}{42}{figure.caption.63}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{42}{subfigure.19.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{42}{subfigure.19.2}\protected@file@percent }
+\newlabel{fig:gbt_final_pr_curve_micro}{{5.20a}{42}{Subfigure 5 5.20a}{subfigure.5.20.1}{}}
+\newlabel{sub@fig:gbt_final_pr_curve_micro}{{(a)}{a}{Subfigure 5 5.20a\relax }{subfigure.5.20.1}{}}
+\newlabel{fig:gbt_final_pr_curve_small-medium}{{5.20b}{42}{Subfigure 5 5.20b}{subfigure.5.20.2}{}}
+\newlabel{sub@fig:gbt_final_pr_curve_small-medium}{{(b)}{b}{Subfigure 5 5.20b\relax }{subfigure.5.20.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces GBT - Final PR curves\relax }}{42}{figure.caption.64}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{42}{subfigure.20.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{42}{subfigure.20.2}\protected@file@percent }
+\newlabel{fig:gbt_final_cm_default_th_micro}{{5.21a}{42}{Subfigure 5 5.21a}{subfigure.5.21.1}{}}
+\newlabel{sub@fig:gbt_final_cm_default_th_micro}{{(a)}{a}{Subfigure 5 5.21a\relax }{subfigure.5.21.1}{}}
+\newlabel{fig:gbt_final_cm_best_roc_th_micro}{{5.21b}{42}{Subfigure 5 5.21b}{subfigure.5.21.2}{}}
+\newlabel{sub@fig:gbt_final_cm_best_roc_th_micro}{{(b)}{b}{Subfigure 5 5.21b\relax }{subfigure.5.21.2}{}}
+\newlabel{fig:gbt_final_cm_best_pr_th_micro}{{5.21c}{42}{Subfigure 5 5.21c}{subfigure.5.21.3}{}}
+\newlabel{sub@fig:gbt_final_cm_best_pr_th_micro}{{(c)}{c}{Subfigure 5 5.21c\relax }{subfigure.5.21.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.21}{\ignorespaces Micro: Confusion matrices for three different thresholds\relax }}{42}{figure.caption.65}\protected@file@percent }
+\newlabel{fig:gbt_final_cm_micro}{{5.21}{42}{Micro: Confusion matrices for three different thresholds\relax }{figure.caption.65}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Default threshold.}}}{42}{subfigure.21.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {ROC curve: Best th.}}}{42}{subfigure.21.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {PR curve : Best th.}}}{42}{subfigure.21.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.3}Trying the best model on a different target}{42}{subsection.5.6.3}\protected@file@percent }
+\newlabel{fig:gbt_final_cm_default_th_small-medium}{{5.22a}{43}{Subfigure 5 5.22a}{subfigure.5.22.1}{}}
+\newlabel{sub@fig:gbt_final_cm_default_th_small-medium}{{(a)}{a}{Subfigure 5 5.22a\relax }{subfigure.5.22.1}{}}
+\newlabel{fig:gbt_final_cm_best_roc_th_small-medium}{{5.22b}{43}{Subfigure 5 5.22b}{subfigure.5.22.2}{}}
+\newlabel{sub@fig:gbt_final_cm_best_roc_th_small-medium}{{(b)}{b}{Subfigure 5 5.22b\relax }{subfigure.5.22.2}{}}
+\newlabel{fig:gbt_final_cm_best_pr_th_small-medium}{{5.22c}{43}{Subfigure 5 5.22c}{subfigure.5.22.3}{}}
+\newlabel{sub@fig:gbt_final_cm_best_pr_th_small-medium}{{(c)}{c}{Subfigure 5 5.22c\relax }{subfigure.5.22.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.22}{\ignorespaces Small-Medium: Confusion matrices for three different thresholds\relax }}{43}{figure.caption.66}\protected@file@percent }
+\newlabel{fig:gbt_final_cm_small-medium}{{5.22}{43}{Small-Medium: Confusion matrices for three different thresholds\relax }{figure.caption.66}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Default threshold.}}}{43}{subfigure.22.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {ROC curve: Best th.}}}{43}{subfigure.22.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {PR curve : Best th.}}}{43}{subfigure.22.3}\protected@file@percent }
+\newlabel{fig:gbt_final_feature_importance_micro}{{5.23a}{43}{Subfigure 5 5.23a}{subfigure.5.23.1}{}}
+\newlabel{sub@fig:gbt_final_feature_importance_micro}{{(a)}{a}{Subfigure 5 5.23a\relax }{subfigure.5.23.1}{}}
+\newlabel{fig:gbt_final_feature_importance_small-medium}{{5.23b}{43}{Subfigure 5 5.23b}{subfigure.5.23.2}{}}
+\newlabel{sub@fig:gbt_final_feature_importance_small-medium}{{(b)}{b}{Subfigure 5 5.23b\relax }{subfigure.5.23.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.23}{\ignorespaces GBT - Feature importance\relax }}{43}{figure.caption.67}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Micro.}}}{43}{subfigure.23.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Small and Medium.}}}{43}{subfigure.23.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.11}{\ignorespaces Model performance on 3 months target\relax }}{43}{table.caption.69}\protected@file@percent }
+\newlabel{performance_on_3_months_target}{{5.11}{43}{Model performance on 3 months target\relax }{table.caption.69}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions}{45}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Conclusion}{41}{section.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Suggestion for future research}{42}{section.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Conclusion}{45}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Suggestion for future research}{46}{section.6.2}\protected@file@percent }
 \bibcite{Geron2017}{1}
 \bibcite{Sousa2015}{2}
 \bibcite{Garcia2016}{3}
@@ -415,7 +431,7 @@
 \bibcite{Hancock2020}{9}
 \bibcite{Almeida2019}{10}
 \bibcite{Hannes}{11}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{43}{section*.63}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{47}{section*.70}\protected@file@percent }
 \bibcite{Berkhahn2016}{12}
 \bibcite{Russac2018}{13}
 \bibcite{duboue2020}{14}

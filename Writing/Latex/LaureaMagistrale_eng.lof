@@ -15,87 +15,93 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Target variable distribution\relax }}{20}{figure.caption.12}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{20}{subfigure.3.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{20}{subfigure.3.2}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Categorical embeddings: \textit {acquisition channel}\relax }}{22}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Data quantity distribution over the months\relax }}{22}{figure.caption.18}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{22}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{22}{subfigure.5.2}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Undersampling process of the \textit {staying} class: \textit {micro} data set\relax }}{23}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Balanced data: quantity distribution over the months\relax }}{24}{figure.caption.22}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{24}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{24}{subfigure.7.2}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Cumulative importance vs number of features\relax }}{25}{figure.caption.26}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{25}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{25}{subfigure.8.2}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Correlation matrices\relax }}{25}{figure.caption.28}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{25}{subfigure.9.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{25}{subfigure.9.2}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Recursive feature elimination with cross-validation: micro\relax }}{26}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Recursive feature elimination with cross-validation: small-medium\relax }}{26}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Complete workflow\relax }}{27}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Churner profile: identity\relax }}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Churner profile: location\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Churner profile: products\relax }}{22}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Churner profile: acquisition channels and activation reasons\relax }}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Categorical embeddings: \textit {acquisition channel}\relax }}{24}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Data quantity distribution over the months\relax }}{24}{figure.caption.22}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{24}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{24}{subfigure.9.2}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Undersampling process of the \textit {staying} class: \textit {micro} data set\relax }}{25}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Balanced data: quantity distribution over the months\relax }}{25}{figure.caption.26}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{25}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{25}{subfigure.11.2}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Cumulative importance vs number of features\relax }}{27}{figure.caption.30}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{27}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{27}{subfigure.12.2}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Correlation matrices\relax }}{27}{figure.caption.32}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{27}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{27}{subfigure.13.2}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Recursive feature elimination with cross-validation: micro\relax }}{28}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Recursive feature elimination with cross-validation: small-medium\relax }}{28}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Complete workflow\relax }}{29}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Logistic regression: ROC curves\relax }}{30}{figure.caption.34}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{30}{subfigure.1.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{30}{subfigure.1.2}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Logistic regression: PR curves\relax }}{30}{figure.caption.35}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{30}{subfigure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{30}{subfigure.2.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Logistic regression: Confusion matrices\relax }}{31}{figure.caption.36}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{31}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{31}{subfigure.3.2}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Decision tree classifier: ROC curves\relax }}{32}{figure.caption.38}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{32}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.4.2}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Decision tree classifier: PR curves\relax }}{32}{figure.caption.39}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{32}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.5.2}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Decision tree classifier: Confusion matrices\relax }}{32}{figure.caption.40}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{32}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.6.2}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Random forest classifier: ROC curves\relax }}{33}{figure.caption.42}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{33}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{33}{subfigure.7.2}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Random forest classifier: PR curves\relax }}{33}{figure.caption.43}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{33}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{33}{subfigure.8.2}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Random forest classifier: Confusion matrices\relax }}{34}{figure.caption.44}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{34}{subfigure.9.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{34}{subfigure.9.2}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Gradient-boosted tree classifier: ROC curves\relax }}{35}{figure.caption.46}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{35}{subfigure.10.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.10.2}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Gradient-boosted tree classifier: PR curves\relax }}{35}{figure.caption.47}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{35}{subfigure.11.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.11.2}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Gradient-boosted tree classifier: Confusion matrices\relax }}{35}{figure.caption.48}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{35}{subfigure.12.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.12.2}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces XGBoost: ROC curves\relax }}{36}{figure.caption.50}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{36}{subfigure.13.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{36}{subfigure.13.2}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces XGBoost: PR curves\relax }}{36}{figure.caption.51}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{36}{subfigure.14.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{36}{subfigure.14.2}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces XGBoost: Confusion matrices\relax }}{37}{figure.caption.52}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{37}{subfigure.15.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{37}{subfigure.15.2}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Random search - PR AUC by iteration\relax }}{38}{figure.caption.56}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{38}{subfigure.16.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{38}{subfigure.16.2}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces GBT - Final ROC curves\relax }}{39}{figure.caption.57}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{39}{subfigure.17.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{39}{subfigure.17.2}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces GBT - Final PR curves\relax }}{39}{figure.caption.58}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{39}{subfigure.18.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{39}{subfigure.18.2}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Micro: Confusion matrices for three different thresholds\relax }}{39}{figure.caption.59}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Default threshold.}}}{39}{subfigure.19.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curve: Best th.}}}{39}{subfigure.19.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {PR curve : Best th.}}}{39}{subfigure.19.3}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Small-Medium: Confusion matrices for three different thresholds\relax }}{40}{figure.caption.60}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Default threshold.}}}{40}{subfigure.20.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curve: Best th.}}}{40}{subfigure.20.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {PR curve : Best th.}}}{40}{subfigure.20.3}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces GBT - Feature importance\relax }}{40}{figure.caption.61}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{40}{subfigure.21.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{40}{subfigure.21.2}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Logistic regression: ROC curves\relax }}{32}{figure.caption.38}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{32}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.1.2}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Logistic regression: PR curves\relax }}{32}{figure.caption.39}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{32}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{32}{subfigure.2.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Logistic regression: Confusion matrices\relax }}{33}{figure.caption.40}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{33}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{33}{subfigure.3.2}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Decision tree classifier: ROC curves\relax }}{34}{figure.caption.42}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{34}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{34}{subfigure.4.2}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Decision tree classifier: PR curves\relax }}{34}{figure.caption.43}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{34}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{34}{subfigure.5.2}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Decision tree classifier: Confusion matrices\relax }}{34}{figure.caption.44}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{34}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{34}{subfigure.6.2}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Random forest classifier: ROC curves\relax }}{35}{figure.caption.46}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{35}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.7.2}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Random forest classifier: PR curves\relax }}{35}{figure.caption.47}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{35}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{35}{subfigure.8.2}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Random forest classifier: Confusion matrices\relax }}{36}{figure.caption.48}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{36}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{36}{subfigure.9.2}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Gradient-boosted tree classifier: ROC curves\relax }}{37}{figure.caption.50}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{37}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{37}{subfigure.10.2}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Gradient-boosted tree classifier: PR curves\relax }}{37}{figure.caption.51}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{37}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{37}{subfigure.11.2}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Gradient-boosted tree classifier: Confusion matrices\relax }}{37}{figure.caption.52}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{37}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{37}{subfigure.12.2}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces XGBoost: ROC curves\relax }}{38}{figure.caption.54}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{38}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{38}{subfigure.13.2}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces XGBoost: PR curves\relax }}{38}{figure.caption.55}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{38}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{38}{subfigure.14.2}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces XGBoost: Confusion matrices\relax }}{39}{figure.caption.56}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{39}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{39}{subfigure.15.2}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces PR Curves: summary (micro)\relax }}{40}{figure.caption.59}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces PR Curves: summary (small-medium)\relax }}{40}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Random search - PR AUC by iteration\relax }}{41}{figure.caption.62}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{41}{subfigure.18.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{41}{subfigure.18.2}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces GBT - Final ROC curves\relax }}{42}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{42}{subfigure.19.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{42}{subfigure.19.2}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces GBT - Final PR curves\relax }}{42}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{42}{subfigure.20.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{42}{subfigure.20.2}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Micro: Confusion matrices for three different thresholds\relax }}{42}{figure.caption.65}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Default threshold.}}}{42}{subfigure.21.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curve: Best th.}}}{42}{subfigure.21.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {PR curve : Best th.}}}{42}{subfigure.21.3}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Small-Medium: Confusion matrices for three different thresholds\relax }}{43}{figure.caption.66}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Default threshold.}}}{43}{subfigure.22.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curve: Best th.}}}{43}{subfigure.22.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {PR curve : Best th.}}}{43}{subfigure.22.3}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces GBT - Feature importance\relax }}{43}{figure.caption.67}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{43}{subfigure.23.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{43}{subfigure.23.2}%
 \addvspace {10\p@ }

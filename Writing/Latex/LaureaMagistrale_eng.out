@@ -34,23 +34,25 @@
 \BOOKMARK [2][-]{subsection.4.2.1}{Data collection: ETL}{section.4.2}% 34
 \BOOKMARK [2][-]{subsection.4.2.2}{Feature creation}{section.4.2}% 35
 \BOOKMARK [1][-]{section.4.3}{Data description and understanding}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.4}{Data preprocessing and feature selection}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.4.1}{Handling missing data}{section.4.4}% 38
-\BOOKMARK [2][-]{subsection.4.4.2}{Dealing with categorical features}{section.4.4}% 39
-\BOOKMARK [2][-]{subsection.4.4.3}{Train-Test split}{section.4.4}% 40
-\BOOKMARK [2][-]{subsection.4.4.4}{Imbalanced data}{section.4.4}% 41
-\BOOKMARK [2][-]{subsection.4.4.5}{Feature selection}{section.4.4}% 42
-\BOOKMARK [2][-]{subsection.4.4.6}{The complete workflow}{section.4.4}% 43
-\BOOKMARK [0][-]{chapter.5}{Models and results}{}% 44
-\BOOKMARK [1][-]{section.5.1}{Logistic regression}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.2}{Decision tree classifier}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.3}{Random forest classifier}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.4}{Gradient-boosted tree classifier}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.5}{XGBoost}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.6}{Summary and analysis of the results}{chapter.5}% 50
-\BOOKMARK [2][-]{subsection.5.6.1}{Random search}{section.5.6}% 51
-\BOOKMARK [2][-]{subsection.5.6.2}{Threshold optimization and final results}{section.5.6}% 52
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 53
-\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 54
-\BOOKMARK [1][-]{section.6.2}{Suggestion for future research}{chapter.6}% 55
-\BOOKMARK [0][-]{section*.63}{Bibliography}{}% 56
+\BOOKMARK [2][-]{subsection.4.3.1}{The churner profile}{section.4.3}% 37
+\BOOKMARK [1][-]{section.4.4}{Data preprocessing and feature selection}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.4.1}{Handling missing data}{section.4.4}% 39
+\BOOKMARK [2][-]{subsection.4.4.2}{Dealing with categorical features}{section.4.4}% 40
+\BOOKMARK [2][-]{subsection.4.4.3}{Train-Test split}{section.4.4}% 41
+\BOOKMARK [2][-]{subsection.4.4.4}{Imbalanced data}{section.4.4}% 42
+\BOOKMARK [2][-]{subsection.4.4.5}{Feature selection}{section.4.4}% 43
+\BOOKMARK [2][-]{subsection.4.4.6}{The complete workflow}{section.4.4}% 44
+\BOOKMARK [0][-]{chapter.5}{Models and results}{}% 45
+\BOOKMARK [1][-]{section.5.1}{Logistic regression}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.2}{Decision tree classifier}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.3}{Random forest classifier}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.4}{Gradient-boosted tree classifier}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.5}{XGBoost}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.6}{Summary and analysis of the results}{chapter.5}% 51
+\BOOKMARK [2][-]{subsection.5.6.1}{Random search}{section.5.6}% 52
+\BOOKMARK [2][-]{subsection.5.6.2}{Threshold optimization and final results}{section.5.6}% 53
+\BOOKMARK [2][-]{subsection.5.6.3}{Trying the best model on a different target}{section.5.6}% 54
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 55
+\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 56
+\BOOKMARK [1][-]{section.6.2}{Suggestion for future research}{chapter.6}% 57
+\BOOKMARK [0][-]{section*.70}{Bibliography}{}% 58

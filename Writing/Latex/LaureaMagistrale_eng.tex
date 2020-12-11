@@ -420,6 +420,41 @@ The data set of micro clients consisted of 20.223.914,0 records while the data s
   \caption{Target variable distribution}
 \end{figure}
 
+\subsection{The churner profile}
+
+To better understand the data set, we performed some analysis to build a profile for the clients that tend to churn. The analysis was divided in the following four elements, The identity, the location, The product that they use and finally how they were acquired.
+
+Regarding identity, clients from market \textit{libero}, offering catering services, consuming between 4 and 12 kilowatts with a seniority less than 36 months tend to churn the most. See the graphs on figure \ref{fig:identity} for statistical support to these findings. As for the geographical location instead, we discovered that clients from the Nord-Est and Nord-Ovest regions tend to churn the most. Graphs that support this finding can be found in figure \ref{fig:location}. The favorite products of the churning clients were found to be the following: \textit{GIUSTAXTE IMPRESA}, \textit{ENERGIA FLESSIBILE}, \textit{GIUSTAXTE GAS IMPRESA}, \textit{GIUSTAXTE BIORARIA IMPRESA}, and \textit{SOLUZIONE ENERGIA STAGIONE}. See figure \ref{fig:products} for details. And finally the churning clients are mostly acquired through the following channels \textit{Agenzia} and \textit{AGCOR} with the following reason \textit{Switch Attivo}. Figure \ref{fig:acquisition} gives more statistical detail about this last element.
+
+\begin{figure}[!ht]
+    \includegraphics[width=0.95\textwidth]{images/identity.jpg}
+    \centering
+    \caption{Churner profile: identity}
+    \label{fig:identity}
+\end{figure}
+
+\begin{figure}[!ht]
+    \includegraphics[width=0.95\textwidth]{images/location.jpg}
+    \centering
+    \caption{Churner profile: location}
+    \label{fig:location}
+\end{figure}
+
+\begin{figure}[!ht]
+    \includegraphics[width=0.95\textwidth]{images/products.jpg}
+    \centering
+    \caption{Churner profile: products}
+    \label{fig:products}
+\end{figure}
+
+\begin{figure}[!ht]
+    \includegraphics[width=0.95\textwidth]{images/acquisition.jpg}
+    \centering
+    \caption{Churner profile: acquisition channels and activation reasons}
+    \label{fig:acquisition}
+\end{figure}
+
+
 \section{Data preprocessing and feature selection}
 
 Before applying any machine learning algorithm, some preprocessing steps are usually performed on data in order to clean it and put it in the appropriate form to be best exploited by the algorithm. This section presents the description of the preprocessing/cleaning operations that we performed in this study.
@@ -819,11 +854,11 @@ XGB Small-Medium&0.5&7.85845&62.2334&13.9548&0.778677&0.124997\\
 
 \section{Summary and analysis of the results}
 
-In summary, 5 different machine learning models were used in this study (Logistic regression, Random forest, Decision tree, Gradient-boosted tree and XGBoost) to predict customer churn. These 5 models have been evaluated using 6 different evaluation metrics (Confusion matrix, Precision, Recall, F1 Score, ROC AUC and PR AUC). To choose the best performing model, we focused our attention on precision and recall since we were interested by both the quality and the quantity of the positive predictions. F1 Score is as combination of this two metrics. 
+In summary, 5 different machine learning models were used in this study (Logistic regression, Random forest, Decision tree, Gradient-boosted tree and XGBoost) to predict customer churn. These 5 models have been evaluated using 6 different evaluation metrics (Confusion matrix, Precision, Recall, F1 Score, ROC AUC and PR AUC). To choose the best performing model, we focused our attention on precision and recall since we were interested by both the quality and the quantity of the positive predictions. F1 Score is as combination of these two metrics. 
 
 However the initial predictions were made using the default threshold (0.5); Thus, it was then necessary to find a metric able to summarize the model performance over all the possible thresholds so that the best threshold could then be identified. Precision and Recall area under the curve (PR AUC) was thought to be the right metric to do so.
 
-As shown on tables \ref{results_summary_micro} and \ref{results_summary_small-medium}, the best model appears to be \textit{Gradient Boosted Tree Classifier} with a PR AUC of approximately $0.10$ for \textit{micro} and $0.13$ for textit{small-medium} data sets. 
+As shown on tables \ref{results_summary_micro} and \ref{results_summary_small-medium}, the best model appears to be \textit{Gradient Boosted Tree Classifier} with a PR AUC of approximately $0.10$ for \textit{micro} and $0.13$ for \textit{small-medium} data sets. Figures \ref{fig:PR_curves_micro} and \ref{fig:PR_curves_small-medium} instead show the 5 PR curves on which we can see that the best one is Gradient Boosted Tree for both micro and small-medium data sets.
 
 
 \begin{table}[!ht]
@@ -865,6 +900,21 @@ XFB Small-Medium&0.5&7.85845&62.2334&13.9548&0.778677&0.124997\\
 \caption{Results summary (Small-medium)}
 \label{results_summary_small-medium}
 \end{table}
+
+\begin{figure}[!ht]
+  \centering
+\includegraphics[width=1\textwidth]{images/PR_curves_micro.jpg}
+  \caption{PR Curves: summary (micro)}
+  \label{fig:PR_curves_micro}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+\includegraphics[width=1\textwidth]{images/PR_curves_small-medium.jpg}
+  \caption{PR Curves: summary (small-medium)}
+  \label{fig:PR_curves_small-medium}
+\end{figure}
+
 
 Some more work has been conducted in order to further optimize the best performing model including, parameter tuning through random search and threshold optimization. 
 
@@ -996,6 +1046,31 @@ GBT Small-Medium (PR best th.)&0.697076&63.9946&48.0522&54.8892&0.886273&0.53281
 \vspace{2mm}
 \caption{Final model results for different thresholds}
 \label{final_results_summary}
+\end{table}
+
+\subsection{Trying the best model on a different target}
+
+Our study aimed to predict the probability for a client to churn in the next 2 months. This goal was reached by building a machine learning model to perform the task. However, we decided to test our model on a different target variable - namely the probability for a client to churn in the next \textbf{3 months} - to asses the generalization capabilities of our solution. As a result, our model still performed well with the new target. Table \ref{performance_on_3_months_target} displays the obtained results.
+
+\begin{table}[!htb]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+GBT Micro 3 months&0.5&25.9196&36.3276&30.2535&0.799934&0.237196\\
+GBT Micro 3 months&0.0987135&10.6223&67.4027&18.3524&0.799934&0.237196\\
+GBT Micro 3 months&0.567459&28.7064&32.6212&30.5388&0.799934&0.237196\\
+GBT Small-Medium 3 months&0.5&36.9339&57.4029&44.9477&0.871179&0.518616\\
+GBT Small-Medium 3 months&0.0958046&12.4564&82.7468&21.6533&0.871179&0.518616\\
+GBT Small-Medium 3 months&0.704147&65.6442&44.8737&53.3072&0.871179&0.518616\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Model performance on 3 months target}
+\label{performance_on_3_months_target}
 \end{table}
 
 

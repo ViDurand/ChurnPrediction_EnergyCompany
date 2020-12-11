@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.27)  26 NOV 2020 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.27)  11 DEC 2020 14:38
 entering extended mode
 **./LaureaMagistrale_eng.tex
 (LaureaMagistrale_eng.tex
@@ -766,7 +766,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienza-MLred-pos.pdf, id=227, 288.07625pt x 89.33376pt>
+<sapienza-MLred-pos.pdf, id=235, 288.07625pt x 89.33376pt>
 File: sapienza-MLred-pos.pdf Graphic file (type pdf)
 <use sapienza-MLred-pos.pdf>
 Package pdftex.def Info: sapienza-MLred-pos.pdf  used on input line 50.
@@ -860,7 +860,7 @@ Chapter 1.
 [1
 
 ]
-<images/Thesis-Research-Area.png, id=450, 537.80925pt x 459.51675pt>
+<images/Thesis-Research-Area.png, id=474, 537.80925pt x 459.51675pt>
 File: images/Thesis-Research-Area.png Graphic file (type png)
 <use images/Thesis-Research-Area.png>
 Package pdftex.def Info: images/Thesis-Research-Area.png  used on input line 93
@@ -874,34 +874,34 @@ Chapter 2.
 Underfull \vbox (badness 1983) has occurred while \output is active []
 
  [6]
-<images/One-hot_encoding.jpg, id=491, 351.714pt x 172.2435pt>
+<images/One-hot_encoding.jpg, id=515, 351.714pt x 172.2435pt>
 File: images/One-hot_encoding.jpg Graphic file (type jpg)
 <use images/One-hot_encoding.jpg>
 Package pdftex.def Info: images/One-hot_encoding.jpg  used on input line 160.
 (pdftex.def)             Requested size: 198.0pt x 96.9682pt.
 
 [7 <./images/One-hot_encoding.jpg>] [8]
-<images/Simple_Decision_Tree.jpg, id=521, 423.38174pt x 286.06876pt>
+<images/Simple_Decision_Tree.jpg, id=545, 423.38174pt x 286.06876pt>
 File: images/Simple_Decision_Tree.jpg Graphic file (type jpg)
 <use images/Simple_Decision_Tree.jpg>
 Package pdftex.def Info: images/Simple_Decision_Tree.jpg  used on input line 23
 3.
 (pdftex.def)             Requested size: 316.80121pt x 214.05342pt.
  [9] [10 <./images/Simple_Decision_Tree.jpg>] [11]
-<images/confusion-matrix-exemple.jpg, id=564, 261.97874pt x 193.9245pt>
+<images/confusion-matrix-exemple.jpg, id=588, 261.97874pt x 193.9245pt>
 File: images/confusion-matrix-exemple.jpg Graphic file (type jpg)
 <use images/confusion-matrix-exemple.jpg>
 Package pdftex.def Info: images/confusion-matrix-exemple.jpg  used on input lin
 e 291.
 (pdftex.def)             Requested size: 198.0pt x 146.5704pt.
  [12] [13 <./images/confusion-matrix-exemple.jpg>]
-<images/roc_curve_interpretation.jpg, id=590, 552.26324pt x 416.15475pt>
+<images/roc_curve_interpretation.jpg, id=614, 552.26324pt x 416.15475pt>
 File: images/roc_curve_interpretation.jpg Graphic file (type jpg)
 <use images/roc_curve_interpretation.jpg>
 Package pdftex.def Info: images/roc_curve_interpretation.jpg  used on input lin
 e 333.
 (pdftex.def)             Requested size: 198.0pt x 149.19965pt.
-<images/pr_curve_interpretation.jpg, id=591, 586.5915pt x 445.06274pt>
+<images/pr_curve_interpretation.jpg, id=615, 586.5915pt x 445.06274pt>
 File: images/pr_curve_interpretation.jpg Graphic file (type jpg)
 <use images/pr_curve_interpretation.jpg>
 Package pdftex.def Info: images/pr_curve_interpretation.jpg  used on input line
@@ -913,7 +913,7 @@ Chapter 3.
 [15
 
 ]
-<images/studies_summary.jpg, id=624, 649.2255pt x 183.68625pt>
+<images/studies_summary.jpg, id=648, 649.2255pt x 183.68625pt>
 File: images/studies_summary.jpg Graphic file (type jpg)
 <use images/studies_summary.jpg>
 Package pdftex.def Info: images/studies_summary.jpg  used on input line 361.
@@ -923,25 +923,25 @@ Chapter 4.
 [17
 
 ]
-<images/data_collection.jpg, id=636, 654.0435pt x 199.947pt>
+<images/data_collection.jpg, id=660, 654.0435pt x 199.947pt>
 File: images/data_collection.jpg Graphic file (type jpg)
 <use images/data_collection.jpg>
 Package pdftex.def Info: images/data_collection.jpg  used on input line 392.
 (pdftex.def)             Requested size: 376.19879pt x 115.00829pt.
  [18 <./images/data_collection.jpg>]
-<images/feature_creation.jpg, id=642, 492.03825pt x 317.988pt>
+<images/feature_creation.jpg, id=666, 492.03825pt x 317.988pt>
 File: images/feature_creation.jpg Graphic file (type jpg)
 <use images/feature_creation.jpg>
 Package pdftex.def Info: images/feature_creation.jpg  used on input line 403.
 (pdftex.def)             Requested size: 376.19879pt x 243.12416pt.
-<images/target-variable-distribution-micro.jpg, id=646, 271.0125pt x 270.41025p
+<images/target-variable-distribution-micro.jpg, id=670, 271.0125pt x 270.41025p
 t>
 File: images/target-variable-distribution-micro.jpg Graphic file (type jpg)
 <use images/target-variable-distribution-micro.jpg>
 Package pdftex.def Info: images/target-variable-distribution-micro.jpg  used on
  input line 417.
 (pdftex.def)             Requested size: 178.19879pt x 177.80699pt.
-<images/target-variable-distribution-small-medium.jpg, id=647, 266.1945pt x 273
+<images/target-variable-distribution-small-medium.jpg, id=671, 266.1945pt x 273
 .4215pt>
 File: images/target-variable-distribution-small-medium.jpg Graphic file (type j
 pg)
@@ -950,468 +950,509 @@ Package pdftex.def Info: images/target-variable-distribution-small-medium.jpg
 used on input line 419.
 (pdftex.def)             Requested size: 178.19879pt x 183.03706pt.
  [19 <./images/feature_creation.jpg>]
+<images/identity.jpg, id=682, 785.334pt x 486.01575pt>
+File: images/identity.jpg Graphic file (type jpg)
+<use images/identity.jpg>
+Package pdftex.def Info: images/identity.jpg  used on input line 430.
+(pdftex.def)             Requested size: 376.19879pt x 232.81769pt.
+<images/location.jpg, id=683, 579.96675pt x 330.63525pt>
+File: images/location.jpg Graphic file (type jpg)
+<use images/location.jpg>
+Package pdftex.def Info: images/location.jpg  used on input line 437.
+(pdftex.def)             Requested size: 376.19879pt x 214.47649pt.
+<images/products.jpg, id=684, 501.072pt x 335.45325pt>
+File: images/products.jpg Graphic file (type jpg)
+<use images/products.jpg>
+Package pdftex.def Info: images/products.jpg  used on input line 444.
+(pdftex.def)             Requested size: 376.19879pt x 251.85547pt.
+<images/acquisition.jpg, id=685, 841.34325pt x 269.808pt>
+File: images/acquisition.jpg Graphic file (type jpg)
+<use images/acquisition.jpg>
+Package pdftex.def Info: images/acquisition.jpg  used on input line 451.
+(pdftex.def)             Requested size: 376.19879pt x 120.64261pt.
+
 [20 <./images/target-variable-distribution-micro.jpg> <./images/target-variable
 -distribution-small-medium.jpg>]
-<images/categorical_embeddings.jpg, id=663, 682.9515pt x 298.716pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./images/identity.jpg> <./images/location.jpg>]
+Underfull \vbox (badness 2538) has occurred while \output is active []
+
+ [22 <./images/products.jpg> <./images/acquisition.jpg>]
+<images/categorical_embeddings.jpg, id=704, 682.9515pt x 298.716pt>
 File: images/categorical_embeddings.jpg Graphic file (type jpg)
 <use images/categorical_embeddings.jpg>
 Package pdftex.def Info: images/categorical_embeddings.jpg  used on input line 
-456.
+491.
 (pdftex.def)             Requested size: 376.19879pt x 164.54498pt.
- [21]
-<images/distribution-over-months-micro.jpg, id=678, 475.7775pt x 290.88675pt>
+ [23]
+<images/distribution-over-months-micro.jpg, id=718, 475.7775pt x 290.88675pt>
 File: images/distribution-over-months-micro.jpg Graphic file (type jpg)
 <use images/distribution-over-months-micro.jpg>
 Package pdftex.def Info: images/distribution-over-months-micro.jpg  used on inp
-ut line 474.
+ut line 509.
 (pdftex.def)             Requested size: 198.0pt x 121.05751pt.
-<images/distribution-over-months-small-medium.jpg, id=679, 474.573pt x 290.2845
+<images/distribution-over-months-small-medium.jpg, id=719, 474.573pt x 290.2845
 pt>
 File: images/distribution-over-months-small-medium.jpg Graphic file (type jpg)
 <use images/distribution-over-months-small-medium.jpg>
 Package pdftex.def Info: images/distribution-over-months-small-medium.jpg  used
- on input line 476.
+ on input line 511.
 (pdftex.def)             Requested size: 198.0pt x 121.1125pt.
-
-Underfull \vbox (badness 2495) has occurred while \output is active []
-
- [22 <./images/categorical_embeddings.jpg> <./images/distribution-over-months-m
+ [24 <./images/categorical_embeddings.jpg> <./images/distribution-over-months-m
 icro.jpg> <./images/distribution-over-months-small-medium.jpg>]
-<images/undersampling-staying-class-micro.jpg, id=687, 782.32275pt x 354.123pt>
+<images/undersampling-staying-class-micro.jpg, id=728, 782.32275pt x 354.123pt>
 
 File: images/undersampling-staying-class-micro.jpg Graphic file (type jpg)
 <use images/undersampling-staying-class-micro.jpg>
 Package pdftex.def Info: images/undersampling-staying-class-micro.jpg  used on 
-input line 487.
+input line 522.
 (pdftex.def)             Requested size: 376.19879pt x 170.2851pt.
-<images/balanced-distribution-over-months-micro.jpg, id=690, 475.7775pt x 285.4
+<images/balanced-distribution-over-months-micro.jpg, id=731, 475.7775pt x 285.4
 665pt>
 File: images/balanced-distribution-over-months-micro.jpg Graphic file (type jpg
 )
 <use images/balanced-distribution-over-months-micro.jpg>
 Package pdftex.def Info: images/balanced-distribution-over-months-micro.jpg  us
-ed on input line 501.
+ed on input line 536.
 (pdftex.def)             Requested size: 198.0pt x 118.80177pt.
-<images/balanced-distribution-over-months-small-medium.jpg, id=691, 474.573pt x
+<images/balanced-distribution-over-months-small-medium.jpg, id=732, 474.573pt x
  286.06876pt>
 File: images/balanced-distribution-over-months-small-medium.jpg Graphic file (t
 ype jpg)
 <use images/balanced-distribution-over-months-small-medium.jpg>
 Package pdftex.def Info: images/balanced-distribution-over-months-small-medium.
-jpg  used on input line 503.
+jpg  used on input line 538.
 (pdftex.def)             Requested size: 198.0pt x 119.3536pt.
- [23 <./images/undersampling-staying-class-micro.jpg>]
-<images/cumulative-importance_vs_number-of-features_micro.jpg, id=704, 558.888p
+
+Underfull \vbox (badness 2671) has occurred while \output is active []
+
+ [25 <./images/undersampling-staying-class-micro.jpg> <./images/balanced-distri
+bution-over-months-micro.jpg> <./images/balanced-distribution-over-months-small
+-medium.jpg>]
+<images/cumulative-importance_vs_number-of-features_micro.jpg, id=743, 558.888p
 t x 450.483pt>
 File: images/cumulative-importance_vs_number-of-features_micro.jpg Graphic file
  (type jpg)
 <use images/cumulative-importance_vs_number-of-features_micro.jpg>
 Package pdftex.def Info: images/cumulative-importance_vs_number-of-features_mic
-ro.jpg  used on input line 525.
+ro.jpg  used on input line 560.
 (pdftex.def)             Requested size: 198.0pt x 159.59607pt.
-<images/cumulative-importance_vs_number-of-features_small-medium.jpg, id=705, 5
+<images/cumulative-importance_vs_number-of-features_small-medium.jpg, id=744, 5
 60.0925pt x 449.88075pt>
 File: images/cumulative-importance_vs_number-of-features_small-medium.jpg Graph
 ic file (type jpg)
 <use images/cumulative-importance_vs_number-of-features_small-medium.jpg>
 Package pdftex.def Info: images/cumulative-importance_vs_number-of-features_sma
-ll-medium.jpg  used on input line 527.
+ll-medium.jpg  used on input line 562.
 (pdftex.def)             Requested size: 198.0pt x 159.03947pt.
-<images/correlation-matrix_micro.jpg, id=708, 457.71pt x 489.62926pt>
+<images/correlation-matrix_micro.jpg, id=747, 457.71pt x 489.62926pt>
 File: images/correlation-matrix_micro.jpg Graphic file (type jpg)
 <use images/correlation-matrix_micro.jpg>
 Package pdftex.def Info: images/correlation-matrix_micro.jpg  used on input lin
-e 537.
+e 572.
 (pdftex.def)             Requested size: 198.0pt x 211.80656pt.
-<images/correlation-matrix_small-medium.jpg, id=709, 455.90324pt x 486.618pt>
+<images/correlation-matrix_small-medium.jpg, id=748, 455.90324pt x 486.618pt>
 File: images/correlation-matrix_small-medium.jpg Graphic file (type jpg)
 <use images/correlation-matrix_small-medium.jpg>
 Package pdftex.def Info: images/correlation-matrix_small-medium.jpg  used on in
-put line 539.
+put line 574.
 (pdftex.def)             Requested size: 198.0pt x 211.34299pt.
-
-Underfull \vbox (badness 1264) has occurred while \output is active []
-
- [24 <./images/balanced-distribution-over-months-micro.jpg> <./images/balanced-
-distribution-over-months-small-medium.jpg>]
-<images/rfecv_micro.jpg, id=724, 579.96675pt x 397.485pt>
+ [26]
+<images/rfecv_micro.jpg, id=766, 579.96675pt x 397.485pt>
 File: images/rfecv_micro.jpg Graphic file (type jpg)
 <use images/rfecv_micro.jpg>
-Package pdftex.def Info: images/rfecv_micro.jpg  used on input line 550.
+Package pdftex.def Info: images/rfecv_micro.jpg  used on input line 585.
 (pdftex.def)             Requested size: 376.19879pt x 257.84058pt.
-<images/rfecv_small-medium.jpg, id=725, 565.51276pt x 379.4175pt>
+<images/rfecv_small-medium.jpg, id=767, 565.51276pt x 379.4175pt>
 File: images/rfecv_small-medium.jpg Graphic file (type jpg)
 <use images/rfecv_small-medium.jpg>
-Package pdftex.def Info: images/rfecv_small-medium.jpg  used on input line 557.
+Package pdftex.def Info: images/rfecv_small-medium.jpg  used on input line 592.
 
 (pdftex.def)             Requested size: 376.19879pt x 252.40208pt.
- [25 <./images/cumulative-importance_vs_number-of-features_micro.jpg> <./images
-/cumulative-importance_vs_number-of-features_small-medium.jpg> <./images/correl
-ation-matrix_micro.jpg> <./images/correlation-matrix_small-medium.jpg>]
-<images/complete_wf.jpg, id=733, 773.289pt x 398.6895pt>
+<images/complete_wf.jpg, id=769, 773.289pt x 398.6895pt>
 File: images/complete_wf.jpg Graphic file (type jpg)
 <use images/complete_wf.jpg>
-Package pdftex.def Info: images/complete_wf.jpg  used on input line 568.
+Package pdftex.def Info: images/complete_wf.jpg  used on input line 603.
 (pdftex.def)             Requested size: 376.19879pt x 193.96036pt.
- [26 <./images/rfecv_micro.jpg> <./images/rfecv_small-medium.jpg>] [27 <./image
-s/complete_wf.jpg>] [28
+ [27 <./images/cumulative-importance_vs_number-of-features_micro.jpg> <./images
+/cumulative-importance_vs_number-of-features_small-medium.jpg> <./images/correl
+ation-matrix_micro.jpg> <./images/correlation-matrix_small-medium.jpg>]
+[28 <./images/rfecv_micro.jpg> <./images/rfecv_small-medium.jpg>] [29 <./images
+/complete_wf.jpg>] [30
 
 ]
 Chapter 5.
-<images/lr_roc_curve_micro.png, id=756, 393.47pt x 286.06876pt>
+<images/lr_roc_curve_micro.png, id=796, 393.47pt x 286.06876pt>
 File: images/lr_roc_curve_micro.png Graphic file (type png)
 <use images/lr_roc_curve_micro.png>
-Package pdftex.def Info: images/lr_roc_curve_micro.png  used on input line 607.
+Package pdftex.def Info: images/lr_roc_curve_micro.png  used on input line 642.
 
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/lr_roc_curve_small-medium.png, id=757, 393.47pt x 286.06876pt>
+<images/lr_roc_curve_small-medium.png, id=797, 393.47pt x 286.06876pt>
 File: images/lr_roc_curve_small-medium.png Graphic file (type png)
 <use images/lr_roc_curve_small-medium.png>
 Package pdftex.def Info: images/lr_roc_curve_small-medium.png  used on input li
-ne 609.
+ne 644.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/lr_pr_curve_micro.png, id=758, 393.47pt x 286.06876pt>
+<images/lr_pr_curve_micro.png, id=798, 393.47pt x 286.06876pt>
 File: images/lr_pr_curve_micro.png Graphic file (type png)
 <use images/lr_pr_curve_micro.png>
-Package pdftex.def Info: images/lr_pr_curve_micro.png  used on input line 615.
+Package pdftex.def Info: images/lr_pr_curve_micro.png  used on input line 650.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/lr_pr_curve_small-medium.png, id=759, 393.47pt x 286.06876pt>
+<images/lr_pr_curve_small-medium.png, id=799, 393.47pt x 286.06876pt>
 File: images/lr_pr_curve_small-medium.png Graphic file (type png)
 <use images/lr_pr_curve_small-medium.png>
 Package pdftex.def Info: images/lr_pr_curve_small-medium.png  used on input lin
-e 617.
+e 652.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/lr_cm_micro.png, id=760, 401.5pt x 313.17pt>
+<images/lr_cm_micro.png, id=800, 401.5pt x 313.17pt>
 File: images/lr_cm_micro.png Graphic file (type png)
 <use images/lr_cm_micro.png>
-Package pdftex.def Info: images/lr_cm_micro.png  used on input line 623.
+Package pdftex.def Info: images/lr_cm_micro.png  used on input line 658.
 (pdftex.def)             Requested size: 198.0pt x 154.4438pt.
-<images/lr_cm_small-medium.png, id=761, 387.4475pt x 308.15125pt>
+<images/lr_cm_small-medium.png, id=801, 387.4475pt x 308.15125pt>
 File: images/lr_cm_small-medium.png Graphic file (type png)
 <use images/lr_cm_small-medium.png>
-Package pdftex.def Info: images/lr_cm_small-medium.png  used on input line 625.
+Package pdftex.def Info: images/lr_cm_small-medium.png  used on input line 660.
 
 (pdftex.def)             Requested size: 198.0pt x 157.47948pt.
 
 Underfull \vbox (badness 1603) has occurred while \output is active []
 
- [29]
-[30 <./images/lr_roc_curve_micro.png> <./images/lr_roc_curve_small-medium.png> 
+ [31]
+[32 <./images/lr_roc_curve_micro.png> <./images/lr_roc_curve_small-medium.png> 
 <./images/lr_pr_curve_micro.png> <./images/lr_pr_curve_small-medium.png>]
-<images/dt_roc_curve_micro.png, id=790, 393.47pt x 286.06876pt>
+<images/dt_roc_curve_micro.png, id=830, 393.47pt x 286.06876pt>
 File: images/dt_roc_curve_micro.png Graphic file (type png)
 <use images/dt_roc_curve_micro.png>
-Package pdftex.def Info: images/dt_roc_curve_micro.png  used on input line 654.
+Package pdftex.def Info: images/dt_roc_curve_micro.png  used on input line 689.
 
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/dt_roc_curve_small-medium.png, id=791, 393.47pt x 286.06876pt>
+<images/dt_roc_curve_small-medium.png, id=831, 393.47pt x 286.06876pt>
 File: images/dt_roc_curve_small-medium.png Graphic file (type png)
 <use images/dt_roc_curve_small-medium.png>
 Package pdftex.def Info: images/dt_roc_curve_small-medium.png  used on input li
-ne 656.
+ne 691.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/dt_pr_curve_micro.png, id=792, 393.47pt x 286.06876pt>
+<images/dt_pr_curve_micro.png, id=832, 393.47pt x 286.06876pt>
 File: images/dt_pr_curve_micro.png Graphic file (type png)
 <use images/dt_pr_curve_micro.png>
-Package pdftex.def Info: images/dt_pr_curve_micro.png  used on input line 662.
+Package pdftex.def Info: images/dt_pr_curve_micro.png  used on input line 697.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/dt_pr_curve_small-medium.png, id=793, 393.47pt x 286.06876pt>
+<images/dt_pr_curve_small-medium.png, id=833, 393.47pt x 286.06876pt>
 File: images/dt_pr_curve_small-medium.png Graphic file (type png)
 <use images/dt_pr_curve_small-medium.png>
 Package pdftex.def Info: images/dt_pr_curve_small-medium.png  used on input lin
-e 664.
+e 699.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/dt_cm_micro.png, id=794, 401.5pt x 313.17pt>
+<images/dt_cm_micro.png, id=834, 401.5pt x 313.17pt>
 File: images/dt_cm_micro.png Graphic file (type png)
 <use images/dt_cm_micro.png>
-Package pdftex.def Info: images/dt_cm_micro.png  used on input line 670.
+Package pdftex.def Info: images/dt_cm_micro.png  used on input line 705.
 (pdftex.def)             Requested size: 198.0pt x 154.4438pt.
-<images/dt_cm_small-medium.png, id=795, 392.46625pt x 313.17pt>
+<images/dt_cm_small-medium.png, id=835, 392.46625pt x 313.17pt>
 File: images/dt_cm_small-medium.png Graphic file (type png)
 <use images/dt_cm_small-medium.png>
-Package pdftex.def Info: images/dt_cm_small-medium.png  used on input line 672.
+Package pdftex.def Info: images/dt_cm_small-medium.png  used on input line 707.
 
 (pdftex.def)             Requested size: 198.0pt x 157.99907pt.
-<images/rf_roc_curve_micro.png, id=805, 393.47pt x 286.06876pt>
+<images/rf_roc_curve_micro.png, id=845, 393.47pt x 286.06876pt>
 File: images/rf_roc_curve_micro.png Graphic file (type png)
 <use images/rf_roc_curve_micro.png>
-Package pdftex.def Info: images/rf_roc_curve_micro.png  used on input line 702.
+Package pdftex.def Info: images/rf_roc_curve_micro.png  used on input line 737.
 
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/rf_roc_curve_small-medium.png, id=806, 393.47pt x 286.06876pt>
+<images/rf_roc_curve_small-medium.png, id=846, 393.47pt x 286.06876pt>
 File: images/rf_roc_curve_small-medium.png Graphic file (type png)
 <use images/rf_roc_curve_small-medium.png>
 Package pdftex.def Info: images/rf_roc_curve_small-medium.png  used on input li
-ne 704.
+ne 739.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/rf_pr_curve_micro.png, id=807, 393.47pt x 286.06876pt>
+<images/rf_pr_curve_micro.png, id=847, 393.47pt x 286.06876pt>
 File: images/rf_pr_curve_micro.png Graphic file (type png)
 <use images/rf_pr_curve_micro.png>
-Package pdftex.def Info: images/rf_pr_curve_micro.png  used on input line 710.
+Package pdftex.def Info: images/rf_pr_curve_micro.png  used on input line 745.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/rf_pr_curve_small-medium.png, id=808, 393.47pt x 286.06876pt>
+<images/rf_pr_curve_small-medium.png, id=848, 393.47pt x 286.06876pt>
 File: images/rf_pr_curve_small-medium.png Graphic file (type png)
 <use images/rf_pr_curve_small-medium.png>
 Package pdftex.def Info: images/rf_pr_curve_small-medium.png  used on input lin
-e 712.
+e 747.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/rf_cm_micro.png, id=809, 401.5pt x 313.17pt>
+<images/rf_cm_micro.png, id=849, 401.5pt x 313.17pt>
 File: images/rf_cm_micro.png Graphic file (type png)
 <use images/rf_cm_micro.png>
-Package pdftex.def Info: images/rf_cm_micro.png  used on input line 718.
+Package pdftex.def Info: images/rf_cm_micro.png  used on input line 753.
 (pdftex.def)             Requested size: 198.0pt x 154.4438pt.
-<images/rf_cm_small-medium.png, id=810, 392.46625pt x 313.17pt>
+<images/rf_cm_small-medium.png, id=850, 392.46625pt x 313.17pt>
 File: images/rf_cm_small-medium.png Graphic file (type png)
 <use images/rf_cm_small-medium.png>
-Package pdftex.def Info: images/rf_cm_small-medium.png  used on input line 720.
+Package pdftex.def Info: images/rf_cm_small-medium.png  used on input line 755.
 
 (pdftex.def)             Requested size: 198.0pt x 157.99907pt.
 
-[31 <./images/lr_cm_micro.png> <./images/lr_cm_small-medium.png>]
+[33 <./images/lr_cm_micro.png> <./images/lr_cm_small-medium.png>]
 
-LaTeX Warning: Text page 32 contains only floats.
+LaTeX Warning: Text page 34 contains only floats.
 
 
 Overfull \vbox (0.30016pt too high) has occurred while \output is active []
 
 
-[32 <./images/dt_roc_curve_micro.png> <./images/dt_roc_curve_small-medium.png> 
+[34 <./images/dt_roc_curve_micro.png> <./images/dt_roc_curve_small-medium.png> 
 <./images/dt_pr_curve_micro.png> <./images/dt_pr_curve_small-medium.png> <./ima
-ges/dt_cm_micro.png> <./images/dt_cm_small-medium.png>] [33 <./images/rf_roc_cu
+ges/dt_cm_micro.png> <./images/dt_cm_small-medium.png>] [35 <./images/rf_roc_cu
 rve_micro.png> <./images/rf_roc_curve_small-medium.png> <./images/rf_pr_curve_m
 icro.png> <./images/rf_pr_curve_small-medium.png>]
-Overfull \hbox (5.16705pt too wide) in paragraph at lines 729--730
+Overfull \hbox (5.16705pt too wide) in paragraph at lines 764--765
 []\T1/lmr/m/n/10.95 (-20) We used \T1/lmr/m/it/10.95 (-20) pys-park \T1/lmr/m/n
 /10.95 (-20) with the fol-low-ing set-tings to im-ple-ment this model: $\OML/lm
 m/m/it/10.95 maxDepth \OT1/lmr/m/n/10.95 (-20) =
  []
 
-<images/gbt_roc_curve_micro.png, id=859, 393.47pt x 286.06876pt>
+<images/gbt_roc_curve_micro.png, id=899, 393.47pt x 286.06876pt>
 File: images/gbt_roc_curve_micro.png Graphic file (type png)
 <use images/gbt_roc_curve_micro.png>
-Package pdftex.def Info: images/gbt_roc_curve_micro.png  used on input line 750
+Package pdftex.def Info: images/gbt_roc_curve_micro.png  used on input line 785
 .
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/gbt_roc_curve_small-medium.png, id=860, 393.47pt x 286.06876pt>
+<images/gbt_roc_curve_small-medium.png, id=900, 393.47pt x 286.06876pt>
 File: images/gbt_roc_curve_small-medium.png Graphic file (type png)
 <use images/gbt_roc_curve_small-medium.png>
 Package pdftex.def Info: images/gbt_roc_curve_small-medium.png  used on input l
-ine 752.
+ine 787.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/gbt_pr_curve_micro.png, id=861, 393.47pt x 286.06876pt>
+<images/gbt_pr_curve_micro.png, id=901, 393.47pt x 286.06876pt>
 File: images/gbt_pr_curve_micro.png Graphic file (type png)
 <use images/gbt_pr_curve_micro.png>
-Package pdftex.def Info: images/gbt_pr_curve_micro.png  used on input line 758.
+Package pdftex.def Info: images/gbt_pr_curve_micro.png  used on input line 793.
 
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/gbt_pr_curve_small-medium.png, id=862, 393.47pt x 286.06876pt>
+<images/gbt_pr_curve_small-medium.png, id=902, 393.47pt x 286.06876pt>
 File: images/gbt_pr_curve_small-medium.png Graphic file (type png)
 <use images/gbt_pr_curve_small-medium.png>
 Package pdftex.def Info: images/gbt_pr_curve_small-medium.png  used on input li
-ne 760.
+ne 795.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/gbt_cm_micro.png, id=863, 397.485pt x 309.155pt>
+<images/gbt_cm_micro.png, id=903, 397.485pt x 309.155pt>
 File: images/gbt_cm_micro.png Graphic file (type png)
 <use images/gbt_cm_micro.png>
-Package pdftex.def Info: images/gbt_cm_micro.png  used on input line 766.
+Package pdftex.def Info: images/gbt_cm_micro.png  used on input line 801.
 (pdftex.def)             Requested size: 198.0pt x 154.0016pt.
-<images/gbt_cm_small-medium.png, id=864, 392.46625pt x 313.17pt>
+<images/gbt_cm_small-medium.png, id=904, 392.46625pt x 313.17pt>
 File: images/gbt_cm_small-medium.png Graphic file (type png)
 <use images/gbt_cm_small-medium.png>
-Package pdftex.def Info: images/gbt_cm_small-medium.png  used on input line 768
+Package pdftex.def Info: images/gbt_cm_small-medium.png  used on input line 803
 .
 (pdftex.def)             Requested size: 198.0pt x 157.99907pt.
-<images/xgb_roc_curve_micro.png, id=873, 393.47pt x 286.06876pt>
+<images/xgb_roc_curve_micro.png, id=913, 393.47pt x 286.06876pt>
 File: images/xgb_roc_curve_micro.png Graphic file (type png)
 <use images/xgb_roc_curve_micro.png>
-Package pdftex.def Info: images/xgb_roc_curve_micro.png  used on input line 797
+Package pdftex.def Info: images/xgb_roc_curve_micro.png  used on input line 832
 .
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/xgb_roc_curve_small-medium.png, id=874, 393.47pt x 286.06876pt>
+<images/xgb_roc_curve_small-medium.png, id=914, 393.47pt x 286.06876pt>
 File: images/xgb_roc_curve_small-medium.png Graphic file (type png)
 <use images/xgb_roc_curve_small-medium.png>
 Package pdftex.def Info: images/xgb_roc_curve_small-medium.png  used on input l
-ine 799.
+ine 834.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/xgb_pr_curve_micro.png, id=875, 393.47pt x 286.06876pt>
+<images/xgb_pr_curve_micro.png, id=915, 393.47pt x 286.06876pt>
 File: images/xgb_pr_curve_micro.png Graphic file (type png)
 <use images/xgb_pr_curve_micro.png>
-Package pdftex.def Info: images/xgb_pr_curve_micro.png  used on input line 805.
+Package pdftex.def Info: images/xgb_pr_curve_micro.png  used on input line 840.
 
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/xgb_pr_curve_small-medium.png, id=876, 393.47pt x 286.06876pt>
+<images/xgb_pr_curve_small-medium.png, id=916, 393.47pt x 286.06876pt>
 File: images/xgb_pr_curve_small-medium.png Graphic file (type png)
 <use images/xgb_pr_curve_small-medium.png>
 Package pdftex.def Info: images/xgb_pr_curve_small-medium.png  used on input li
-ne 807.
+ne 842.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/xgb_cm_micro.png, id=877, 401.5pt x 313.17pt>
+<images/xgb_cm_micro.png, id=917, 401.5pt x 313.17pt>
 File: images/xgb_cm_micro.png Graphic file (type png)
 <use images/xgb_cm_micro.png>
-Package pdftex.def Info: images/xgb_cm_micro.png  used on input line 813.
+Package pdftex.def Info: images/xgb_cm_micro.png  used on input line 848.
 (pdftex.def)             Requested size: 198.0pt x 154.4438pt.
-<images/xgb_cm_small-medium.png, id=878, 392.46625pt x 313.17pt>
+<images/xgb_cm_small-medium.png, id=918, 392.46625pt x 313.17pt>
 File: images/xgb_cm_small-medium.png Graphic file (type png)
 <use images/xgb_cm_small-medium.png>
-Package pdftex.def Info: images/xgb_cm_small-medium.png  used on input line 815
+Package pdftex.def Info: images/xgb_cm_small-medium.png  used on input line 850
 .
 (pdftex.def)             Requested size: 198.0pt x 157.99907pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34 <./images/rf_cm_micro.png> <./images/rf_cm_small-medium.png>]
+ [36 <./images/rf_cm_micro.png> <./images/rf_cm_small-medium.png>]
 
-LaTeX Warning: Text page 35 contains only floats.
+LaTeX Warning: Text page 37 contains only floats.
 
 
 Overfull \vbox (0.30016pt too high) has occurred while \output is active []
 
 
-[35 <./images/gbt_roc_curve_micro.png> <./images/gbt_roc_curve_small-medium.png
+[37 <./images/gbt_roc_curve_micro.png> <./images/gbt_roc_curve_small-medium.png
 > <./images/gbt_pr_curve_micro.png> <./images/gbt_pr_curve_small-medium.png> <.
-/images/gbt_cm_micro.png> <./images/gbt_cm_small-medium.png>] [36 <./images/xgb
+/images/gbt_cm_micro.png> <./images/gbt_cm_small-medium.png>] [38 <./images/xgb
 _roc_curve_micro.png> <./images/xgb_roc_curve_small-medium.png> <./images/xgb_p
-r_curve_micro.png> <./images/xgb_pr_curve_small-medium.png>] [37 <./images/xgb_
-cm_micro.png> <./images/xgb_cm_small-medium.png>]
-<images/random_search_micro.jpg, id=929, 365.56575pt x 221.02576pt>
+r_curve_micro.png> <./images/xgb_pr_curve_small-medium.png>]
+<images/PR_curves_micro.jpg, id=961, 838.332pt x 419.166pt>
+File: images/PR_curves_micro.jpg Graphic file (type jpg)
+<use images/PR_curves_micro.jpg>
+Package pdftex.def Info: images/PR_curves_micro.jpg  used on input line 906.
+(pdftex.def)             Requested size: 396.0pt x 197.99942pt.
+<images/PR_curves_small-medium.jpg, id=962, 779.91376pt x 400.49625pt>
+File: images/PR_curves_small-medium.jpg Graphic file (type jpg)
+<use images/PR_curves_small-medium.jpg>
+Package pdftex.def Info: images/PR_curves_small-medium.jpg  used on input line 
+913.
+(pdftex.def)             Requested size: 396.0pt x 203.35205pt.
+ [39 <./images/xgb_cm_micro.png> <./images/xgb_cm_small-medium.png>]
+<images/random_search_micro.jpg, id=974, 365.56575pt x 221.02576pt>
 File: images/random_search_micro.jpg Graphic file (type jpg)
 <use images/random_search_micro.jpg>
-Package pdftex.def Info: images/random_search_micro.jpg  used on input line 921
+Package pdftex.def Info: images/random_search_micro.jpg  used on input line 971
 .
 (pdftex.def)             Requested size: 198.0pt x 119.71298pt.
-<images/random_search_small-medium.jpg, id=930, 364.36125pt x 220.4235pt>
+<images/random_search_small-medium.jpg, id=975, 364.36125pt x 220.4235pt>
 File: images/random_search_small-medium.jpg Graphic file (type jpg)
 <use images/random_search_small-medium.jpg>
 Package pdftex.def Info: images/random_search_small-medium.jpg  used on input l
-ine 923.
+ine 973.
 (pdftex.def)             Requested size: 198.0pt x 119.7803pt.
-<images/gbt_final_roc_curve_micro.png, id=940, 393.47pt x 286.06876pt>
+ [40 <./images/PR_curves_micro.jpg> <./images/PR_curves_small-medium.jpg>]
+<images/gbt_final_roc_curve_micro.png, id=991, 393.47pt x 286.06876pt>
 File: images/gbt_final_roc_curve_micro.png Graphic file (type png)
 <use images/gbt_final_roc_curve_micro.png>
 Package pdftex.def Info: images/gbt_final_roc_curve_micro.png  used on input li
-ne 934.
+ne 984.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/gbt_final_roc_curve_small-medium.png, id=941, 393.47pt x 286.06876pt>
+<images/gbt_final_roc_curve_small-medium.png, id=992, 393.47pt x 286.06876pt>
 File: images/gbt_final_roc_curve_small-medium.png Graphic file (type png)
 <use images/gbt_final_roc_curve_small-medium.png>
 Package pdftex.def Info: images/gbt_final_roc_curve_small-medium.png  used on i
-nput line 936.
+nput line 986.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/gbt_final_pr_curve_micro.png, id=942, 393.47pt x 286.06876pt>
+<images/gbt_final_pr_curve_micro.png, id=993, 393.47pt x 286.06876pt>
 File: images/gbt_final_pr_curve_micro.png Graphic file (type png)
 <use images/gbt_final_pr_curve_micro.png>
 Package pdftex.def Info: images/gbt_final_pr_curve_micro.png  used on input lin
-e 943.
+e 993.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/gbt_final_pr_curve_small-medium.png, id=943, 393.47pt x 286.06876pt>
+<images/gbt_final_pr_curve_small-medium.png, id=994, 393.47pt x 286.06876pt>
 File: images/gbt_final_pr_curve_small-medium.png Graphic file (type png)
 <use images/gbt_final_pr_curve_small-medium.png>
 Package pdftex.def Info: images/gbt_final_pr_curve_small-medium.png  used on in
-put line 945.
+put line 995.
 (pdftex.def)             Requested size: 198.0pt x 143.95068pt.
-<images/gbt_final_cm_default_th_micro.png, id=944, 401.5pt x 313.17pt>
+<images/gbt_final_cm_default_th_micro.png, id=995, 401.5pt x 313.17pt>
 File: images/gbt_final_cm_default_th_micro.png Graphic file (type png)
 <use images/gbt_final_cm_default_th_micro.png>
 Package pdftex.def Info: images/gbt_final_cm_default_th_micro.png  used on inpu
-t line 952.
+t line 1002.
 (pdftex.def)             Requested size: 130.68073pt x 101.93195pt.
-<images/gbt_final_cm_best_roc_th_micro.png, id=945, 451.6875pt x 313.17pt>
+<images/gbt_final_cm_best_roc_th_micro.png, id=996, 451.6875pt x 313.17pt>
 File: images/gbt_final_cm_best_roc_th_micro.png Graphic file (type png)
 <use images/gbt_final_cm_best_roc_th_micro.png>
 Package pdftex.def Info: images/gbt_final_cm_best_roc_th_micro.png  used on inp
-ut line 954.
+ut line 1004.
 (pdftex.def)             Requested size: 130.68073pt x 90.6067pt.
-<images/gbt_final_cm_best_pr_th_micro.png, id=946, 439.6425pt x 313.17pt>
+<images/gbt_final_cm_best_pr_th_micro.png, id=997, 439.6425pt x 313.17pt>
 File: images/gbt_final_cm_best_pr_th_micro.png Graphic file (type png)
 <use images/gbt_final_cm_best_pr_th_micro.png>
 Package pdftex.def Info: images/gbt_final_cm_best_pr_th_micro.png  used on inpu
-t line 956.
+t line 1006.
 (pdftex.def)             Requested size: 130.68073pt x 93.08679pt.
-<images/gbt_final_cm_default_th_small-medium.png, id=947, 392.46625pt x 313.17p
+<images/gbt_final_cm_default_th_small-medium.png, id=998, 392.46625pt x 313.17p
 t>
 File: images/gbt_final_cm_default_th_small-medium.png Graphic file (type png)
 <use images/gbt_final_cm_default_th_small-medium.png>
 Package pdftex.def Info: images/gbt_final_cm_default_th_small-medium.png  used 
-on input line 963.
+on input line 1013.
 (pdftex.def)             Requested size: 130.68073pt x 104.27823pt.
-<images/gbt_final_cm_best_roc_th_small-medium.png, id=948, 451.6875pt x 313.17p
+<images/gbt_final_cm_best_roc_th_small-medium.png, id=999, 451.6875pt x 313.17p
 t>
 File: images/gbt_final_cm_best_roc_th_small-medium.png Graphic file (type png)
 <use images/gbt_final_cm_best_roc_th_small-medium.png>
 Package pdftex.def Info: images/gbt_final_cm_best_roc_th_small-medium.png  used
- on input line 965.
+ on input line 1015.
 (pdftex.def)             Requested size: 130.68073pt x 90.6067pt.
-<images/gbt_final_cm_best_pr_th_small-medium.png, id=949, 439.6425pt x 310.1587
-5pt>
+<images/gbt_final_cm_best_pr_th_small-medium.png, id=1000, 439.6425pt x 310.158
+75pt>
 File: images/gbt_final_cm_best_pr_th_small-medium.png Graphic file (type png)
 <use images/gbt_final_cm_best_pr_th_small-medium.png>
 Package pdftex.def Info: images/gbt_final_cm_best_pr_th_small-medium.png  used 
-on input line 967.
+on input line 1017.
 (pdftex.def)             Requested size: 130.68073pt x 92.19173pt.
-<images/gbt_final_feature_importance_micro.jpg, id=950, 365.56575pt x 221.628pt
->
+<images/gbt_final_feature_importance_micro.jpg, id=1001, 365.56575pt x 221.628p
+t>
 File: images/gbt_final_feature_importance_micro.jpg Graphic file (type jpg)
 <use images/gbt_final_feature_importance_micro.jpg>
 Package pdftex.def Info: images/gbt_final_feature_importance_micro.jpg  used on
- input line 974.
+ input line 1024.
 (pdftex.def)             Requested size: 198.0pt x 120.03918pt.
-<images/gbt_final_feature_importance_small-medium.jpg, id=951, 420.3705pt x 253
-.54726pt>
+<images/gbt_final_feature_importance_small-medium.jpg, id=1002, 420.3705pt x 25
+3.54726pt>
 File: images/gbt_final_feature_importance_small-medium.jpg Graphic file (type j
 pg)
 <use images/gbt_final_feature_importance_small-medium.jpg>
 Package pdftex.def Info: images/gbt_final_feature_importance_small-medium.jpg  
-used on input line 976.
+used on input line 1026.
 (pdftex.def)             Requested size: 198.0pt x 119.42642pt.
- [38 <./images/random_search_micro.jpg> <./images/random_search_small-medium.jp
-g>] [39 <./images/gbt_final_roc_curve_micro.png> <./images/gbt_final_roc_curve_
-small-medium.png> <./images/gbt_final_pr_curve_micro.png> <./images/gbt_final_p
-r_curve_small-medium.png> <./images/gbt_final_cm_default_th_micro.png> <./image
-s/gbt_final_cm_best_roc_th_micro.png> <./images/gbt_final_cm_best_pr_th_micro.p
-ng>] [40 <./images/gbt_final_cm_default_th_small-medium.png> <./images/gbt_fina
-l_cm_best_roc_th_small-medium.png> <./images/gbt_final_cm_best_pr_th_small-medi
-um.png> <./images/gbt_final_feature_importance_micro.jpg> <./images/gbt_final_f
-eature_importance_small-medium.jpg>]
-Chapter 6.
-[41
 
-] [42]
-Underfull \hbox (badness 4981) in paragraph at lines 1055--1056
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41 <./images/random_search_micro.jpg> <./images/random_search_small-medium.jp
+g>]
+[42 <./images/gbt_final_roc_curve_micro.png> <./images/gbt_final_roc_curve_smal
+l-medium.png> <./images/gbt_final_pr_curve_micro.png> <./images/gbt_final_pr_cu
+rve_small-medium.png> <./images/gbt_final_cm_default_th_micro.png> <./images/gb
+t_final_cm_best_roc_th_micro.png> <./images/gbt_final_cm_best_pr_th_micro.png>]
+[43 <./images/gbt_final_cm_default_th_small-medium.png> <./images/gbt_final_cm_
+best_roc_th_small-medium.png> <./images/gbt_final_cm_best_pr_th_small-medium.pn
+g> <./images/gbt_final_feature_importance_micro.jpg> <./images/gbt_final_featur
+e_importance_small-medium.jpg>] [44
+
+]
+Chapter 6.
+[45] [46]
+Underfull \hbox (badness 4981) in paragraph at lines 1130--1131
 []\T1/lmr/m/n/10.95 (+20) F. Almeida and G. Xexeo [][]Word em-bed-dings: A sur-
 vey[][]. CoRR,
  []
 
-[43
+[47
 
 
 
-] [44pdfTeX warning (ext4): destination with the same identifier (name{cite.Sok
+] [48pdfTeX warning (ext4): destination with the same identifier (name{cite.Sok
 olova2006}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1103 \bibitem{Namburu2005}
+l.1178 \bibitem{Namburu2005}
                             ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1144.
- [45]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1144.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1219.
+ [49]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1219.
  (LaureaMagistrale_eng.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1219.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1219.
 
 Package rerunfilecheck Info: File `LaureaMagistrale_eng.out' has not changed.
-(rerunfilecheck)             Checksum: BBAB3FD69C39F65133FDB22777016346;4004.
+(rerunfilecheck)             Checksum: 4C529EF874FA3450B72BC0A7AAAE211C;4174.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16623 strings out of 480790
- 270129 string characters out of 2913590
+ 16683 strings out of 480790
+ 271413 string characters out of 2913590
  791565 words of memory out of 3000000
- 31759 multiletter control sequences out of 15000+200000
- 620302 words of font info for 150 fonts, out of 3000000 for 9000
+ 31798 multiletter control sequences out of 15000+200000
+ 620432 words of font info for 151 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,12n,100p,1112b,543s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/MiKTeX/fonts/enc/dvips/lm/lm-
@@ -1425,9 +1466,9 @@ fb><C:/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/MiKTeX/fonts/type1/public/lm/l
 mri10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/MiKTeX/fonts/type1/pu
 blic/lm/lmss17.pfb><C:/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/MiKTeX/fonts
 /type1/public/lm/lmsy8.pfb>
-Output written on LaureaMagistrale_eng.pdf (55 pages, 2535698 bytes).
+Output written on LaureaMagistrale_eng.pdf (59 pages, 2953639 bytes).
 PDF statistics:
- 1158 PDF objects out of 1200 (max. 8388607)
- 287 named destinations out of 1000 (max. 500000)
- 27930 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1214 PDF objects out of 1440 (max. 8388607)
+ 300 named destinations out of 1000 (max. 500000)
+ 27976 words of extra memory for PDF output out of 29859 (max. 10000000)
 
