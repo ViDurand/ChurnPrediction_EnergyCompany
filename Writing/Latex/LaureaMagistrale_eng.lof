@@ -82,26 +82,42 @@
 \contentsline {figure}{\numberline {5.15}{\ignorespaces XGBoost: Confusion matrices\relax }}{39}{figure.caption.56}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{39}{subfigure.15.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{39}{subfigure.15.2}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces PR Curves: summary (micro)\relax }}{40}{figure.caption.59}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces PR Curves: summary (small-medium)\relax }}{40}{figure.caption.60}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Random search - PR AUC by iteration\relax }}{41}{figure.caption.62}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Curves summary (micro)\relax }}{40}{figure.caption.59}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PR curves.}}}{40}{subfigure.16.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curves.}}}{40}{subfigure.16.2}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Curves summary (small-medium)\relax }}{40}{figure.caption.60}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PR curves.}}}{40}{subfigure.17.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curves.}}}{40}{subfigure.17.2}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Area under PR curve: summary\relax }}{41}{figure.caption.61}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{41}{subfigure.18.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{41}{subfigure.18.2}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces GBT - Final ROC curves\relax }}{42}{figure.caption.63}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{42}{subfigure.19.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{42}{subfigure.19.2}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces GBT - Final PR curves\relax }}{42}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small-medium.}}}{41}{subfigure.18.2}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Random search - PR AUC by iteration\relax }}{41}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{41}{subfigure.19.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{41}{subfigure.19.2}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces GBT - Final ROC curves\relax }}{42}{figure.caption.65}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{42}{subfigure.20.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{42}{subfigure.20.2}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Micro: Confusion matrices for three different thresholds\relax }}{42}{figure.caption.65}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Default threshold.}}}{42}{subfigure.21.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curve: Best th.}}}{42}{subfigure.21.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {PR curve : Best th.}}}{42}{subfigure.21.3}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Small-Medium: Confusion matrices for three different thresholds\relax }}{43}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces GBT - Final PR curves\relax }}{43}{figure.caption.66}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{43}{subfigure.21.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{43}{subfigure.21.2}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Micro: Confusion matrices for three different thresholds\relax }}{43}{figure.caption.67}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Default threshold.}}}{43}{subfigure.22.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curve: Best th.}}}{43}{subfigure.22.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {PR curve : Best th.}}}{43}{subfigure.22.3}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces GBT - Feature importance\relax }}{43}{figure.caption.67}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{43}{subfigure.23.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{43}{subfigure.23.2}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Small-Medium: Confusion matrices for three different thresholds\relax }}{43}{figure.caption.68}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Default threshold.}}}{43}{subfigure.23.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curve: Best th.}}}{43}{subfigure.23.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {PR curve : Best th.}}}{43}{subfigure.23.3}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces GBT - Feature importance\relax }}{44}{figure.caption.69}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{44}{subfigure.24.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small and Medium.}}}{44}{subfigure.24.2}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Curves summary - 3 months target (micro)\relax }}{44}{figure.caption.72}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PR curves.}}}{44}{subfigure.25.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curves.}}}{44}{subfigure.25.2}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Curves summary - 3 months target (small-medium)\relax }}{45}{figure.caption.73}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PR curves.}}}{45}{subfigure.26.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ROC curves.}}}{45}{subfigure.26.2}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Area under PR curve - 3 months target: summary\relax }}{45}{figure.caption.74}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Micro.}}}{45}{subfigure.27.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Small-medium.}}}{45}{subfigure.27.2}%
 \addvspace {10\p@ }

@@ -854,12 +854,11 @@ XGB Small-Medium&0.5&7.85845&62.2334&13.9548&0.778677&0.124997\\
 
 \section{Summary and analysis of the results}
 
-In summary, 5 different machine learning models were used in this study (Logistic regression, Random forest, Decision tree, Gradient-boosted tree and XGBoost) to predict customer churn. These 5 models have been evaluated using 6 different evaluation metrics (Confusion matrix, Precision, Recall, F1 Score, ROC AUC and PR AUC). To choose the best performing model, we focused our attention on precision and recall since we were interested by both the quality and the quantity of the positive predictions. F1 Score is as combination of these two metrics. 
+In summary, 5 different machine learning models were used in this study (Logistic regression, Random forest, Decision tree, Gradient-boosted tree and XGBoost) to predict customer churn. These 5 models have been evaluated using 6 different evaluation metrics (Confusion matrix, Precision, Recall, F1 Score, ROC AUC and PR AUC). To choose the best performing model, we focused our attention on precision and recall since we were interested by both the quality (precision) and the quantity (recall) of the positive predictions. F1 Score is a combination of these two metrics. 
 
 However the initial predictions were made using the default threshold (0.5); Thus, it was then necessary to find a metric able to summarize the model performance over all the possible thresholds so that the best threshold could then be identified. Precision and Recall area under the curve (PR AUC) was thought to be the right metric to do so.
 
-As shown on tables \ref{results_summary_micro} and \ref{results_summary_small-medium}, the best model appears to be \textit{Gradient Boosted Tree Classifier} with a PR AUC of approximately $0.10$ for \textit{micro} and $0.13$ for \textit{small-medium} data sets. Figures \ref{fig:PR_curves_micro} and \ref{fig:PR_curves_small-medium} instead show the 5 PR curves on which we can see that the best one is Gradient Boosted Tree for both micro and small-medium data sets.
-
+As shown on tables \ref{results_summary_micro} and \ref{results_summary_small-medium}, the best model appears to be \textit{Gradient Boosted Tree Classifier} with a PR AUC of approximately $0.10$ for \textit{micro} and $0.13$ for \textit{small-medium} data sets. 
 
 \begin{table}[!ht]
 \centering
@@ -901,22 +900,35 @@ XFB Small-Medium&0.5&7.85845&62.2334&13.9548&0.778677&0.124997\\
 \label{results_summary_small-medium}
 \end{table}
 
+Moreover, all the PR and ROC curves have been gathered on the same plot in order to make any comparison easier. this comparison can be made on figures [\ref{fig:PR_curves_micro}, \ref{fig:ROC_curves_micro}] and [\ref{fig:PR_curves_small-medium}, \ref{fig:ROC_curves_small-medium}] representing respectively the micro and small-medium data sets. Observing these curves, we are able to confirm that the best model is Gradient Boosted Tree, since greater area lies under its curves. We can also say that XGBoost is performing almost as good as Gradient Boosted Tree since their PR curves are quite close to each other.
+
 \begin{figure}[!ht]
   \centering
-\includegraphics[width=1\textwidth]{images/PR_curves_micro.jpg}
-  \caption{PR Curves: summary (micro)}
-  \label{fig:PR_curves_micro}
+  \subfloat[PR curves.]{\includegraphics[width=0.5\textwidth]{images/PR_curves_micro.png}\label{fig:PR_curves_micro}}
+  \hfill
+  \subfloat[ROC curves.]{\includegraphics[width=0.5\textwidth]{images/ROC_curves_micro.png}\label{fig:ROC_curves_micro}}
+  \caption{Curves summary (micro)}
 \end{figure}
 
 \begin{figure}[!ht]
   \centering
-\includegraphics[width=1\textwidth]{images/PR_curves_small-medium.jpg}
-  \caption{PR Curves: summary (small-medium)}
-  \label{fig:PR_curves_small-medium}
+  \subfloat[PR curves.]{\includegraphics[width=0.5\textwidth]{images/PR_curves_small-medium.png}\label{fig:PR_curves_small-medium}}
+  \hfill
+  \subfloat[ROC curves.]{\includegraphics[width=0.5\textwidth]{images/ROC_curves_small-medium.png}\label{fig:ROC_curves_small-medium}}
+  \caption{Curves summary (small-medium)}
 \end{figure}
 
+Another tool that was used to compare the different methods that we used is a plot of the areas under the PR curve (AUC). From figures \ref{fig:AUC_plots_micro} and \ref{fig:AUC_plots_small_medium} we can clearly see that for both micro and small-medium data sets, the model having the highest AUC is Gradient Boosted Tree.
 
-Some more work has been conducted in order to further optimize the best performing model including, parameter tuning through random search and threshold optimization. 
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.5\textwidth]{images/AUC_plots_micro.png}\label{fig:AUC_plots_micro}}
+  \hfill
+  \subfloat[Small-medium.]{\includegraphics[width=0.5\textwidth]{images/AUC_plots_small_medium.png}\label{fig:AUC_plots_small_medium}}
+  \caption{Area under PR curve: summary}
+\end{figure}
+
+After evaluating the machine learning models and selecting the best performing one, some more work has been conducted in order to further optimize the selected model including, parameter tuning through random search and threshold optimization. 
 
 \subsection{Random search}
 
@@ -977,7 +989,30 @@ subsamplingRate&0.6956739102219601\\
 
 \subsection{Threshold optimization and final results}
 
-Running the gradient boosted tree model with the best parameters identified in the previous step through random search, we obtained the final results with the default threshold ($0.5$). Moreover threshold optimization process has been made to identify the threshold yielding the best performances. Threshold optimization was performed using both ROC and PR curves. The final ROC curves can be found on figures \ref{fig:gbt_final_roc_curve_micro} and \ref{fig:gbt_final_roc_curve_small-medium}. The final PR curves are displayed on figures \ref{fig:gbt_final_pr_curve_micro} and \ref{fig:gbt_final_roc_curve_small-medium}. Figures \ref{fig:gbt_final_cm_micro} and \ref{fig:gbt_final_cm_small-medium} show the confusion matrices for different thresholds and for our two data sets. Figures \ref{fig:gbt_final_feature_importance_micro} and \ref{fig:gbt_final_feature_importance_small-medium} display the first 10 most important features of the final model. And lastly, the final results are summarized in table \ref{final_results_summary}.
+Running the gradient boosted tree model with the best parameters identified in the previous step through random search, we obtained the final results with the default threshold ($0.5$). Moreover threshold optimization process has been made to identify the threshold yielding the best performances. Threshold optimization was performed using both ROC and PR curves. The following table \ref{final_results_summary} summarizes the final results obtained after optimization.
+
+\begin{table}[!htb]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+GBT Micro (Default th.)&0.5&20.0593&36.4681	&25.8821&0.809498&0.192311\\
+GBT Micro (ROC best th.)&0.0928788&7.55362&69.5023&13.6263&0.809498&0.192311\\
+GBT Micro (PR best th.)&0.617549&24.5504&29.819&26.9294&0.809498&0.192311\\
+GBT Small-Medium (Default th.)&0.5&35.2695&63.0268&45.229&0.886273&0.532811\\
+GBT Small-Medium (ROC best th.)&0.302107&18.0879&72.8668&28.9816&0.886273&0.532811\\
+GBT Small-Medium (PR best th.)&0.697076&63.9946&48.0522&54.8892&0.886273&0.532811\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Final model results for different thresholds}
+\label{final_results_summary}
+\end{table}
+
+The final ROC curves can be found on figures \ref{fig:gbt_final_roc_curve_micro} and \ref{fig:gbt_final_roc_curve_small-medium}. The final PR curves are displayed on figures \ref{fig:gbt_final_pr_curve_micro} and \ref{fig:gbt_final_pr_curve_small-medium}.
 
 \begin{figure}[!ht]
   \centering
@@ -996,6 +1031,7 @@ Running the gradient boosted tree model with the best parameters identified in t
   \caption{GBT - Final PR curves}
 \end{figure}
 
+Figures \ref{fig:gbt_final_cm_micro} and \ref{fig:gbt_final_cm_small-medium} show the confusion matrices for different thresholds and for our two data sets. 
 
 \begin{figure}[!ht]
   \centering
@@ -1019,6 +1055,8 @@ Running the gradient boosted tree model with the best parameters identified in t
   \label{fig:gbt_final_cm_small-medium}
 \end{figure}
 
+Finally the first 10 most important features of the final model can be found on figures \ref{fig:gbt_final_feature_importance_micro} and \ref{fig:gbt_final_feature_importance_small-medium}.
+
 \begin{figure}[!ht]
   \centering
   \subfloat[Micro.]{\includegraphics[width=0.50\textwidth]{images/gbt_final_feature_importance_micro.jpg}\label{fig:gbt_final_feature_importance_micro}}
@@ -1027,30 +1065,81 @@ Running the gradient boosted tree model with the best parameters identified in t
   \caption{GBT - Feature importance}
 \end{figure}
 
-\begin{table}[!htb]
+\subsection{Experiment on a different target}
+
+Our study aimed to predict the probability for a client to churn in the next 2 months. This goal was reached by building a machine learning model to perform the task. However, we decided to run the same experiment on a different target variable (namely the probability for a client to churn in the next \textbf{3 months}) in order to asses the generalization capabilities of our solution. As a result, the experiment still performed well with the new target yielding slightly better results. 
+
+Tables \ref{results_summary_3m_micro} and \ref{results_summary_3m_small-medium} summarize the results of different approaches used, respectively for micro and small-medium data sets. We observe that the best model is still Gradient Boosted Tree with a PR AUC being approximately equal to $0.14$ for Micro and $...$ fro small-medium data sets.
+
+\begin{table}[!ht]
 \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}[t]{lcccccc}
 \toprule
 &Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
 \midrule
-GBT Micro (Default th.)&0.5&20.0593&36.4681	&25.8821&0.809498&0.192311\\
-GBT Micro (ROC best th.)&0.0928788&7.55362&69.5023&13.6263&0.809498&0.192311\\
-GBT Micro (PR best th.)&0.617549&24.5504&29.819&26.9294&0.809498&0.192311\\
-GBT Small-Medium (Default th.)&0.5&35.2695&63.0268&45.229&0.886273&0.532811\\
-GBT Small-Medium (ROC best th.)&0.302107&18.0879&72.8668&28.9816&0.886273&0.532811\\
-GBT Small-Medium (PR best th.)&0.697076&63.9946&48.0522&54.8892&0.886273&0.532811\\
+LR Micro&0.5&6.72863&59.9089&12.0984&0.707312&0.109066\\
+DT Micro&0.5&10.9757&44.4357&17.6033&0.690043&0.0910786\\
+RF Micro&0.5&8.22654&55.5549&14.331&0.724323&0.119777\\
+GBT Micro&0.5&9.83999&57.5606&16.8069&0.763539&0.145415\\
+XGB Micro&0.5&8.71478&62.3346&15.2917&0.764896&0.141527\\
 \bottomrule
 \end{tabular}
 }
 \vspace{2mm}
-\caption{Final model results for different thresholds}
-\label{final_results_summary}
+\caption{Results summary - 3 months target (Micro)}
+\label{results_summary_3m_micro}
 \end{table}
 
-\subsection{Trying the best model on a different target}
+\begin{table}[!ht]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{lcccccc}
+\toprule
+&Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
+\midrule
+LR Small-Medium&0.5&&&&&\\
+DT Small-Medium&0.5&&&&&\\
+RF Small-Medium&0.5&&&&&\\
+GBT Small-Medium&0.5&&&&&\\
+XFB Small-Medium&0.5&&&&&\\
+\bottomrule
+\end{tabular}
+}
+\vspace{2mm}
+\caption{Results summary - 3 months target (Small-medium)}
+\label{results_summary_3m_small-medium}
+\end{table}
 
-Our study aimed to predict the probability for a client to churn in the next 2 months. This goal was reached by building a machine learning model to perform the task. However, we decided to test our model on a different target variable - namely the probability for a client to churn in the next \textbf{3 months} - to asses the generalization capabilities of our solution. As a result, our model still performed well with the new target. Table \ref{performance_on_3_months_target} displays the obtained results.
+Figures [\ref{fig:PR_curves_3m_micro}, \ref{fig:ROC_curves_3m_micro}] and [\ref{fig:PR_curves_3m_small-medium}, \ref{fig:ROC_curves_3m_small-medium}] show the ROC and PR curves of the different approaches used on which we can see that the best performing model remains GBT.
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[PR curves.]{\includegraphics[width=0.5\textwidth]{images/PR_curves_3m_micro.png}\label{fig:PR_curves_3m_micro}}
+  \hfill
+  \subfloat[ROC curves.]{\includegraphics[width=0.5\textwidth]{images/ROC_curves_3m_micro.png}\label{fig:ROC_curves_3m_micro}}
+  \caption{Curves summary - 3 months target (micro)}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[PR curves.]{\includegraphics[width=0.5\textwidth]{images/PR_curves_3m_small-medium.png}\label{fig:PR_curves_3m_small-medium}}
+  \hfill
+  \subfloat[ROC curves.]{\includegraphics[width=0.5\textwidth]{images/ROC_curves_3m_small-medium.png}\label{fig:ROC_curves_3m_small-medium}}
+  \caption{Curves summary - 3 months target (small-medium)}
+\end{figure}
+
+Lastly, figures \ref{fig:AUC_plots_3m_micro} and \ref{fig:AUC_plots_3m_small_medium} clearly show that for both micro and small-medium data sets, the model having the highest AUC is Gradient Boosted Tree.
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[Micro.]{\includegraphics[width=0.5\textwidth]{images/AUC_plots_3m_micro.png}\label{fig:AUC_plots_3m_micro}}
+  \hfill
+  \subfloat[Small-medium.]{\includegraphics[width=0.5\textwidth]{images/AUC_plots_3m_small_medium.png}\label{fig:AUC_plots_3m_small_medium}}
+  \caption{Area under PR curve - 3 months target: summary}
+\end{figure}
+
+We also tested our best model on a the new target variable still obtaining good results that are summarized on table \ref{performance_on_3_months_target}.
 
 \begin{table}[!htb]
 \centering

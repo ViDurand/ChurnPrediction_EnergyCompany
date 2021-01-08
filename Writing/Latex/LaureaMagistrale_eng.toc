@@ -60,10 +60,10 @@
 \contentsline {section}{\numberline {5.4}Gradient-boosted tree classifier}{35}{section.5.4}%
 \contentsline {section}{\numberline {5.5}XGBoost}{36}{section.5.5}%
 \contentsline {section}{\numberline {5.6}Summary and analysis of the results}{38}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Random search}{40}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Threshold optimization and final results}{41}{subsection.5.6.2}%
-\contentsline {subsection}{\numberline {5.6.3}Trying the best model on a different target}{42}{subsection.5.6.3}%
-\contentsline {chapter}{\numberline {6}Conclusions}{45}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Conclusion}{45}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Suggestion for future research}{46}{section.6.2}%
-\contentsline {chapter}{Bibliography}{47}{section*.70}%
+\contentsline {subsection}{\numberline {5.6.1}Random search}{41}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Threshold optimization and final results}{42}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Experiment on a different target}{42}{subsection.5.6.3}%
+\contentsline {chapter}{\numberline {6}Conclusions}{47}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Conclusion}{47}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Suggestion for future research}{48}{section.6.2}%
+\contentsline {chapter}{Bibliography}{49}{section*.76}%

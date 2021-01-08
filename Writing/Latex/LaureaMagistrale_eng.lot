@@ -10,8 +10,10 @@
 \contentsline {table}{\numberline {5.5}{\ignorespaces XGBoost metrics\relax }}{38}{table.caption.53}%
 \contentsline {table}{\numberline {5.6}{\ignorespaces Results summary (Micro)\relax }}{39}{table.caption.57}%
 \contentsline {table}{\numberline {5.7}{\ignorespaces Results summary (Small-medium)\relax }}{39}{table.caption.58}%
-\contentsline {table}{\numberline {5.8}{\ignorespaces Random search results (Micro)\relax }}{41}{table.caption.61}%
-\contentsline {table}{\numberline {5.9}{\ignorespaces Random search results (Small-Medium)\relax }}{41}{table.caption.61}%
-\contentsline {table}{\numberline {5.10}{\ignorespaces Final model results for different thresholds\relax }}{41}{table.caption.68}%
-\contentsline {table}{\numberline {5.11}{\ignorespaces Model performance on 3 months target\relax }}{43}{table.caption.69}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Random search results (Micro)\relax }}{41}{table.caption.62}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Random search results (Small-Medium)\relax }}{41}{table.caption.62}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces Final model results for different thresholds\relax }}{42}{table.caption.64}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces Results summary - 3 months target (Micro)\relax }}{44}{table.caption.70}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces Results summary - 3 months target (Small-medium)\relax }}{44}{table.caption.71}%
+\contentsline {table}{\numberline {5.13}{\ignorespaces Model performance on 3 months target\relax }}{45}{table.caption.75}%
 \addvspace {10\p@ }
