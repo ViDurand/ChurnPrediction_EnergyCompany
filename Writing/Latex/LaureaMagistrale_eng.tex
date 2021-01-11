@@ -1069,7 +1069,7 @@ Finally the first 10 most important features of the final model can be found on 
 
 Our study aimed to predict the probability for a client to churn in the next 2 months. This goal was reached by building a machine learning model to perform the task. However, we decided to run the same experiment on a different target variable (namely the probability for a client to churn in the next \textbf{3 months}) in order to asses the generalization capabilities of our solution. As a result, the experiment still performed well with the new target yielding slightly better results. 
 
-Tables \ref{results_summary_3m_micro} and \ref{results_summary_3m_small-medium} summarize the results of different approaches used, respectively for micro and small-medium data sets. We observe that the best model is still Gradient Boosted Tree with a PR AUC being approximately equal to $0.14$ for Micro and $...$ fro small-medium data sets.
+Tables \ref{results_summary_3m_micro} and \ref{results_summary_3m_small-medium} summarize the results of different approaches used, respectively for micro and small-medium data sets. We observe that the best model is still Gradient Boosted Tree with a PR AUC being approximately equal to $0.14$ for Micro and $0.18$ for small-medium data sets.
 
 \begin{table}[!ht]
 \centering
@@ -1098,11 +1098,11 @@ XGB Micro&0.5&8.71478&62.3346&15.2917&0.764896&0.141527\\
 \toprule
 &Threshold&Precision (\%)&Recall (\%)&F1 Score (\%)&ROC AUC&PR AUC\\
 \midrule
-LR Small-Medium&0.5&&&&&\\
-DT Small-Medium&0.5&&&&&\\
-RF Small-Medium&0.5&&&&&\\
-GBT Small-Medium&0.5&&&&&\\
-XFB Small-Medium&0.5&&&&&\\
+LR Small-Medium&0.5&7.82659&63.6911&13.9402&0.709553&0.12704\\
+DT Small-Medium&0.5&8.88206&61.0145&15.5068&0.721413&0.150036\\
+RF Small-Medium&0.5&8.04307&66.2329&14.3442&0.727338&0.134614\\
+GBT Small-Medium&0.5&10.0294&68.8129&17.5071&0.779955&0.184047\\
+XGB Small-Medium&0.5&10.8309&63.0956&18.4881&0.770731&0.177088\\
 \bottomrule
 \end{tabular}
 }
